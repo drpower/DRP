@@ -1,8 +1,4 @@
 <style type="text/css">
-  .category-product-title:hover {
-    color: #b44127;
-  }
-
   .button-home {
     position: absolute;
     bottom: 5%;
@@ -65,16 +61,50 @@
       margin-right: 0px;
     }
   }
+
+  @media screen and (max-width: 490px) {
+    .category-product-title {
+      min-height: 150px;
+    }
+  }
+
+  .hero-category-product-title {
+    font-size: 2.7em;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .hero-category-product-title:hover {
+    color: #515151;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .hero-category-product-title {
+      font-size: 1.7em;
+    }
+
+    .hero-red-line {
+      display: none;
+    }
+
+    .hero-product-title-break {
+      display: block;
+    }
+
+    .home-spotlight-break {
+      display: block;
+      margin-left: 0px !important;
+    }
+  }
 </style>
 <div class="homepage-new">
   <!-- START HEADER IMAGE --> <a href="/savings/sale">
     <picture>
       <!--[if IE 9]><video style="display: none;"><![endif]-->
       <source media="(max-width: 780px)"
-        srcset="https://dam.generac.com/ImConvServlet/imconv/31da11415adb902eb7986480a174e9d2d88439cb/original">
+        srcset="https://dam.generac.com/ImConvServlet/imconv/de96d72c9c0e3768e9270071a0981409d0d84433/original">
       </source>
       <!--[if IE 9]></video><![endif]--> <img alt="Shop our Sale"
-        srcset="https://dam.generac.com/ImConvServlet/imconv/b19a776d6fb219ec9ee3cb376450e690327fbb37/original" />
+        srcset="https://dam.generac.com/ImConvServlet/imconv/192689b18322401c93d72b4ee597fc672fbe8acc/original" />
     </picture>
   </a> <!-- END HEADER IMAGE -->
   <!-- START NEW ARRIVALS -->
@@ -83,32 +113,40 @@
       <div class="my-5 section-header col-xs-12">
         <h4 class="section-subtitle"><span>Featured Categories</span></h4>
       </div>
-      <div class="col-xs-6 col-md-3"><a href="/power-equipment/edgers"><img alt="Shop Edgers"
-            src="https://dam.generac.com/ImConvServlet/imconv/33fbdb341201f8361c2ef3c9ea044b462a902b6b/original" />
+      <div class="col-xs-6 col-md-3"><a href="/power-equipment/trimmer-mowers"><img alt="Shop Trimmers"
+            src="https://dam.generac.com/ImConvServlet/imconv/07ee3ca09e343dc61d8f77e17b9e76cfcb632bbe/original" />
           <div class="category-product-title"
-            style="display:none; text-align: center; margin-top: 10px; margin-bottom: 10px">Lawn &
-            Garden Edgers</div>
+            style="/* display:none; */text-align: center;margin-top: 0px;margin-bottom: 10px;font-weight: bold;background-color: #f6f6f6;padding: 10px;">
+            Trimmer Mowers<br><span style="
+        color: #F04124;
+    ">Save up to $400!</span></div>
         </a></div>
       <div class="col-xs-6 col-md-3"><a href="/power-equipment/chippers"><img alt="Shop Chippers & Chipper Shredders"
-            src="https://dam.generac.com/ImConvServlet/imconv/0c97c9d968ad2844dec91e9bb0bd1f160b51bf2c/original" />
+            src="https://dam.generac.com/ImConvServlet/imconv/236724745135ca3b9bfc7c2f3b62c34fafb0bfa3/original" />
           <div class="category-product-title"
-            style="display:none; text-align: center; margin-top: 10px; margin-bottom: 10px">Chippers
-            & Chipper Shredders</div>
+            style="/* display:none; */text-align: center;margin-top: 0px;margin-bottom: 10px;font-weight: bold;background-color: #f6f6f6;padding: 10px;">
+            Chippers & Chipper Shredders<br><span style="
+        color: #F04124;
+    ">Make brush piles disappear!</span></div>
         </a></div>
-      <div class="col-xs-6 col-md-3"><a href="/power-equipment/lawn-mowers/tow-behind-mowers"><img
-            alt="Shop Tow-Behind Mowers"
-            src="https://dam.generac.com/ImConvServlet/imconv/353cff2084fe181772c25f1da88cd6426804a0ad/original" />
+      <div class="col-xs-6 col-md-3"><a
+          href="/power-equipment/leaf-blowers-vacuums/leaf-vacuums/self-propelled-leaf-vacs"><img
+            alt="Shop Leaf Vacuums"
+            src="https://dam.generac.com/ImConvServlet/imconv/618799c08a98fd89ec69d55679661c870da3dbd8/original" />
           <div class="category-product-title"
-            style="display:none; text-align: center; margin-top: 10px; margin-bottom: 10px">
-            Tow-Behind Finish Mowers</div>
+            style="/* display:none; */text-align: center;margin-top: 0px;margin-bottom: 10px;font-weight: bold;background-color: #f6f6f6;padding: 10px;">
+            EZ-BAGGER™ Leaf Vacuums<br><span style="
+        color: #F04124;
+    ">Kick leaves to the curb!</span></div>
         </a></div>
       <div class="col-xs-6 col-md-3"><a href="/power-equipment/leaf-blowers-vacuums/leaf-vacuums"><img
-            alt="Shop Chippers"
-            src="https://dam.generac.com/ImConvServlet/imconv/25ae0c088b6864f973b29d4e0e03f9a6dfb7dd8f/original" />
+            alt="Shop Leaf and Lawn Vacuums"
+            src="https://dam.generac.com/ImConvServlet/imconv/b2509c27afabc6ec1382ba8f9ba22ef782426ea5/original" />
           <div class="category-product-title"
-            style="display:none; text-align: center; margin-top: 10px; margin-bottom: 10px">Leaf &
-            Lawn Vacuums
-          </div>
+            style="/* display:none; */text-align: center;margin-top: 0px;margin-bottom: 10px;font-weight: bold;background-color: #f6f6f6;padding: 10px;">
+            Leaf & Lawn Vacuums<br><span style="
+        color: #F04124;
+    ">Now #1 in Capacity</span></div>
         </a></div>
     </div>
   </div>
@@ -120,22 +158,24 @@
         <h4 class="section-subtitle" style="text-align: center; margin-top: 0px"><span>Product Spotlight</span></h4>
       </div>
       <div class="col-xs-12 col-md-6" style="margin-bottom: 20px"><a
-          href="/power-equipment/leaf-blowers-vacuums/leaf-blowers"><img alt="Shop Walk-Behind Leaf Vacs"
-            src="https://dam.generac.com/ImConvServlet/imconv/67a1dc18dd96ece8f71c228d2827881bf3a2bd9c/original" />
-          <!-- <button class="button-home btn-primary"> Shop The Electric Zero-Turn Mower </button> -->
-          <!--	<div class="category-product-title" style="text-align: left;margin-top: 10px;margin-bottom: 40px;">
-					<span style="font-size: 18px; font-weight:bold; text-transform:uppercase">SAVE UP TO $400</span><br>
-					<span style="font-size: 14px; font-weight:normal;">Trimmer Mowers</span>
-				</div>-->
+          href="/power-equipment/field-brush-mowers/walk-behind/commercial-xd-series"><img
+            alt="Commercial -Grade Brush Mowers"
+            src="https://dam.generac.com/ImConvServlet/imconv/b7453291aa533f63efe908da9738890328d8ac64/original" />
+          <div class="category-product-title"
+            style="/* display:none; */text-align: center;margin-top: 0px;margin-bottom: 10px;font-weight: bold;background-color: #f6f6f6;padding: 15px;font-size: 1.6em">
+            Commercial-Grade Brush Mowers! <span class="home-spotlight-break" style="
+            color: #F04124;
+            font-style: italic;
+            font-size: .8em;
+            margin-left: 30px;
+        ">26" and 30" Cutting Widths!</span></div>
         </a></div>
-      <div class="col-xs-12 col-md-6"><a href="/power-equipment/battery-mowers-tools"><img
+      <div class="col-xs-12 col-md-6"><a href="/search/?text=Versa-Trailers+%26+Powerwagons"><img
             alt="Shop Battery Powered Tools"
-            src="https://dam.generac.com/ImConvServlet/imconv/eec6eff3b48746ca0839669a0ecab49df2cc5bae/original" />
-          <!-- <button class="button-home btn-primary"> Shop Walk Behind Leaf Vacuums </button> -->
-          <!--	<div class="category-product-title" style="text-align: left;margin-top: 10px;margin-bottom: 40px;">
-				<span style="font-size: 18px; font-weight:bold; text-transform:uppercase">the ultimate in self-propelled lawn cleanup</span><br>
-					<span style="font-size: 14px; font-weight:normal;">Leaf & Lawn Vacuums</span>
-				</div>-->
+            src="https://dam.generac.com/ImConvServlet/imconv/b61b23290fed8561bd6e61ddbb05a8f7d2c98cdc/original" />
+          <div class="category-product-title"
+            style="/* display:none; */text-align: center;margin-top: 0px;margin-bottom: 10px;font-weight: bold;background-color: #f6f6f6;padding: 15px;font-size: 1.6em">
+            DR Versa-Trailers and Powerwagons make hauling easy!</div>
         </a></div>
     </div>
   </div>
