@@ -69,8 +69,15 @@
   }
 
   .hero-category-product-title {
+    line-height: 2.25em;
     font-size: 2.7em;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  @media only screen and (max-width: 780px) {
+    .cta-button {
+      display: block;
+    }
   }
 
   .hero-category-product-title:hover {
@@ -113,7 +120,7 @@
 
 
 <div class="homepage-new">
-  <!-- START HEADER IMAGE --> <a href="/savings/black-friday-cyber-monday-sale">
+  <!-- START HEADER IMAGE --> <a href="/power-equipment">
     <picture>
       <!--[if IE 9]><video style="display: none;"><![endif]-->
       <source media="(max-width: 780px)"
@@ -125,18 +132,20 @@
     <div class="hero-category-product-title hero-red-line"
       style="text-align: center;margin-top: 0px;margin-bottom: 10px;font-weight: bold;padding: 15px;">
       'Tis the Season for
-      <span style="color:#F04124;margin: 0px 20px 0px 20px;font-weight: bold;"> SAVINGS! |</span>
-      <span class="hero-product-title-break">Order Deadline: December 1</span>
-      <span style="color: #fff; background-color: #F04124; margin-left: 10px; padding: 10px; border-radius: 5px;">Shop
-        Now >
+      <span style="color:#F04124;margin: 0px 0px 0px 0px;font-weight: bold;"> SAVINGS! </span>
+      <span class="hero-product-title-break"> | Order Deadline: December 1</span>
+      <span class="
+      cta-button"
+        style="color: #fff; background-color: #F04124; margin-left: 10px; padding: 10px; border-radius: 5px;">Shop
+        Now
       </span>
     </div>
     <div class="hero-category-product-title hero-line-large"
       style="text-align: center;margin-top: 0px;margin-bottom: 10px;font-weight: bold;padding: 15px;">
       'Tis the Season for Savings!
-      <p>Order Deadline: December <span
-          style="color: #fff; background-color: #F04124; margin-left: 10px; padding: 10px; border-radius: 5px;">Shop
-          Now >
+      <p>Order Deadline: December 1<span class="cta-button"
+          style="color: #fff; background-color: #F04124; width: 50%; margin: auto; padding: 10px; border-radius: 5px;">Shop
+          Now
         </span>
       </p>
     </div>
