@@ -1,37 +1,38 @@
 <style type="text/css">
-  .button-home {
+    .button-home {
       position: absolute;
       bottom: 5%;
       right: 5%;
-      /* width: 110px;      height: 40px; */
+      /* width: 110px;
+        height: 40px; */
       padding: 16px 16px;
       font-size: 14px;
       box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
       border-radius: 5px;
-  }
-
-  .button-home:hover {
+    }
+  
+    .button-home:hover {
       background-color: #ffffff;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
       color: #b44127;
-  }
-
-  .section-subtitle {
+    }
+  
+    .section-subtitle {
       padding-bottom: 20px;
       font-weight: bold;
       text-align: center;
       position: relative;
       z-index: 1;
-  }
-
-  .section-subtitle span {
+    }
+  
+    .section-subtitle span {
       background-color: #fff;
       padding: 0 5px;
       position: relative;
       z-index: 99;
-  }
-
-  .section-subtitle::before {
+    }
+  
+    .section-subtitle::before {
       content: "";
       border-top: 1px solid #a3a3a3;
       width: 100%;
@@ -39,219 +40,579 @@
       top: 16px;
       left: 0;
       z-index: 0;
-  }
-
-  hr {
+    }
+  
+    hr {
       border-top: 1px solid #b8b8b8;
-  }
-
-  .mb-5,
-  .my-5 {
+    }
+  
+    .mb-5,
+    .my-5 {
       margin-bottom: 0rem !important;
-  }
-
-  .homepage-new .container {
+    }
+  
+    .homepage-new .container {
       padding: 0 0rem !important;
-  }
-
-
-
-  @media screen and (max-width: 1404px) {
+    }
+  
+    @media screen and (max-width: 1404px) {
       .homepage-new .row {
-          margin-left: 0px;
-          margin-right: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
       }
-  }
-
-
-
-  @media screen and (max-width: 490px) {
+    }
+  
+    @media screen and (max-width: 490px) {
       .category-product-title {
-          min-height: 100px;
+        min-height: 100px;
       }
-  }
-
-  /* .hero-category-product-title {    font-size: 2.7em;    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);  } */
-  .hero-category-product-title:hover {
+    }
+  
+    /* .hero-category-product-title {
+      font-size: 2.7em;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    } */
+  
+    .hero-category-product-title:hover {
       color: #515151;
-  }
-
-
-
-  @media only screen and (max-width: 1200px) {
-
-      /* .hero-category-product-title {      font-size: 1.7em;    } */
+    }
+  
+  
+    @media only screen and (max-width: 1200px) {
+      /* .hero-category-product-title {
+        font-size: 1.7em;
+      } */
+  
       .hero-red-line {
-          display: none;
+        display: none;
       }
-
+  
       .hero-product-title-break {
-          display: block;
+        display: block;
       }
-
+  
       .home-spotlight-break {
-          display: block;
-          margin-left: 0px !important;
+        display: block;
+        margin-left: 0px !important;
       }
-  }
-
-  .hero-grid-container {
+    }
+  
+    .hero-grid-container {
       display: grid;
       width: 100%;
       margin: auto;
       text-align: center;
       font-weight: bold;
-  }
-
-  .hero-grid-child-1 {}
-
-  .hero-grid-child-2 {}
-
-  .hero-grid-child-3 {}
-
-  .cta-button {
+    }
+  
+    .hero-grid-child-1 {}
+  
+    .hero-grid-child-2 {}
+  
+    .hero-grid-child-3 {}
+  
+    .cta-button {
       background-color: #F04124;
       color: #fff;
       border-radius: 5px;
       font-weight: bold;
       padding: 10px;
       margin: auto;
-  }
-
-  /* GRID TEST STYLE */
-
-
-
-  @media only screen and (min-width: 1200px) {
+    }
+  
+    /* GRID TEST STYLE */
+    @media only screen and (min-width: 1200px) {
       .hero-grid-container {
-          grid-template-columns: 40% 40% 20%;
-          grid-template-rows: 1fr;
+        grid-template-columns: 40% 40% 20%;
+        grid-template-rows: 1fr;
       }
-
+  
       .hero-grid-child-1 {
-          grid-column-start: 1;
-          grid-column-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
       }
-
+  
       .hero-grid-child-2 {
-          grid-column-start: 2;
-          grid-column-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
       }
-
+  
       .hero-grid-child-3 {
-          grid-column-start: 3;
-          grid-column-end: 4;
+        grid-column-start: 3;
+        grid-column-end: 4;
       }
-
+  
       .cta-button {
-          width: 75%;
+        width: 75%;
       }
-
+  
       .hero-category-product-title {
-          font-size: 2.7em;
+        font-size: 2.7em;
       }
-  }
-
-
-
-  @media only screen and (max-width: 1199px) {
+    }
+  
+    @media only screen and (max-width: 1199px) {
       .hero-grid-container {
-          grid-template-columns: 60% 40%;
-          grid-template-rows: 50% 50%;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 50% 50%;
       }
-
+  
       .hero-grid-child-1 {
-          grid-column-start: 1;
-          grid-column-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
       }
-
+  
       .hero-grid-child-2 {
-          grid-column-start: 1;
-          grid-column-end: 2;
-          grid-row-start: 2;
-          grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
       }
-
+  
       .hero-grid-child-3 {
-          grid-column-start: 2;
-          grid-column-end: 3;
-          grid-row-start: 1;
-          grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
       }
-
+  
       .cta-button {
-          width: 50%;
-          font-size: 1.7em;
+        width: 50%;
+        font-size: 1.7em;
       }
-
+  
       .hero-category-product-title {
-          font-size: 2.7em;
+        font-size: 2.7em;
       }
-  }
-
-
-
-  @media only screen and (max-width: 780px) {
+    }
+  
+    @media only screen and (max-width: 780px) {
       .hero-grid-container {
-          grid-template-columns: 1fr;
-          grid-template-rows: 50px 50px 50px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 50px 50px;
       }
-
+  
       .hero-grid-child-1 {
-          grid-row-start: 1;
-          grid-row-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
       }
-
+  
       .hero-grid-child-2 {
-          grid-row-start: 2;
-          grid-row-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
       }
-
+  
       .hero-grid-child-3 {
-          grid-column-start: 1;
-          grid-column-end: 2;
-          grid-row-start: 3;
-          grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
       }
-
+  
       .cta-button {
-          width: 20%;
-          font-size: 1em;
+        width: 20%;
+        font-size: 1em;
       }
-
+  
       .hero-category-product-title {
-          font-size: 2.2em;
+        font-size: 2.2em;
       }
-  }
-
-
-
-  @media only screen and (max-width: 510px) {
+    }
+  
+    @media only screen and (max-width: 510px) {
       .cta-button {
-          width: 50%;
-          font-size: 1em;
+        width: 50%;
+        font-size: 1em;
       }
-  }
-
-
-
-  @media only screen and (max-width: 425px) {
+    }
+  
+    @media only screen and (max-width: 425px) {
+  
       .hero-category-product-title {
-          font-size: 1.7em;
+        font-size: 1.7em;
       }
-  }
-</style>
-<div class="homepage-new" style="margin-top: 20px"> <!-- START HEADER IMAGE --> <a href="/savings/sale">
-               <picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
-          <source media="(max-width: 780px)"
-              srcset="https://dam.generac.com/ImConvServlet/imconv/05396eb74533736c4951bd79adb4fc12ee76552e/original">
-          </source>
-          <!--[if IE 9]></video><![endif]--> <img alt="Mega March Sale - Shop Now"
-              srcset="https://dam.generac.com/ImConvServlet/imconv/5c3f354bcc64e716b8acd93443fccc381d258077/original" />
-      </picture>
-      <!-- GRID  -->
-      <!--  <div class="hero-grid-container">      <div class="hero-grid-child-1">        <div class="hero-category-product-title" style="color: #F04124;">SPECIAL PRICING<br>on SELECT ITEMS</div>      </div>      <div class="hero-grid-child-2">        <div class="hero-category-product-title">Order by December 21st</div>      </div>      <div class="hero-grid-child-3 cta-button">SHOP NOW!</div>    </div></div>-->
-  </a> <!-- END HEADER IMAGE --> <!-- END HEADER IMAGE --> 
+    }
+  
+  
+    @media (max-width: 414px) {
+      .country-home-data-wrapper .refer-friend-wrapper {
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+  
+  
+  
+      .chp-banner a {
+        height: auto;
+      }
+    }
+  
+    .home-page-banner-text-wrapper-right .banner-shop-now {
+      color: #fff;
+      padding: 8px 30px;
+      border-radius: 4px;
+      border: none;
+      background: #f23827;
+      font-weight: normal;
+  
+    }
+  
+    .banner-bottom-text-shipping {
+      margin: 20px 0px 20px 0px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.9rem;
+      color: #fff;
+      text-shadow: 0px 0px 20px #654321;
+      line-height: 30px;
+      text-transform: none;
+      display: block;
+    }
+  
+    .home-page-banner-text-wrapper-right .banner-shop-now:hover {
+      color: #fff;
+      background: #ab2328;
+    }
+  
+    .home-page-main-banner {
+      padding-top: 20px !important;
+      padding-bottom: 20px !important;
+    }
+  
+    @media only screen and (min-width: 1400px) {
+      .home-page-main-banner .home-page-banner-text-wrapper {
+        position: absolute;
+        /* top: 4.5rem;
+        left: 49rem; */
+      }
+    }
+  
+    @media only screen and (min-width: 558px) {
+      .home-page-main-banner {
+        padding-top: 20px !important;
+      }
+  
+      .banner-shop-now {
+        font-size: 18px;
+      }
+    }
+  
+    .home-page-banner-text-wrapper .banner-top-text {
+      text-align: left;
+      font-weight: bold;
+      font-size: 6rem;
+      color: #fff;
+      display: block;
+      /* text-transform: uppercase; */
+      line-height: 90px;
+    }
+  
+    .home-page-banner-text-wrapper .banner-top-text-mega {
+      font-size: 8rem;
+    }
+  
+    .banner-sub-title {
+      text-align: left;
+      font-weight: bold;
+      font-size: 1.4rem;
+      color: #fff;
+      display: block;
+      text-transform: uppercase;
+    }
+  
+    .home-page-banner-text-wrapper-right .banner-bottom-text {
+      margin: 20px 0px 20px 0px;
+      text-align: center;
+      font-weight: normal;
+      font-size: 1.25rem;
+      color: #fff;
+      text-shadow: 0px 0px 20px #654321;
+      line-height: 22px;
+      text-transform: none;
+      display: block;
+    }
+  
+    .home-page-banner-text-wrapper-right {
+      color: #fff;
+      position: absolute;
+      top: 4.5rem;
+      left: 70%;
+    }
+  
+    @media only screen and (max-width: 900px) {
+      .home-page-banner-text-wrapper .banner-top-text {
+        text-align: left;
+        font-weight: bold;
+        font-size: 3rem;
+        color: #fff;
+        display: block;
+        text-transform: uppercase;
+        line-height: 40px;
+      }
+  
+      .home-page-banner-text-wrapper-right {
+        color: #fff;
+        position: absolute;
+        top: .5rem;
+        left: 50%;
+      }
+  
+      .home-page-banner-text-wrapper .banner-top-text-mega {
+        font-size: 4rem;
+      }
+  
+      .home-page-banner-text-wrapper .banner-bottom-text {
+        margin: 10px 0px 10px 0px;
+        text-align: left;
+        font-size: 1rem;
+        color: #fff;
+        text-transform: none;
+        display: block;
+        font-weight: normal;
+      }
+  
+      .banner-sub-title {
+        text-align: left;
+        font-weight: bold;
+        font-size: 1rem;
+        color: #fff;
+        display: block;
+        /* text-transform: uppercase; */
+        line-height: 32px;
+      }
+    }
+  
+    @media (max-width: 570px) {
+      .home-page-banner-text-wrapper-right {
+        position: absolute;
+        top: .5rem;
+        left: 50%;
+      }
+  
+      .banner-bottom-text-shipping {
+        margin: 20px 0px 20px 0px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1rem;
+        color: #fff;
+        text-shadow: 0px 0px 20px #654321;
+        line-height: 20px;
+        text-transform: none;
+        display: block;
+      }
+  
+    }
+  
+    @media (max-width: 557px) {
+      .home-page-main-banner .home-page-banner-text-wrapper {
+        top: 1rem;
+        left: 2em;
+        right: 0;
+      }
+  
+      .home-page-main-banner {
+        padding: 0px !important;
+        margin-top: 20px !important;
+        margin-bottom: 0px !important;
+      }
+    }
+  
+    @media (max-width: 450px) {
+      .home-page-main-banner .home-page-banner-text-wrapper {
+        top: 1rem;
+        left: 2;
+        right: 0;
+      }
+  
+      .home-category-image-wrapper {
+        margin-left: -20px;
+        margin-right: -20px;
+        height: auto;
+        margin-top: 30px;
+      }
+  
+      .home-page-banner-text-wrapper .banner-bottom-text {
+        margin: 0px 0px 0px 0px;
+        text-align: left;
+        font-size: 1rem;
+        color: #fff;
+        text-transform: none;
+        display: block;
+      }
+    }
+  
+    @keyframes slidy {
+      0% {
+        left: 0%;
+      }
+  
+      20% {
+        left: 0%;
+      }
+  
+      25% {
+        left: -100%;
+      }
+  
+      45% {
+        left: -100%;
+      }
+  
+      50% {
+        left: -200%;
+      }
+  
+      70% {
+        left: -200%;
+      }
+  
+      75% {
+        left: -300%;
+      }
+  
+      95% {
+        left: -300%;
+      }
+  
+      100% {
+        left: -400%;
+      }
+    }
+  
+  
+    #slider {
+      overflow: hidden;
+    }
+  
+    #slider figure img {
+      width: 20%;
+      float: left;
+    }
+  
+    #slider figure {
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 30s slidy infinite;
+    }
+  
+    #slider-mobile {
+      overflow: hidden;
+    }
+  
+    #slider-mobile figure img {
+      width: 20%;
+      float: left;
+    }
+  
+    #slider-mobile figure {
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 30s slidy infinite;
+    }
+  
+    @media only screen and (max-width: 600px) {
+      #slider {
+        display: none;
+      }
+    }
+  
+    @media only screen and (min-width: 601px) {
+      #slider-mobile {
+        display: none;
+      }
+    }
+  </style>
+  
+<div class="homepage-new" style="margin-top: 20px"> 
+    
+
+
+
+ <!--START SLIDER-->
+
+
+
+
+
+ <div class="container home-page-main-banner"
+ style="clear: both; margin-top: 0px !important; margin-bottom: 0px !important; padding-bottom: 0px !important; padding-top: 20px !important">
+ <div class="banner__component simple-banner" style="margin-right: 0px !important; margin-left: 0px !important;">
+
+   <div id="slider">
+     <figure>
+       <a href="/savings/sale">
+         <img src="https://dam.generac.com/ImConvServlet/imconv/a430b1f534c9edf508027ea0fe1957d001b74932/original"
+           alt>
+       </a>
+       <a href="/savings/price-drop">
+         <img src="https://dam.generac.com/ImConvServlet/imconv/0f30162efa770e587a6d8bd725483e1b2301328e/original"
+           alt>
+       </a>
+       <a href="/savings/sale">
+         <img src="https://dam.generac.com/ImConvServlet/imconv/a430b1f534c9edf508027ea0fe1957d001b74932/original"
+           alt>
+       </a>
+       <a href="/savings/price-drop">
+         <img src="https://dam.generac.com/ImConvServlet/imconv/0f30162efa770e587a6d8bd725483e1b2301328e/original"
+           alt>
+       </a>
+       <a href=/savings/sale">
+         <img src="https://dam.generac.com/ImConvServlet/imconv/a430b1f534c9edf508027ea0fe1957d001b74932/original"
+           alt>
+       </a>
+     </figure>
+   </div>
+   <div id="slider-mobile">
+     <figure>
+       <a href="/savings/sale">
+         <img src="https://dam.generac.com/ImConvServlet/imconv/59b5630c18e19327c91544e74478f7f6a60d61c3/original"
+           alt>
+       </a>
+       <a href="/savings/price-drop">
+         <img src="https://dam.generac.com/ImConvServlet/imconv/a366de5bc7f1099372f5bbbe67ff796be55e8ae6/original"
+           alt>
+       </a>
+       <a href="/savings/sale">
+         <img src="https://dam.generac.com/ImConvServlet/imconv/59b5630c18e19327c91544e74478f7f6a60d61c3/original"
+           alt>
+       </a>
+       <a href="/savings/price-drop">
+         <img src="https://dam.generac.com/ImConvServlet/imconv/a366de5bc7f1099372f5bbbe67ff796be55e8ae6/original"
+           alt>
+       </a>
+       <a href="/savings/sale">
+         <img src="https://dam.generac.com/ImConvServlet/imconv/59b5630c18e19327c91544e74478f7f6a60d61c3/original"
+           alt>
+       </a>
+     </figure>
+   </div>
+
+ </div>
+</div>
+
+
+
+
+
+
+
+
+<!--END SLIDER-->
+
+
+
+
+
+
+
 
 
 
