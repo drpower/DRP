@@ -9,16 +9,14 @@
         }
     }
 </style>
-<div class="text-uppercase text-center header-promo" style="background: #000000; padding: 0px">
-    <div align="center">
-        <a href="/pages/content/customer-support/shopping-resources/promotions">
-            <img alt="Free Shipping to Your Home"
-                src="https://dam.generac.com/ImConvServlet/imconv/6cce408588b8f0f0a6a550f7081bfe132ab86a5a/original"
-                style="max-width: 70%; width: auto; margin: 0px" />
-        </a>
-    </div>
+<div class="text-uppercase text-center header-promo" style="background: #ef4222; padding: 0px;">
+<div align="center"><a href="/pages/content/customer-support/shopping-resources/shipping"> <img alt="Free Shipping to Your Home" src="https://dam.generac.com/ImConvServlet/imconv/8df51e6a82f6c8e7fc655caa64b63ed940ba6dab/original" style="max-width: 70%; width: auto; margin: 0px;" /></a></div>
 </div>
+
+
+
+
+
 <div class="promo-details" style="padding: 1px 20px 15px 0px; font-size: 12px">
-    <span style="float: right"><a href="/pages/content/customer-support/shopping-resources/promotions">Click here for
-            promotion details</a></span>
+    <span style="float: right"><a href="/pages/content/customer-support/shopping-resources/shipping">Some Limitations Apply</a></span>
 </div>
