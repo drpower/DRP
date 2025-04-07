@@ -1,33 +1,46 @@
 <style>
-.static-content-container h3 {
+  .static-content-container h3 {
     margin-top: 20px !important;
-}
-.static-content-container ul, ol {
+  }
+
+  .static-content-container ul,
+  ol {
     margin-top: 0;
     margin-bottom: 30px;
-}
-.static-content-container li {
+  }
+
+  .static-content-container li {
     margin-left: 20px;
-}
-.alt-header-support {
+  }
+
+  .alt-header-support {
     font-size: 22px;
     font-weight: bold;
     padding: 0px;
-}
-#ui-id-1, #ui-id-2, #ui-id-3, #ui-id-4 {
+  }
+
+  #ui-id-1,
+  #ui-id-2,
+  #ui-id-3,
+  #ui-id-4 {
     margin-left: 0px;
-}
-#overview p {
+  }
+
+  #overview p {
     margin-left: 30px;
-}
-.ui-widget-content {
+  }
+
+  .ui-widget-content {
     background-image: none;
-}
-.ui-state-hover, .ui-state-focus {
-    background: #a43117!important;
-    color: #fff!important;
-}
-.ui-accordion .ui-accordion-header {
+  }
+
+  .ui-state-hover,
+  .ui-state-focus {
+    background: #a43117 !important;
+    color: #fff !important;
+  }
+
+  .ui-accordion .ui-accordion-header {
     display: block;
     cursor: pointer;
     position: relative;
@@ -37,230 +50,376 @@
     font-weight: bold;
     color: #fff;
     background-color: #b44127 !important;
-}
-.ui-accordion .ui-accordion-content {
+  }
+
+  .ui-accordion .ui-accordion-content {
     padding: 1em;
-}
-.ui-accordion .ss-icon {
+  }
+
+  .ui-accordion .ss-icon {
     font-size: 16px;
-}
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  }
+
+  .ui-state-default,
+  .ui-widget-content .ui-state-default,
+  .ui-widget-header .ui-state-default {
     text-align: left;
-}
+  }
 
-@media only screen and (max-width: 1024px) {
-.tdmobile {
-    display: none !important;
-}
-}
+  @media only screen and (max-width: 1024px) {
+    .tdmobile {
+      display: none !important;
+    }
+  }
 
-@media only screen and (min-width: 1025px) {
-.tdfull {
-    display: none !important;
-}
-#manuals td a {
-    float: right
-}
-#maintenance td:nth-child(n+2) {
-    text-align: center
-}
-#maintenance th:nth-child(n+2) {
-    text-align: center
-}
-}
+  @media only screen and (min-width: 1025px) {
+    .tdfull {
+      display: none !important;
+    }
 
-@media only screen and (min-width: 768px) {
-.template-table {
-    border: 0 none;
-    border-spacing: 0;
-    font-size: 14px;/*width: 100%;*/
-}
-.template-table th {
-    font-weight: bold;
-    padding: 10px;
-    text-align: center;
-}
-.template-table td {
-    padding: 10px;
-}
-}
+    #manuals td a {
+      float: right
+    }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-.static-content-container {
-    width: auto;
-    margin: 2%;
-}
-.container__full {
-    padding-left: 0px;
-    padding-right: 0px;
-}
-.container__full .row {
-    margin-left: 0px;
-    margin-right: 0px;
-}
-#ui-id-1, #ui-id-2, #ui-id-3, #ui-id-4 {
-    margin-left: 0px;
-}
-#overview p {
-    margin-left: 0px;
-}
-.template-table {
-    border: 0 none;
-    border-spacing: 0;
-    font-size: 10px;/*width: 100%;*/
-}
-.template-table th {
-    font-size: 10px;
-    ;
-    font-weight: bold;
-    padding: 5px;
-    text-align: center;
-}
-.template-table td {
-    padding: 5px;
-}
-.template-table td[rowspan] {
-    text-align: center;
-}
-.ui-accordion .ui-accordion-header {
-    padding: 20px !important;
-    font-size: 14px;
-}
-}
-/*Table borders and background colors*/
-.section_border {
+    #maintenance td:nth-child(n+2) {
+      text-align: center
+    }
+
+    #maintenance th:nth-child(n+2) {
+      text-align: center
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .template-table {
+      border: 0 none;
+      border-spacing: 0;
+      font-size: 14px;
+      /*width: 100%;*/
+    }
+
+    .template-table th {
+      font-weight: bold;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .template-table td {
+      padding: 10px;
+    }
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .static-content-container {
+      width: auto;
+      margin: 2%;
+    }
+
+    .container__full {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    .container__full .row {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    #ui-id-1,
+    #ui-id-2,
+    #ui-id-3,
+    #ui-id-4 {
+      margin-left: 0px;
+    }
+
+    #overview p {
+      margin-left: 0px;
+    }
+
+    .template-table {
+      border: 0 none;
+      border-spacing: 0;
+      font-size: 10px;
+      /*width: 100%;*/
+    }
+
+    .template-table th {
+      font-size: 10px;
+      ;
+      font-weight: bold;
+      padding: 5px;
+      text-align: center;
+    }
+
+    .template-table td {
+      padding: 5px;
+    }
+
+    .template-table td[rowspan] {
+      text-align: center;
+    }
+
+    .ui-accordion .ui-accordion-header {
+      padding: 20px !important;
+      font-size: 14px;
+    }
+  }
+
+  /*Table borders and background colors*/
+  .section_border {
     border-bottom: 1px solid #7d7d7d;
-}
-.section_white {
+  }
+
+  .section_white {
     background-color: #fff;
-}
-.section-shade {
+  }
+
+  .section-shade {
     background-color: #f3f3f3;
-}
+  }
 </style>
 
 <div class="static-content-container fleft">
   <h3 class="static-page-title">Product Support</h3>
   <div class="media clearfix">
-    <div class=""> <img alt="DR Trimmer Mower Support" src="https://dam.generac.com/ImConvServlet/imconv/ae9d31a2709687fccce0f236d7f8c896e935546f/original" style="width:120px">
+    <div class=""> <img alt="DR Trimmer Mower Support"
+        src="https://dam.generac.com/ImConvServlet/imconv/ae9d31a2709687fccce0f236d7f8c896e935546f/original"
+        style="width:120px">
       <div class="clearer"> &nbsp; </div>
       <div class="media-body">
         <h1 class="media-heading">DR<sup style="font-size:20px;">&reg;</sup> Trimmer Mower</h1>
       </div>
     </div>
-    <div class="ui-accordion ui-widget ui-helper-reset" id="accordion" role="tablist"> 
-      
+    <div class="ui-accordion ui-widget ui-helper-reset" id="accordion" role="tablist">
+
       <!-- Start Accordion -->
-      <h3 aria-controls="ui-id-2" aria-expanded="false" aria-selected="false" class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" id="ui-id-1" role="tab" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Ordering Parts <span class="btn" style="float: right;padding: 0px; display: inline-block; background: none;"><i class="ss-icon">navigatedown</i></span></h3>
-      <div aria-hidden="true" aria-labelledby="ui-id-1" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" role="tabpanel" style="display: none;">
+      <h3 aria-controls="ui-id-2" aria-expanded="false" aria-selected="false"
+        class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+        id="ui-id-1" role="tab" tabindex="0"><span
+          class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Ordering Parts <span class="btn"
+          style="float: right;padding: 0px; display: inline-block; background: none;"><i
+            class="ss-icon">navigatedown</i></span></h3>
+      <div aria-hidden="true" aria-labelledby="ui-id-1"
+        class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" role="tabpanel"
+        style="display: none;">
         <div id="parts">
           <p>Order parts online at the links below. For assistance please call 1-800-687-6575</p>
-          <a class="btn mtb1" href=
-							"/pages/content/customer-support/product-support/ordering-parts?aribrand=chp&amp;arian=trimmer">Find Parts</a> </div>
+          <a class="btn mtb1"
+            href="/pages/content/customer-support/product-support/ordering-parts?aribrand=chp&amp;arian=trimmer">Find
+            Parts</a>
+        </div>
       </div>
-      
+
       <!-- Start Accordion -->
-      <h3 aria-controls="ui-id-2" aria-expanded="false" aria-selected="false" class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" id="ui-id-1" role="tab" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Manuals, Parts Lists, Schematics <span class="btn" style="float: right;padding: 0px; display: inline-block; background: none;"><i class="ss-icon">navigatedown</i></span></h3>
-      <div aria-hidden="true" aria-labelledby="ui-id-1" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" role="tabpanel" style="display: none;"> 
-        
+      <h3 aria-controls="ui-id-2" aria-expanded="false" aria-selected="false"
+        class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+        id="ui-id-1" role="tab" tabindex="0"><span
+          class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Manuals, Parts Lists, Schematics <span
+          class="btn" style="float: right;padding: 0px; display: inline-block; background: none;"><i
+            class="ss-icon">navigatedown</i></span></h3>
+      <div aria-hidden="true" aria-labelledby="ui-id-1"
+        class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" role="tabpanel"
+        style="display: none;">
+
         <!-- START MANUALS -->
-        
+
         <div class="border-bottom border-gray" id="manuals">
-          <p>If you have any questions or are unsure of your model, please contact one of our experienced Technical Support Specialists via <a href="tel:%20+18006876575" rel="nofollow" style="color: #000; text-decoration: none;">phone</a>or <a href="/pages/content/customer-support/contact/form">email</a>.</p>
+          <p>If you have any questions or are unsure of your model, please contact one of our experienced Technical
+            Support Specialists via <a href="tel:%20+18006876575" rel="nofollow"
+              style="color: #000; text-decoration: none;">phone</a>or <a
+              href="/pages/content/customer-support/contact/form">email</a>.</p>
           <div class="alert alert-info">
-            <p><strong>Please Note:</strong> Parts Lists and Schematics are located in the back of the Owner's Manual.</p>
+            <p><strong>Please Note:</strong> Parts Lists and Schematics are located in the back of the Owner's Manual.
+            </p>
           </div>
           <div class="alt-header-support">Walk-Behind - Current Models</div>
           <table class="table">
             <tbody>
+
               <tr>
-                <td><span class="tdmobile">PILOT XT &amp; PILOT Models (February 2021 to Present)</span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/1636e4f038a37c9c72418f1fe1d2096b51bf29ef/original" target="_blank">PILOT XT &amp; PILOT Models (February 2021 to Present)</a></td>
-                <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/1636e4f038a37c9c72418f1fe1d2096b51bf29ef/original" target="_blank">Owner's Manual</a></td>
+                <td><span class="tdmobile">PILOT (February 2018 to Present)</span><a class="tdfull"
+                    href="https://dam.generac.com/ImConvServlet/imconv/f1294f8bb4359bd480ee61ab8fc25c364a1624cb/original"
+                    target="_blank">PILOT (February 2018 to Present)</a></td>
+                <td class="tdmobile"><a
+                    href="https://dam.generac.com/ImConvServlet/imconv/f1294f8bb4359bd480ee61ab8fc25c364a1624cb/original"
+                    target="_blank">Owner's Manual</a></td>
               </tr>
               <tr>
-                <td><span class="tdmobile">PILOT (February 2018 to Present)</span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/f1294f8bb4359bd480ee61ab8fc25c364a1624cb/original" target="_blank">PILOT (February 2018 to Present)</a></td>
-                <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/f1294f8bb4359bd480ee61ab8fc25c364a1624cb/original" target="_blank">Owner's Manual</a></td>
+                <td><span class="tdmobile">PILOT XT &amp; PILOT Models (February 2021 to 2022)</span><a class="tdfull"
+                    href="https://dam.generac.com/ImConvServlet/imconv/1636e4f038a37c9c72418f1fe1d2096b51bf29ef/original"
+                    target="_blank">PILOT XT &amp; PILOT Models (February 2021 to Present)</a></td>
+                <td class="tdmobile"><a
+                    href="https://dam.generac.com/ImConvServlet/imconv/1636e4f038a37c9c72418f1fe1d2096b51bf29ef/original"
+                    target="_blank">Owner's Manual</a></td>
               </tr>
               <tr>
-                <td><span class="tdmobile">PREMIER, PRO, PRO XL, PRO XLSP Self-Propelled (Nov 2022 to Present)</span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/844e0b09048645816e4ab0a19903f267164c42d7/original" target="_blank">PREMIER, PRO, PRO XL, PRO XLSP Self-Propelled (Nov 2022 to Present)</a></td>
-                <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/844e0b09048645816e4ab0a19903f267164c42d7/original" target="_blank">Owner's Manual</a></td>
+                <td><span class="tdmobile">PREMIER, PRO, PRO XL, PRO XLSP Self-Propelled (Nov 2022 to Present)</span><a
+                    class="tdfull"
+                    href="https://dam.generac.com/ImConvServlet/imconv/844e0b09048645816e4ab0a19903f267164c42d7/original"
+                    target="_blank">PREMIER, PRO, PRO XL, PRO XLSP Self-Propelled (Nov 2022 to Present)</a></td>
+                <td class="tdmobile"><a
+                    href="https://dam.generac.com/ImConvServlet/imconv/844e0b09048645816e4ab0a19903f267164c42d7/original"
+                    target="_blank">Owner's Manual</a></td>
               </tr>
               <tr>
-                <td><span class="tdmobile">PULSE 62V, Battery-Powered (April 2019 to Present)</span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/4970860605232f9df5e2b7de58b8c29f6307e4a4/original" target="_blank">PULSE 62V, Battery-Powered (April 2019 to Present)</a></td>
-                <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/4970860605232f9df5e2b7de58b8c29f6307e4a4/original" target="_blank">Owner's Manual</a></td>
+                <td><span class="tdmobile">PULSE 62V, Battery-Powered (April 2019 to Present)</span><a class="tdfull"
+                    href="https://dam.generac.com/ImConvServlet/imconv/4970860605232f9df5e2b7de58b8c29f6307e4a4/original"
+                    target="_blank">PULSE 62V, Battery-Powered (April 2019 to Present)</a></td>
+                <td class="tdmobile"><a
+                    href="https://dam.generac.com/ImConvServlet/imconv/4970860605232f9df5e2b7de58b8c29f6307e4a4/original"
+                    target="_blank">Owner's Manual</a></td>
               </tr>
             </tbody>
           </table>
           <div class="alt-header-support">Walk-Behind - Older Models</div>
           <table class="table">
             <tbody>
-                <tr>
-                <td><span class="tdmobile">PREMIER, PRO, PRO XL, PRO XLSP Self-Propelled (March 2016 to Oct 2022)</span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/621710c4a27fac192508f6a9ac9e097f91e12a52/original" target="_blank">PREMIER, PRO, PRO XL, PRO XLSP Self-Propelled (March 2016 to Oct 2022)</a></td>
-                <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/621710c4a27fac192508f6a9ac9e097f91e12a52/original" target="_blank">Owner's Manual</a></td>
+              <tr>
+                <td><span class="tdmobile">PREMIER, PRO, PRO XL, PRO XLSP Self-Propelled (March 2016 to Oct
+                    2022)</span><a class="tdfull"
+                    href="https://dam.generac.com/ImConvServlet/imconv/621710c4a27fac192508f6a9ac9e097f91e12a52/original"
+                    target="_blank">PREMIER, PRO, PRO XL, PRO XLSP Self-Propelled (March 2016 to Oct 2022)</a></td>
+                <td class="tdmobile"><a
+                    href="https://dam.generac.com/ImConvServlet/imconv/621710c4a27fac192508f6a9ac9e097f91e12a52/original"
+                    target="_blank">Owner's Manual</a></td>
               </tr>
               <tr>
-                <td><span class="tdmobile">Walk-Behind 6.75 Premier, 7.25 Pro, 8.75 Pro-XL (Dec 2015 - March 2016)</span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/3105289b0eda1334f53e409680fa57161e11c690/original" target="_blank">Walk-Behind 6.75 Premier, 7.25 Pro, 8.75 Pro-XL (Dec 2015 - March 2016)</a></td>
-                <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/3105289b0eda1334f53e409680fa57161e11c690/original" target="_blank">Owner's Manual</a></td>
+                <td><span class="tdmobile">Walk-Behind 6.75 Premier, 7.25 Pro, 8.75 Pro-XL (Dec 2015 - March
+                    2016)</span><a class="tdfull"
+                    href="https://dam.generac.com/ImConvServlet/imconv/3105289b0eda1334f53e409680fa57161e11c690/original"
+                    target="_blank">Walk-Behind 6.75 Premier, 7.25 Pro, 8.75 Pro-XL (Dec 2015 - March 2016)</a></td>
+                <td class="tdmobile"><a
+                    href="https://dam.generac.com/ImConvServlet/imconv/3105289b0eda1334f53e409680fa57161e11c690/original"
+                    target="_blank">Owner's Manual</a></td>
               </tr>
               <tr>
-                <td><span class="tdmobile">Self-Propelled Pro-XL Self-Propelled 8.26 Subaru (Summer 2015 - March 2016)</span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/77f5ff07a3cf0215c56d9323ebccfd600f681946/original" target="_blank">Self-Propelled Pro-XL Self-Propelled 8.26 Subaru (Summer 2015 - March 2016)</a></td>
-                <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/77f5ff07a3cf0215c56d9323ebccfd600f681946/original" target="_blank">Owner's Manual</a></td>
+                <td><span class="tdmobile">Self-Propelled Pro-XL Self-Propelled 8.26 Subaru (Summer 2015 - March
+                    2016)</span><a class="tdfull"
+                    href="https://dam.generac.com/ImConvServlet/imconv/77f5ff07a3cf0215c56d9323ebccfd600f681946/original"
+                    target="_blank">Self-Propelled Pro-XL Self-Propelled 8.26 Subaru (Summer 2015 - March 2016)</a></td>
+                <td class="tdmobile"><a
+                    href="https://dam.generac.com/ImConvServlet/imconv/77f5ff07a3cf0215c56d9323ebccfd600f681946/original"
+                    target="_blank">Owner's Manual</a></td>
               </tr>
               <tr>
-                <td><span class="tdmobile">Self-Propelled Pro-XL Self-Propelled 8.26 Subaru (April 2013 - Summer 2015)</span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/94c2f09942f734c9d28f63354d1880f08c3f6dce/original" target="_blank">Self-Propelled Pro-XL Self-Propelled 8.26 Subaru (April 2013 - Summer 2015)</a></td>
-                <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/94c2f09942f734c9d28f63354d1880f08c3f6dce/original" target="_blank">Owner's Manual</a></td>
+                <td><span class="tdmobile">Self-Propelled Pro-XL Self-Propelled 8.26 Subaru (April 2013 - Summer
+                    2015)</span><a class="tdfull"
+                    href="https://dam.generac.com/ImConvServlet/imconv/94c2f09942f734c9d28f63354d1880f08c3f6dce/original"
+                    target="_blank">Self-Propelled Pro-XL Self-Propelled 8.26 Subaru (April 2013 - Summer 2015)</a></td>
+                <td class="tdmobile"><a
+                    href="https://dam.generac.com/ImConvServlet/imconv/94c2f09942f734c9d28f63354d1880f08c3f6dce/original"
+                    target="_blank">Owner's Manual</a></td>
               </tr>
               <tr>
-                <td><span class="tdmobile">Walk-Behind 6.25 Premier, 7.25 Pro, 8.75 Pro-XL (May 2014 - Dec 2015)</span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/77f5ff07a3cf0215c56d9323ebccfd600f681946/original" target="_blank">Walk-Behind 6.25 Premier, 7.25 Pro, 8.75 Pro-XL (May 2014 - Dec 2015)</a></td>
-                <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/77f5ff07a3cf0215c56d9323ebccfd600f681946/original" target="_blank">Owner's Manual</a></td>
+                <td><span class="tdmobile">Walk-Behind 6.25 Premier, 7.25 Pro, 8.75 Pro-XL (May 2014 - Dec
+                    2015)</span><a class="tdfull"
+                    href="https://dam.generac.com/ImConvServlet/imconv/77f5ff07a3cf0215c56d9323ebccfd600f681946/original"
+                    target="_blank">Walk-Behind 6.25 Premier, 7.25 Pro, 8.75 Pro-XL (May 2014 - Dec 2015)</a></td>
+                <td class="tdmobile"><a
+                    href="https://dam.generac.com/ImConvServlet/imconv/77f5ff07a3cf0215c56d9323ebccfd600f681946/original"
+                    target="_blank">Owner's Manual</a></td>
               </tr>
               <tr>
-                <td><span class="tdmobile">Self-Propelled 6.75 &amp; 8.75 Pro-XL (September 2010 - April 2013)</span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/aa9ebb2166964e17e854e1fb39bedca0f1d80112/original" target="_blank">Self-Propelled 6.75 &amp; 8.75 Pro-XL (September 2010 - April 2013)</a></td>
-                <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/aa9ebb2166964e17e854e1fb39bedca0f1d80112/original" target="_blank">Owner's Manual</a></td>
+                <td><span class="tdmobile">Self-Propelled 6.75 &amp; 8.75 Pro-XL (September 2010 - April 2013)</span><a
+                    class="tdfull"
+                    href="https://dam.generac.com/ImConvServlet/imconv/aa9ebb2166964e17e854e1fb39bedca0f1d80112/original"
+                    target="_blank">Self-Propelled 6.75 &amp; 8.75 Pro-XL (September 2010 - April 2013)</a></td>
+                <td class="tdmobile"><a
+                    href="https://dam.generac.com/ImConvServlet/imconv/aa9ebb2166964e17e854e1fb39bedca0f1d80112/original"
+                    target="_blank">Owner's Manual</a></td>
               </tr>
               <tr>
-                <td><span class="tdmobile">Walk-Behind 6.5 Premier, 6.75 Premier Plus, 7.52 Pro, 8.26 Pro-XL (Jan 2013 - May 2014)</span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/da89133bcf9836132afc3eaf6cd970b23701c7e3/original" target="_blank">Walk-Behind 6.5 Premier, 6.75 Premier Plus, 7.52 Pro, 8.26 Pro-XL (Jan 2013 - May 2014)</a></td>
-                <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/da89133bcf9836132afc3eaf6cd970b23701c7e3/original" target="_blank">Owner's Manual</a></td>
+                <td><span class="tdmobile">Walk-Behind 6.5 Premier, 6.75 Premier Plus, 7.52 Pro, 8.26 Pro-XL (Jan 2013 -
+                    May 2014)</span><a class="tdfull"
+                    href="https://dam.generac.com/ImConvServlet/imconv/da89133bcf9836132afc3eaf6cd970b23701c7e3/original"
+                    target="_blank">Walk-Behind 6.5 Premier, 6.75 Premier Plus, 7.52 Pro, 8.26 Pro-XL (Jan 2013 - May
+                    2014)</a></td>
+                <td class="tdmobile"><a
+                    href="https://dam.generac.com/ImConvServlet/imconv/da89133bcf9836132afc3eaf6cd970b23701c7e3/original"
+                    target="_blank">Owner's Manual</a></td>
               </tr>
               <tr>
-                <td><span class="tdmobile">Walk-Behind 6.25 Sprint (September 2010 - January 2013)</span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/aa9ebb2166964e17e854e1fb39bedca0f1d80112/original" target="_blank">Walk-Behind 6.25 Sprint (September 2010 - January 2013)</a></td>
-                <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/aa9ebb2166964e17e854e1fb39bedca0f1d80112/original" target="_blank">Owner's Manual</a></td>
+                <td><span class="tdmobile">Walk-Behind 6.25 Sprint (September 2010 - January 2013)</span><a
+                    class="tdfull"
+                    href="https://dam.generac.com/ImConvServlet/imconv/aa9ebb2166964e17e854e1fb39bedca0f1d80112/original"
+                    target="_blank">Walk-Behind 6.25 Sprint (September 2010 - January 2013)</a></td>
+                <td class="tdmobile"><a
+                    href="https://dam.generac.com/ImConvServlet/imconv/aa9ebb2166964e17e854e1fb39bedca0f1d80112/original"
+                    target="_blank">Owner's Manual</a></td>
               </tr>
               <tr>
-                <td><span class="tdmobile">Walk-Behind 6.25 Sprint (2004 - September 2010)</span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/34b82b72347420b1296fc4dd8deb283499c46416/original" target="_blank">Walk-Behind 6.25 Sprint (2004 - September 2010)</a></td>
-                <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/34b82b72347420b1296fc4dd8deb283499c46416/original" target="_blank">Owner's Manual</a></td>
+                <td><span class="tdmobile">Walk-Behind 6.25 Sprint (2004 - September 2010)</span><a class="tdfull"
+                    href="https://dam.generac.com/ImConvServlet/imconv/34b82b72347420b1296fc4dd8deb283499c46416/original"
+                    target="_blank">Walk-Behind 6.25 Sprint (2004 - September 2010)</a></td>
+                <td class="tdmobile"><a
+                    href="https://dam.generac.com/ImConvServlet/imconv/34b82b72347420b1296fc4dd8deb283499c46416/original"
+                    target="_blank">Owner's Manual</a></td>
               </tr>
               <tr>
-                <td><span class="tdmobile">Walk-Behind Sprint Model (2000 - 2004)</span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/c7ca369850d19a7258fc64cc25891b4ce1fe6896/original" target="_blank">Walk-Behind Sprint Model (2000 - 2004)</a></td>
-                <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/c7ca369850d19a7258fc64cc25891b4ce1fe6896/original" target="_blank">Owner's Manual</a></td>
+                <td><span class="tdmobile">Walk-Behind Sprint Model (2000 - 2004)</span><a class="tdfull"
+                    href="https://dam.generac.com/ImConvServlet/imconv/c7ca369850d19a7258fc64cc25891b4ce1fe6896/original"
+                    target="_blank">Walk-Behind Sprint Model (2000 - 2004)</a></td>
+                <td class="tdmobile"><a
+                    href="https://dam.generac.com/ImConvServlet/imconv/c7ca369850d19a7258fc64cc25891b4ce1fe6896/original"
+                    target="_blank">Owner's Manual</a></td>
               </tr>
               <tr>
-                <td><span class="tdmobile">Walk-Behind Pro Model (2002 - September 2010)</span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/00e87cdebc749b1fa339ba834ceabae7ae1053c3/original" target="_blank">Walk-Behind Pro Model (2002 - September 2010)</a></td>
-                <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/00e87cdebc749b1fa339ba834ceabae7ae1053c3/original" target="_blank">Parts List</a></td>
+                <td><span class="tdmobile">Walk-Behind Pro Model (2002 - September 2010)</span><a class="tdfull"
+                    href="https://dam.generac.com/ImConvServlet/imconv/00e87cdebc749b1fa339ba834ceabae7ae1053c3/original"
+                    target="_blank">Walk-Behind Pro Model (2002 - September 2010)</a></td>
+                <td class="tdmobile"><a
+                    href="https://dam.generac.com/ImConvServlet/imconv/00e87cdebc749b1fa339ba834ceabae7ae1053c3/original"
+                    target="_blank">Parts List</a></td>
               </tr>
               <tr>
-                <td><span class="tdmobile">Self-Propelled 6.75 &amp; 8.25 (2004 - September 2010)</span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/34b82b72347420b1296fc4dd8deb283499c46416/original" target="_blank">Self-Propelled 6.75 &amp; 8.25 (2004 - September 2010)</a></td>
-                <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/34b82b72347420b1296fc4dd8deb283499c46416/original" target="_blank">Owner's Manual</a></td>
+                <td><span class="tdmobile">Self-Propelled 6.75 &amp; 8.25 (2004 - September 2010)</span><a
+                    class="tdfull"
+                    href="https://dam.generac.com/ImConvServlet/imconv/34b82b72347420b1296fc4dd8deb283499c46416/original"
+                    target="_blank">Self-Propelled 6.75 &amp; 8.25 (2004 - September 2010)</a></td>
+                <td class="tdmobile"><a
+                    href="https://dam.generac.com/ImConvServlet/imconv/34b82b72347420b1296fc4dd8deb283499c46416/original"
+                    target="_blank">Owner's Manual</a></td>
               </tr>
               <tr>
-                <td><span class="tdmobile">Walk-Behind 6.75 &amp; 8.25 Commercial Model (2004 - September 2010)</span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/34b82b72347420b1296fc4dd8deb283499c46416/original" target="_blank">Walk-Behind 6.75 &amp; 8.25 Commercial Model (2004 - September 2010)</a></td>
-                <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/34b82b72347420b1296fc4dd8deb283499c46416/original" target="_blank">Owner's Manual</a></td>
+                <td><span class="tdmobile">Walk-Behind 6.75 &amp; 8.25 Commercial Model (2004 - September 2010)</span><a
+                    class="tdfull"
+                    href="https://dam.generac.com/ImConvServlet/imconv/34b82b72347420b1296fc4dd8deb283499c46416/original"
+                    target="_blank">Walk-Behind 6.75 &amp; 8.25 Commercial Model (2004 - September 2010)</a></td>
+                <td class="tdmobile"><a
+                    href="https://dam.generac.com/ImConvServlet/imconv/34b82b72347420b1296fc4dd8deb283499c46416/original"
+                    target="_blank">Owner's Manual</a></td>
               </tr>
               <tr>
-                <td><span class="tdmobile">Walk-Behind Pro Model (2000 - 2001)</span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/e180b49582a06b58212b1ee41d648e0a1bafae34/original" target="_blank">Walk-Behind Pro Model (2000 - 2001)</a></td>
-                <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/e180b49582a06b58212b1ee41d648e0a1bafae34/original" target="_blank">Owner's Manual</a></td>
+                <td><span class="tdmobile">Walk-Behind Pro Model (2000 - 2001)</span><a class="tdfull"
+                    href="https://dam.generac.com/ImConvServlet/imconv/e180b49582a06b58212b1ee41d648e0a1bafae34/original"
+                    target="_blank">Walk-Behind Pro Model (2000 - 2001)</a></td>
+                <td class="tdmobile"><a
+                    href="https://dam.generac.com/ImConvServlet/imconv/e180b49582a06b58212b1ee41d648e0a1bafae34/original"
+                    target="_blank">Owner's Manual</a></td>
               </tr>
               <tr>
-                <td><span class="tdmobile">Walk-Behind Pro Model (1985 - 2000)</span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/b297807e40f6d7de46b6c00b737a24a99a5c653f/original" target="_blank">Walk-Behind Pro Model (1985 - 2000)</a></td>
-                <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/b297807e40f6d7de46b6c00b737a24a99a5c653f/original" target="_blank">Owner's Manual</a></td>
+                <td><span class="tdmobile">Walk-Behind Pro Model (1985 - 2000)</span><a class="tdfull"
+                    href="https://dam.generac.com/ImConvServlet/imconv/b297807e40f6d7de46b6c00b737a24a99a5c653f/original"
+                    target="_blank">Walk-Behind Pro Model (1985 - 2000)</a></td>
+                <td class="tdmobile"><a
+                    href="https://dam.generac.com/ImConvServlet/imconv/b297807e40f6d7de46b6c00b737a24a99a5c653f/original"
+                    target="_blank">Owner's Manual</a></td>
               </tr>
               <tr>
-                <td><span class="tdmobile">Walk-Behind Sprint Model (1985 - 2000)</span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/778a9eb97bc03318afbee33485a1f912df6727fb/original" target="_blank">Walk-Behind Sprint Model (1985 - 2000)</a></td>
-                <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/778a9eb97bc03318afbee33485a1f912df6727fb/original" target="_blank">Owner's Manual</a></td>
+                <td><span class="tdmobile">Walk-Behind Sprint Model (1985 - 2000)</span><a class="tdfull"
+                    href="https://dam.generac.com/ImConvServlet/imconv/778a9eb97bc03318afbee33485a1f912df6727fb/original"
+                    target="_blank">Walk-Behind Sprint Model (1985 - 2000)</a></td>
+                <td class="tdmobile"><a
+                    href="https://dam.generac.com/ImConvServlet/imconv/778a9eb97bc03318afbee33485a1f912df6727fb/original"
+                    target="_blank">Owner's Manual</a></td>
               </tr>
               <tr>
-                <td><span class="tdmobile">Walk-Behind 3.0 HP Compact Model (1988 - 2000)</span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/440d1b3111edf2bb9d7a99029cadc1630f1dfc7c/original" target="_blank">Walk-Behind 3.0 HP Compact Model (1988 - 2000)</a></td>
-                <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/440d1b3111edf2bb9d7a99029cadc1630f1dfc7c/original" target="_blank">Owner's Manual</a></td>
+                <td><span class="tdmobile">Walk-Behind 3.0 HP Compact Model (1988 - 2000)</span><a class="tdfull"
+                    href="https://dam.generac.com/ImConvServlet/imconv/440d1b3111edf2bb9d7a99029cadc1630f1dfc7c/original"
+                    target="_blank">Walk-Behind 3.0 HP Compact Model (1988 - 2000)</a></td>
+                <td class="tdmobile"><a
+                    href="https://dam.generac.com/ImConvServlet/imconv/440d1b3111edf2bb9d7a99029cadc1630f1dfc7c/original"
+                    target="_blank">Owner's Manual</a></td>
               </tr>
             </tbody>
           </table>
@@ -268,12 +427,20 @@
           <table class="table">
             <tbody>
               <tr>
-                <td><span class="tdmobile">PRO XLP 3-Point Hitch (April 2015 - Present)</span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/20e425751ef78d29825cd55e82f16b7ffe81f00f/original" target="_blank">PRO XLP 3-Point Hitch (April 2015 - Present)</a></td>
-                <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/20e425751ef78d29825cd55e82f16b7ffe81f00f/original" target="_blank">Owner's Manual</a></td>
+                <td><span class="tdmobile">PRO XLP 3-Point Hitch (April 2015 - Present)</span><a class="tdfull"
+                    href="https://dam.generac.com/ImConvServlet/imconv/20e425751ef78d29825cd55e82f16b7ffe81f00f/original"
+                    target="_blank">PRO XLP 3-Point Hitch (April 2015 - Present)</a></td>
+                <td class="tdmobile"><a
+                    href="https://dam.generac.com/ImConvServlet/imconv/20e425751ef78d29825cd55e82f16b7ffe81f00f/original"
+                    target="_blank">Owner's Manual</a></td>
               </tr>
               <tr>
-                <td><span class="tdmobile">PRO XLT All-Terrain (January 2014 - Present)</span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/a005983ddb3a9681062dd5d47fa479a64f87971f/original" target="_blank">PRO XLT All-Terrain (January 2014 - Present)</a></td>
-                <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/a005983ddb3a9681062dd5d47fa479a64f87971f/original" target="_blank">Owner's Manual</a></td>
+                <td><span class="tdmobile">PRO XLT All-Terrain (January 2014 - Present)</span><a class="tdfull"
+                    href="https://dam.generac.com/ImConvServlet/imconv/a005983ddb3a9681062dd5d47fa479a64f87971f/original"
+                    target="_blank">PRO XLT All-Terrain (January 2014 - Present)</a></td>
+                <td class="tdmobile"><a
+                    href="https://dam.generac.com/ImConvServlet/imconv/a005983ddb3a9681062dd5d47fa479a64f87971f/original"
+                    target="_blank">Owner's Manual</a></td>
               </tr>
             </tbody>
           </table>
@@ -281,12 +448,21 @@
           <table class="table">
             <tbody>
               <tr>
-                <td><span class="tdmobile">6.25 Tow-Behind Trimmer (January 2014 - November 2016)</span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/6f90ed1b561b4277dbcec5369a861c4e9db516d6/original" target="_blank">Tow-Behind Yard Trimmer (January 2014 - November 2016)</a></td>
-                <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/6f90ed1b561b4277dbcec5369a861c4e9db516d6/original" target="_blank">Owner's Manual</a></td>
+                <td><span class="tdmobile">6.25 Tow-Behind Trimmer (January 2014 - November 2016)</span><a
+                    class="tdfull"
+                    href="https://dam.generac.com/ImConvServlet/imconv/6f90ed1b561b4277dbcec5369a861c4e9db516d6/original"
+                    target="_blank">Tow-Behind Yard Trimmer (January 2014 - November 2016)</a></td>
+                <td class="tdmobile"><a
+                    href="https://dam.generac.com/ImConvServlet/imconv/6f90ed1b561b4277dbcec5369a861c4e9db516d6/original"
+                    target="_blank">Owner's Manual</a></td>
               </tr>
               <tr>
-                <td><span class="tdmobile">3-Point Hitch (August 2012 - May 2015)</span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/56fdbadc553254de5a251694962daa120fffb2c3/original" target="_blank">3-Point Hitch (August 2012 - May 2015)</a></td>
-                <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/56fdbadc553254de5a251694962daa120fffb2c3/original" target="_blank">Owner's Manual</a></td>
+                <td><span class="tdmobile">3-Point Hitch (August 2012 - May 2015)</span><a class="tdfull"
+                    href="https://dam.generac.com/ImConvServlet/imconv/56fdbadc553254de5a251694962daa120fffb2c3/original"
+                    target="_blank">3-Point Hitch (August 2012 - May 2015)</a></td>
+                <td class="tdmobile"><a
+                    href="https://dam.generac.com/ImConvServlet/imconv/56fdbadc553254de5a251694962daa120fffb2c3/original"
+                    target="_blank">Owner's Manual</a></td>
               </tr>
             </tbody>
           </table>
@@ -294,68 +470,122 @@
           <table class="table">
             <tbody>
               <tr>
-                <td><span class="tdmobile">12&quot; Beaver Blade<sup>&reg;</sup></span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/97117787c85908a5c3a5dfe6dd3ef85727046b35/original" target="_blank">12&quot; Beaver Blade<sup>&reg;</sup></a></td>
-                <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/97117787c85908a5c3a5dfe6dd3ef85727046b35/original" target="_blank">Owner's Manual</a></td>
+                <td><span class="tdmobile">12&quot; Beaver Blade<sup>&reg;</sup></span><a class="tdfull"
+                    href="https://dam.generac.com/ImConvServlet/imconv/97117787c85908a5c3a5dfe6dd3ef85727046b35/original"
+                    target="_blank">12&quot; Beaver Blade<sup>&reg;</sup></a></td>
+                <td class="tdmobile"><a
+                    href="https://dam.generac.com/ImConvServlet/imconv/97117787c85908a5c3a5dfe6dd3ef85727046b35/original"
+                    target="_blank">Owner's Manual</a></td>
               </tr>
               <tr>
-                <td><span class="tdmobile">DuraBlade Kit (for machines with serial number TRM156200 &amp; above)</span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/0299db01dd7f286fd898838149308bcd6cc9bc90/original" target="_blank">DuraBlade Kit (for machines with serial number TRM156200 &amp; above)</a></td>
-                <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/0299db01dd7f286fd898838149308bcd6cc9bc90/original" target="_blank">Owner's Manual</a></td>
+                <td><span class="tdmobile">DuraBlade Kit (for machines with serial number TRM156200 &amp;
+                    above)</span><a class="tdfull"
+                    href="https://dam.generac.com/ImConvServlet/imconv/0299db01dd7f286fd898838149308bcd6cc9bc90/original"
+                    target="_blank">DuraBlade Kit (for machines with serial number TRM156200 &amp; above)</a></td>
+                <td class="tdmobile"><a
+                    href="https://dam.generac.com/ImConvServlet/imconv/0299db01dd7f286fd898838149308bcd6cc9bc90/original"
+                    target="_blank">Owner's Manual</a></td>
               </tr>
               <tr>
-                <td><span class="tdmobile">DuraBlade Kit (for machines with serial number TRM156199 &amp; below)</span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/555e78fb00db851c05887995e17f87c6cf17f27e/original" target="_blank">DuraBlade Kit (for machines with serial number TRM156199 &amp; below)</a></td>
-                <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/555e78fb00db851c05887995e17f87c6cf17f27e/original" target="_blank">Owner's Manual</a></td>
+                <td><span class="tdmobile">DuraBlade Kit (for machines with serial number TRM156199 &amp;
+                    below)</span><a class="tdfull"
+                    href="https://dam.generac.com/ImConvServlet/imconv/555e78fb00db851c05887995e17f87c6cf17f27e/original"
+                    target="_blank">DuraBlade Kit (for machines with serial number TRM156199 &amp; below)</a></td>
+                <td class="tdmobile"><a
+                    href="https://dam.generac.com/ImConvServlet/imconv/555e78fb00db851c05887995e17f87c6cf17f27e/original"
+                    target="_blank">Owner's Manual</a></td>
               </tr>
               <tr>
-                <td><span class="tdmobile">Power Take-Off (PTO) System</span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/caf0eaa38f1cc992b10b2a83f828d3a5a3e4a3e7/original" target="_blank">Power Take-Off (PTO) System</a></td>
-                <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/caf0eaa38f1cc992b10b2a83f828d3a5a3e4a3e7/original" target="_blank">Owner's Manual</a></td>
+                <td><span class="tdmobile">Power Take-Off (PTO) System</span><a class="tdfull"
+                    href="https://dam.generac.com/ImConvServlet/imconv/caf0eaa38f1cc992b10b2a83f828d3a5a3e4a3e7/original"
+                    target="_blank">Power Take-Off (PTO) System</a></td>
+                <td class="tdmobile"><a
+                    href="https://dam.generac.com/ImConvServlet/imconv/caf0eaa38f1cc992b10b2a83f828d3a5a3e4a3e7/original"
+                    target="_blank">Owner's Manual</a></td>
               </tr>
             </tbody>
           </table>
         </div>
-        
-        <!-- END MANUALS --> 
-        
+
+        <!-- END MANUALS -->
+
       </div>
-      
+
       <!-- Start Accordion -->
-      <h3 aria-controls="ui-id-2" aria-expanded="false" aria-selected="false" class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" id="ui-id-1" role="tab" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Support Videos <span class="btn" style="float: right;padding: 0px; display: inline-block; background: none;"><i class="ss-icon">navigatedown</i></span></h3>
-      <div aria-hidden="true" aria-labelledby="ui-id-1" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" role="tabpanel" style="display: none;">
+      <h3 aria-controls="ui-id-2" aria-expanded="false" aria-selected="false"
+        class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+        id="ui-id-1" role="tab" tabindex="0"><span
+          class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Support Videos <span class="btn"
+          style="float: right;padding: 0px; display: inline-block; background: none;"><i
+            class="ss-icon">navigatedown</i></span></h3>
+      <div aria-hidden="true" aria-labelledby="ui-id-1"
+        class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" role="tabpanel"
+        style="display: none;">
         <div class="border-bottom border-gray" id="supportvideos">
           <div class="row">
-            <div class="col-xs-12 col-sm-6 col-lg-6"> <a class="fancybox" data-fancybox-type="iframe" href="https://www.youtube.com/embed/5eWY37hd97k?autoplay=1&amp;rel=0"><img alt="DR Trimmer cord being replaced in Trimmer Mower line plates" class="img-thumbnail" src="https://img.youtube.com/vi/5eWY37hd97k/mqdefault.jpg">
-              <p class="mtb2">Trimmer Cord Replacement with Line Plates</p>
+            <div class="col-xs-12 col-sm-6 col-lg-6"> <a class="fancybox" data-fancybox-type="iframe"
+                href="https://www.youtube.com/embed/5eWY37hd97k?autoplay=1&amp;rel=0"><img
+                  alt="DR Trimmer cord being replaced in Trimmer Mower line plates" class="img-thumbnail"
+                  src="https://img.youtube.com/vi/5eWY37hd97k/mqdefault.jpg">
+                <p class="mtb2">Trimmer Cord Replacement with Line Plates</p>
               </a> </div>
-            <div class="col-xs-12 col-sm-6 col-lg-6"> <a class="fancybox" data-fancybox-type="iframe" href="https://www.youtube.com/embed/A-JsJ6FuAOM?autoplay=1&amp;rel=0"><img alt="DR Trimmer cord being inserted into Quick-Lock trimmer head" class="img-thumbnail" src="https://img.youtube.com/vi/A-JsJ6FuAOM/mqdefault.jpg">
-              <p class="mtb2">Install Quick Lock</p>
+            <div class="col-xs-12 col-sm-6 col-lg-6"> <a class="fancybox" data-fancybox-type="iframe"
+                href="https://www.youtube.com/embed/A-JsJ6FuAOM?autoplay=1&amp;rel=0"><img
+                  alt="DR Trimmer cord being inserted into Quick-Lock trimmer head" class="img-thumbnail"
+                  src="https://img.youtube.com/vi/A-JsJ6FuAOM/mqdefault.jpg">
+                <p class="mtb2">Install Quick Lock</p>
               </a> </div>
-            <div class="col-xs-12 col-sm-6 col-lg-6"> <a class="fancybox" data-fancybox-type="iframe" href="https://www.youtube.com/embed/PeJS7Cela60?autoplay=1&amp;rel=0"><img alt="Tech Support installing Brake kit for Beaver Blade" class="img-thumbnail" src="https://img.youtube.com/vi/PeJS7Cela60/mqdefault.jpg">
-              <p class="mtb2">Install the Brake Kit for Beaver Blade</p>
+            <div class="col-xs-12 col-sm-6 col-lg-6"> <a class="fancybox" data-fancybox-type="iframe"
+                href="https://www.youtube.com/embed/PeJS7Cela60?autoplay=1&amp;rel=0"><img
+                  alt="Tech Support installing Brake kit for Beaver Blade" class="img-thumbnail"
+                  src="https://img.youtube.com/vi/PeJS7Cela60/mqdefault.jpg">
+                <p class="mtb2">Install the Brake Kit for Beaver Blade</p>
               </a> </div>
-            <div class="col-xs-12 col-sm-6 col-lg-6"> <a class="fancybox" data-fancybox-type="iframe" href="https://www.youtube.com/embed/GamEVEG3M48?autoplay=1&amp;rel=0"><img alt="Tech Support discussing maintenance tips for DR Trimmer Mowers" class="img-thumbnail" src="https://dam.generac.com/ImConvServlet/imconv/a89a48aea3266a7b9ef3fb90397d6e15d0623c8e/original">
-              <p class="mtb2">Maintenance Tips</p>
+            <div class="col-xs-12 col-sm-6 col-lg-6"> <a class="fancybox" data-fancybox-type="iframe"
+                href="https://www.youtube.com/embed/GamEVEG3M48?autoplay=1&amp;rel=0"><img
+                  alt="Tech Support discussing maintenance tips for DR Trimmer Mowers" class="img-thumbnail"
+                  src="https://dam.generac.com/ImConvServlet/imconv/a89a48aea3266a7b9ef3fb90397d6e15d0623c8e/original">
+                <p class="mtb2">Maintenance Tips</p>
               </a> </div>
-            <div class="col-xs-12 col-sm-6 col-lg-6"> <a class="fancybox" data-fancybox-type="iframe" href="https://www.youtube.com/embed/1BLGjlvebd4?autoplay=1&amp;rel=0"><img alt="Tech Support discussing how to adjust a DR Trimmer control cable" class="img-thumbnail" src="https://dam.generac.com/ImConvServlet/imconv/30ccdfa5cca62b8c695cfd4b6c6b921ab98eff82/original">
-              <p class="mtb2">How to adjust a DR Trimmer control cable</p>
+            <div class="col-xs-12 col-sm-6 col-lg-6"> <a class="fancybox" data-fancybox-type="iframe"
+                href="https://www.youtube.com/embed/1BLGjlvebd4?autoplay=1&amp;rel=0"><img
+                  alt="Tech Support discussing how to adjust a DR Trimmer control cable" class="img-thumbnail"
+                  src="https://dam.generac.com/ImConvServlet/imconv/30ccdfa5cca62b8c695cfd4b6c6b921ab98eff82/original">
+                <p class="mtb2">How to adjust a DR Trimmer control cable</p>
               </a> </div>
           </div>
         </div>
       </div>
-      
+
       <!-- Start Accordion -->
-      <h3 aria-controls="ui-id-2" aria-expanded="false" aria-selected="false" class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" id="ui-id-1" role="tab" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Troubleshooting <span class="btn" style="float: right;padding: 0px; display: inline-block; background: none;"><i class="ss-icon">navigatedown</i></span></h3>
-      <div aria-hidden="true" aria-labelledby="ui-id-1" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" role="tabpanel" style="display: none;">
+      <h3 aria-controls="ui-id-2" aria-expanded="false" aria-selected="false"
+        class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+        id="ui-id-1" role="tab" tabindex="0"><span
+          class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Troubleshooting <span class="btn"
+          style="float: right;padding: 0px; display: inline-block; background: none;"><i
+            class="ss-icon">navigatedown</i></span></h3>
+      <div aria-hidden="true" aria-labelledby="ui-id-1"
+        class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" role="tabpanel"
+        style="display: none;">
         <div class="border-bottom border-gray" id="troubleshooting">
           <h2>A guide to solving common problems with your DR<sup>&reg;</sup> Trimmer Mower.</h2>
-          <p>Most problems are easy to fix. Consult the troubleshooting table below for common problems and their solutions.</p>
+          <p>Most problems are easy to fix. Consult the troubleshooting table below for common problems and their
+            solutions.</p>
           <div class="alert alert-warning"> <i class="ss-icon">warning</i> <strong>Warning:</strong>
-            <p>When performing any maintenance, you must first shut off the engine, wait five (5) minutes for all parts to stop and cool, and disconnect the spark plug wire, keeping it away from the spark plug. Read the <a href="#safety">safety considerations</a> section of your Owner's Manual before performing any repairs or maintenance.</p>
+            <p>When performing any maintenance, you must first shut off the engine, wait five (5) minutes for all parts
+              to stop and cool, and disconnect the spark plug wire, keeping it away from the spark plug. Read the <a
+                href="#safety">safety considerations</a> section of your Owner's Manual before performing any repairs or
+              maintenance.</p>
           </div>
           <div class="alt-header-support">Recoil will not pull out or is difficult to pull. </div>
           <ul>
             <li>Check that the tine drive clutch is disengaged.</li>
             <li>Check the engine oil level, adjust as needed. If the level is too low, then engine may be seized.</li>
-            <li>There may be an oil compression lock in the cylinder. Take out the spark plug; hold a rag over the spark plug hole and pull the recoil cord several times to blow out any oil in the cylinder. Wipe off the spark plug and reinstall it.</li>
-            <li>Try to turn the engine pulley by hand, with the spark plug wire off. If it turns, the recoil may be broken or jammed.</li>
+            <li>There may be an oil compression lock in the cylinder. Take out the spark plug; hold a rag over the spark
+              plug hole and pull the recoil cord several times to blow out any oil in the cylinder. Wipe off the spark
+              plug and reinstall it.</li>
+            <li>Try to turn the engine pulley by hand, with the spark plug wire off. If it turns, the recoil may be
+              broken or jammed.</li>
           </ul>
           <div class="alt-header-support">The engine turns over but does not start. </div>
           <ul>
@@ -363,125 +593,212 @@
             <li>Make sure the spark plug wire is attached.</li>
             <li>Make sure the fuel shut-off is in the ON position.</li>
             <li>Check the oil and gas level. See your Owner's Manual.</li>
-            <li>The gas must be fresh and clean. If the gas is old, change it. Use <a href="/Power-Equipment/Batteries%2C-Parts%2C-and-Maintenance/Machine-Maintenance/Maintenance/DR-Ethanol-Fuel-Treatment%2C-24-oz/p/000000000000358351">Ethanol Fuel Treatment</a> if you keep gas longer than one month.</li>
+            <li>The gas must be fresh and clean. If the gas is old, change it. Use <a
+                href="/Power-Equipment/Batteries%2C-Parts%2C-and-Maintenance/Machine-Maintenance/Maintenance/DR-Ethanol-Fuel-Treatment%2C-24-oz/p/000000000000358351">Ethanol
+                Fuel Treatment</a> if you keep gas longer than one month.</li>
             <li>Check the throttle and choke settings, adjustment and travel.</li>
-            <li>Make sure the spark plug is clean. If the spark plug is dirty or cracked, change it. If it's oily, leave it out, hold a rag over the plug hole and pull the recoil cord several times to blow out any oil in the cylinder, then wipe off the plug and reinsert it.</li>
+            <li>Make sure the spark plug is clean. If the spark plug is dirty or cracked, change it. If it's oily, leave
+              it out, hold a rag over the plug hole and pull the recoil cord several times to blow out any oil in the
+              cylinder, then wipe off the plug and reinsert it.</li>
             <li>Make sure the wiring is all connected, and the connections are tight.</li>
-            <li>Check the air filter. If it is dirty, replace it following the procedure in the Engine Owner's Manual.</li>
+            <li>Check the air filter. If it is dirty, replace it following the procedure in the Engine Owner's Manual.
+            </li>
           </ul>
           <div class="alt-header-support">The engine will not start using electric start. </div>
           <ul>
             <li>Review the "Electric Starting" section in your Owner's Manual.</li>
             <li>Check the in-line fuses in front of the battery. See your Owner's Manual.</li>
-            <li>Check the wire connections, especially the ground connection. This is the large black wire leading from the battery and connected to the engine.</li>
-            <li>Check the wire connections to the solenoid. Disconnect the black battery ground wire first to avoid sparks. Make sure that all of the connections are clean and tight. Reconnect the battery ground wire.</li>
-            <li>Check the ground connection on the solenoid where it is bolted to the frame. Using a wrench or socket, tighten the bolts to ensure a good connection to the frame.</li>
-            <li>The battery may not be charged. Check the voltage yourself or at a service station. If the voltage is low, charge the battery with a 12-volt, 1- to 2-amp trickle charger. If you don't run your machine for at least 45 minutes at a time, the battery may need to be periodically charged. See the Battery Care section in your Owner's Manual.</li>
+            <li>Check the wire connections, especially the ground connection. This is the large black wire leading from
+              the battery and connected to the engine.</li>
+            <li>Check the wire connections to the solenoid. Disconnect the black battery ground wire first to avoid
+              sparks. Make sure that all of the connections are clean and tight. Reconnect the battery ground wire.</li>
+            <li>Check the ground connection on the solenoid where it is bolted to the frame. Using a wrench or socket,
+              tighten the bolts to ensure a good connection to the frame.</li>
+            <li>The battery may not be charged. Check the voltage yourself or at a service station. If the voltage is
+              low, charge the battery with a 12-volt, 1- to 2-amp trickle charger. If you don't run your machine for at
+              least 45 minutes at a time, the battery may need to be periodically charged. See the Battery Care section
+              in your Owner's Manual.</li>
           </ul>
           <div class="alt-header-support">The engine lacks power or is not running smoothly. </div>
           <ul>
             <li>Check the throttle lever travel and adjustment. Make sure throttle lever in the FAST position.</li>
-            <li>Check the air filter. If it is dirty, replace it following the procedure in the Engine Owner's Manual.</li>
-            <li>Make sure the spark plug is clean. If the spark plug is dirty or cracked, change it. If it's oily, leave it out, hold a rag over the plug hole and pull the recoil cord several times to blow out any oil in the cylinder, then wipe off the plug and reinsert it.</li>
-            <li>The gas must be fresh and clean. If the gas is old, change it. Use <a href="/Power-Equipment/Batteries%2C-Parts%2C-and-Maintenance/Machine-Maintenance/Maintenance/DR-Ethanol-Fuel-Treatment%2C-24-oz/p/000000000000358351">Ethanol Fuel Treatment</a> if you keep gas longer than one month.</li>
-            <li>The engine may not have the right amount of clean oil. If the oil is dirty, change it following the procedure in your Owner's Manual.</li>
+            <li>Check the air filter. If it is dirty, replace it following the procedure in the Engine Owner's Manual.
+            </li>
+            <li>Make sure the spark plug is clean. If the spark plug is dirty or cracked, change it. If it's oily, leave
+              it out, hold a rag over the plug hole and pull the recoil cord several times to blow out any oil in the
+              cylinder, then wipe off the plug and reinsert it.</li>
+            <li>The gas must be fresh and clean. If the gas is old, change it. Use <a
+                href="/Power-Equipment/Batteries%2C-Parts%2C-and-Maintenance/Machine-Maintenance/Maintenance/DR-Ethanol-Fuel-Treatment%2C-24-oz/p/000000000000358351">Ethanol
+                Fuel Treatment</a> if you keep gas longer than one month.</li>
+            <li>The engine may not have the right amount of clean oil. If the oil is dirty, change it following the
+              procedure in your Owner's Manual.</li>
           </ul>
           <div class="alt-header-support">The engine smokes. </div>
           <ul>
             <li>Check the oil level and adjust as needed.</li>
-            <li>Check the air filter. If it is dirty, clean or replace it following the procedure in the Engine Owner's Manual.</li>
-            <li>You may be using the wrong oil - too light for the temperature. Refer to your Engine Owner's Manual for detailed information.</li>
+            <li>Check the air filter. If it is dirty, clean or replace it following the procedure in the Engine Owner's
+              Manual.</li>
+            <li>You may be using the wrong oil - too light for the temperature. Refer to your Engine Owner's Manual for
+              detailed information.</li>
             <li>Clean the engine cooling fins and the carburetor housing if they're dirty.</li>
           </ul>
           <div class="alt-header-support">The trimmer head won't spin or lacks power. </div>
           <ul>
-            <li>Check for proper alignment of the V-belt and verify belt guide positions. Check against the figure "Trimmer Head Belt - All Models" in your Owner's Manual.</li>
-            <li>The belt may be worn or frayed; replace it. See your Owner's Manual for instructions on replacing the belt.</li>
-            <li>If the trimmer head still will not spin, follow the procedure for "Adjusting the Belt Tension through the Trimmer Control Cable" in your Owner's Manual.</li>
+            <li>Check for proper alignment of the V-belt and verify belt guide positions. Check against the figure
+              "Trimmer Head Belt - All Models" in your Owner's Manual.</li>
+            <li>The belt may be worn or frayed; replace it. See your Owner's Manual for instructions on replacing the
+              belt.</li>
+            <li>If the trimmer head still will not spin, follow the procedure for "Adjusting the Belt Tension through
+              the Trimmer Control Cable" in your Owner's Manual.</li>
           </ul>
-          <div class="alt-header-support">The trimmer head keeps spinning or spins when your release the bail bar. </div>
+          <div class="alt-header-support">The trimmer head keeps spinning or spins when your release the bail bar.
+          </div>
           <ul>
-            <li>Check for proper alignment of the V-belt and verify belt guide positions. Check against the figure "Trimmer Head Belt - All Models" in your Owner's Manual.</li>
-            <li>If the trimmer head keeps spinning when you release the bail bar, see "Adjusting the Belt Tension through the Trimmer Control Cable" in your Owner's Manual.</li>
-            <li>Check the brake for excessive wear and replace if necessary. See the "Brake Arm-All Models" in your Owner's Manual.</li>
+            <li>Check for proper alignment of the V-belt and verify belt guide positions. Check against the figure
+              "Trimmer Head Belt - All Models" in your Owner's Manual.</li>
+            <li>If the trimmer head keeps spinning when you release the bail bar, see "Adjusting the Belt Tension
+              through the Trimmer Control Cable" in your Owner's Manual.</li>
+            <li>Check the brake for excessive wear and replace if necessary. See the "Brake Arm-All Models" in your
+              Owner's Manual.</li>
           </ul>
           <div class="alt-header-support">The cutting cords are breaking. </div>
           <ul>
-            <li>The cords may be too dry. Store cords in a plastic bag with a damp sponge or cloth to make them less prone to breaking or soak them in a bucket of water for a few days.</li>
-            <li>Try a lighter cord. The smallest diameter of cord capable of cutting the material at hand combined with the fastest engine speed usually provides the best grass trimming performance. When you need more power for thicker growth such as berry canes, brambles, thistles, or ragweed, you may want to use the 175-mil cord in combination with the highest engine speed.</li>
-            <li>You may be trying to do too much too fast. Ease into the material you are cutting; let the cord tips do the work. Take small bites of tall or tough vegetation. Cut half a swath at a time, keeping the finished area to the discharge or right side of the trimmer. Go over tall material twice, the first time with the trimmer head tilted up and back; the second time with the Mow-Ball Support on the ground.</li>
-            <li>Make sure that you are not hitting the cords against a stone or a chain-link fence. The cords won't last as long against obstacles as in the open. Work on controlling the cutting pattern. With practice, you'll learn to cut closer to obstacles without hitting them.</li>
+            <li>The cords may be too dry. Store cords in a plastic bag with a damp sponge or cloth to make them less
+              prone to breaking or soak them in a bucket of water for a few days.</li>
+            <li>Try a lighter cord. The smallest diameter of cord capable of cutting the material at hand combined with
+              the fastest engine speed usually provides the best grass trimming performance. When you need more power
+              for thicker growth such as berry canes, brambles, thistles, or ragweed, you may want to use the 175-mil
+              cord in combination with the highest engine speed.</li>
+            <li>You may be trying to do too much too fast. Ease into the material you are cutting; let the cord tips do
+              the work. Take small bites of tall or tough vegetation. Cut half a swath at a time, keeping the finished
+              area to the discharge or right side of the trimmer. Go over tall material twice, the first time with the
+              trimmer head tilted up and back; the second time with the Mow-Ball Support on the ground.</li>
+            <li>Make sure that you are not hitting the cords against a stone or a chain-link fence. The cords won't last
+              as long against obstacles as in the open. Work on controlling the cutting pattern. With practice, you'll
+              learn to cut closer to obstacles without hitting them.</li>
           </ul>
           <div class="alt-header-support">The cutting cords are pulling out. </div>
           <ul>
-            <li>You may be moving too fast into tough, woody growth. In doing so, the cords may wrap on stalks and pull out. Check the operating tips in the section above on breaking cords.</li>
-            <li>Make sure that you are not trying to cut material too heavy, dry or woody for the cord. The design of your trimmer is to cut green material up to about the thickness of a pencil. For very heavy material, you may need the optional Beaver Blade attachment.</li>
-            <li>For trimmer heads prior to August 2008: Be sure that you are not installing the smaller cord in the larger cord slots. See your Owner's Manual for cord installation.</li>
+            <li>You may be moving too fast into tough, woody growth. In doing so, the cords may wrap on stalks and pull
+              out. Check the operating tips in the section above on breaking cords.</li>
+            <li>Make sure that you are not trying to cut material too heavy, dry or woody for the cord. The design of
+              your trimmer is to cut green material up to about the thickness of a pencil. For very heavy material, you
+              may need the optional Beaver Blade attachment.</li>
+            <li>For trimmer heads prior to August 2008: Be sure that you are not installing the smaller cord in the
+              larger cord slots. See your Owner's Manual for cord installation.</li>
           </ul>
           <div class="alt-header-support">PTA (Parallel Trimming Action) is difficult. </div>
           <ul>
-            <li>If you have adjusted the handlebar up or down, you may need to adjust the PTA lever. See the section "Adjusting the PTA" in your Owner's Manual.</li>
+            <li>If you have adjusted the handlebar up or down, you may need to adjust the PTA lever. See the section
+              "Adjusting the PTA" in your Owner's Manual.</li>
           </ul>
           <div class="alt-header-support">The Mow-Ball Support is wearing too quickly. </div>
           <ul>
-            <li>You may be pushing the trimmer head down into the ground. The DR Trimmer Mower works best with a light touch, with the Mow-Ball Support gliding just above the ground.</li>
-            <li>You may be hitting the Mow-Ball Support against rocks, concrete driveways or other hard obstacles. Try approaching them slowly, and from different directions, to avoid unnecessary wear.</li>
+            <li>You may be pushing the trimmer head down into the ground. The DR Trimmer Mower works best with a light
+              touch, with the Mow-Ball Support gliding just above the ground.</li>
+            <li>You may be hitting the Mow-Ball Support against rocks, concrete driveways or other hard obstacles. Try
+              approaching them slowly, and from different directions, to avoid unnecessary wear.</li>
           </ul>
           <div class="alt-header-support">The drive wheels won't turn (self-propelled model). </div>
           <ul>
-            <li>The transmission clutch may be out of adjustment. Adjust the inline adjuster located in the clutch cable. See "Adjusting the Wheel Clutch" in your Owner's Manual.</li>
-            <li>The drive chain may have broken or come off the sprockets. Remove the bottom shield to investigate. See your Owner's Manual for removal and drive chain replacement.</li>
-            <li>The drive belt may have come off the pulleys, worn out or failed. Remove the bottom shield to investigate. See your Owner's Manual for removal and drive belt replacement.</li>
-            <li>Check to see if the wheels rotate freely in each direction. They should freewheel in the forward direction and lock against the axle going backwards. If they freewheel backwards, the drive wheel clutches may have failed.</li>
+            <li>The transmission clutch may be out of adjustment. Adjust the inline adjuster located in the clutch
+              cable. See "Adjusting the Wheel Clutch" in your Owner's Manual.</li>
+            <li>The drive chain may have broken or come off the sprockets. Remove the bottom shield to investigate. See
+              your Owner's Manual for removal and drive chain replacement.</li>
+            <li>The drive belt may have come off the pulleys, worn out or failed. Remove the bottom shield to
+              investigate. See your Owner's Manual for removal and drive belt replacement.</li>
+            <li>Check to see if the wheels rotate freely in each direction. They should freewheel in the forward
+              direction and lock against the axle going backwards. If they freewheel backwards, the drive wheel clutches
+              may have failed.</li>
           </ul>
-          <div class="alt-header-support">The machine creeps forward without squeezing the clutch (self-propelled model). </div>
+          <div class="alt-header-support">The machine creeps forward without squeezing the clutch (self-propelled
+            model). </div>
           <ul>
-            <li>The transmission clutch may be out of adjustment. Adjust the inline adjuster located in the clutch cable. See "Adjusting the Wheel Clutch" in your Owner's Manual.
+            <li>The transmission clutch may be out of adjustment. Adjust the inline adjuster located in the clutch
+              cable. See "Adjusting the Wheel Clutch" in your Owner's Manual.
               </p>
           </ul>
         </div>
       </div>
-      
+
       <!-- Start Accordion -->
-      <h3 aria-controls="ui-id-2" aria-expanded="false" aria-selected="false" class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" id="ui-id-1" role="tab" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Tips &amp; Tricks <span class="btn" style="float: right;padding: 0px; display: inline-block; background: none;"><i class="ss-icon">navigatedown</i></span></h3>
-      <div aria-hidden="true" aria-labelledby="ui-id-1" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" role="tabpanel" style="display: none;">
+      <h3 aria-controls="ui-id-2" aria-expanded="false" aria-selected="false"
+        class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+        id="ui-id-1" role="tab" tabindex="0"><span
+          class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Tips &amp; Tricks <span class="btn"
+          style="float: right;padding: 0px; display: inline-block; background: none;"><i
+            class="ss-icon">navigatedown</i></span></h3>
+      <div aria-hidden="true" aria-labelledby="ui-id-1"
+        class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" role="tabpanel"
+        style="display: none;">
         <div class="border-bottom border-gray" id="tips">
-          <div class="alt-header-support">The following information is provided to demonstrate proper techniques when operating your DR<sup>&reg;</sup> Trimmer Mower.</div>
+          <div class="alt-header-support">The following information is provided to demonstrate proper techniques when
+            operating your DR<sup>&reg;</sup> Trimmer Mower.</div>
           <div class="alert alert-info">
-            <p><strong>Note:</strong> This information pertains to the most recent DR<sup>&reg;</sup> Trimmer Mower models. Please refer to your Owner's Manual for instructions specific to your machine. Please refer to the Engine Owner's Manual for engine specific instructions.</p>
+            <p><strong>Note:</strong> This information pertains to the most recent DR<sup>&reg;</sup> Trimmer Mower
+              models. Please refer to your Owner's Manual for instructions specific to your machine. Please refer to the
+              Engine Owner's Manual for engine specific instructions.</p>
           </div>
           <div class="alert alert-warning"> <i class="ss-icon">warning</i> <strong>Warning:</strong>
-            <p>The trimmer engine's power can easily throw stones, sticks and other debris at great velocity, which could cause personal injury or property damage. Do not run the machine over mulch, gravel driveways or loose stones with the trimmer head spinning.</p>
+            <p>The trimmer engine's power can easily throw stones, sticks and other debris at great velocity, which
+              could cause personal injury or property damage. Do not run the machine over mulch, gravel driveways or
+              loose stones with the trimmer head spinning.</p>
           </div>
           <h2>Always try to cut tall grass or weeds on the left</h2>
-          <p>Always check your work area before trimming and remove any debris that might tangle or damage the machine.</p>
-          <p>If you do run into debris and the trimmer becomes tangled, turn off the engine and disconnect the spark plug wire before attempting to untangle the machine.</p>
-          <p>For the neatest appearance, do your trimming first, discharging clippings away from borders and shrubs, then do your mowing.</p>
-          <p>Many owners like to mow easy, open areas with their regular riding or walk-behind mower after trimming all the odd and hard-to-reach spots with the DR<sup>&reg;</sup> Trimmer Mower.</p>
+          <p>Always check your work area before trimming and remove any debris that might tangle or damage the machine.
+          </p>
+          <p>If you do run into debris and the trimmer becomes tangled, turn off the engine and disconnect the spark
+            plug wire before attempting to untangle the machine.</p>
+          <p>For the neatest appearance, do your trimming first, discharging clippings away from borders and shrubs,
+            then do your mowing.</p>
+          <p>Many owners like to mow easy, open areas with their regular riding or walk-behind mower after trimming all
+            the odd and hard-to-reach spots with the DR<sup>&reg;</sup> Trimmer Mower.</p>
           <h2>How to take care of dry or woody, heavy growth</h2>
           <p>Be sure to keep uncut material to your left, maintaining a clear discharge area to your right.</p>
-          <p>If the machine cannot do it all in one pass, use the &quot;two pass&quot; method: overlapping half of the cutting swath, whenever possible.</p>
-          <p>If the grass is very thick and heavy, try raising the trimmer head off the ground a few inches by pushing down on the handlebar. Cut the material at this height, and then make a second pass with the Mow-Ball&trade; Support close to the ground.</p>
-          <p>Ease the DR<sup>&reg;</sup> Trimmer Mower into denser growth. If the material is too tough or woody to cut, the cutting cords will wrap around it, wear down, or even break off. The design of your trimmer is to cut green material up to about the thickness of a pencil. For very heavy, dry or woody material, you may need the optional Beaver Blade&reg; attachment.</p>
-          <p>Sometimes the growth is so heavy, you cannot mow it in rows. Use a forward and back &quot;vacuum cleaner&quot; motion in these cases.</p>
+          <p>If the machine cannot do it all in one pass, use the &quot;two pass&quot; method: overlapping half of the
+            cutting swath, whenever possible.</p>
+          <p>If the grass is very thick and heavy, try raising the trimmer head off the ground a few inches by pushing
+            down on the handlebar. Cut the material at this height, and then make a second pass with the Mow-Ball&trade;
+            Support close to the ground.</p>
+          <p>Ease the DR<sup>&reg;</sup> Trimmer Mower into denser growth. If the material is too tough or woody to cut,
+            the cutting cords will wrap around it, wear down, or even break off. The design of your trimmer is to cut
+            green material up to about the thickness of a pencil. For very heavy, dry or woody material, you may need
+            the optional Beaver Blade&reg; attachment.</p>
+          <p>Sometimes the growth is so heavy, you cannot mow it in rows. Use a forward and back &quot;vacuum
+            cleaner&quot; motion in these cases.</p>
           <h2>For self-propelled models only</h2>
-          <p>If you must go back and forth in the &quot;vacuum cleaner&quot; motion, be sure to release the wheel clutch lever when pulling the trimmer back.</p>
+          <p>If you must go back and forth in the &quot;vacuum cleaner&quot; motion, be sure to release the wheel clutch
+            lever when pulling the trimmer back.</p>
           <h2>Trimmer cord installation and tips</h2>
-          <p>Because conditions and vegetation vary so much, you should experiment with cord weights to discover what works best for your situation.</p>
-          <p>When replacing cords, do it one at a time and use the old cord to mark the position for the new cord that you are replacing.</p>
+          <p>Because conditions and vegetation vary so much, you should experiment with cord weights to discover what
+            works best for your situation.</p>
+          <p>When replacing cords, do it one at a time and use the old cord to mark the position for the new cord that
+            you are replacing.</p>
           <p>If the cord breaks off flush at the line plate, use the new cord to push out the old cord.</p>
-          <p>Storing the cord in a plastic bag with a damp sponge or cloth will help keep it pliable. You can also soak it in a bucket of room temperature water for a few days before use to make it more pliable.</p>
+          <p>Storing the cord in a plastic bag with a damp sponge or cloth will help keep it pliable. You can also soak
+            it in a bucket of room temperature water for a few days before use to make it more pliable.</p>
         </div>
       </div>
-      
+
       <!-- Start Accordion -->
-      <h3 aria-controls="ui-id-2" aria-expanded="false" aria-selected="false" class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" id="ui-id-1" role="tab" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Maintenance <span class="btn" style="float: right;padding: 0px; display: inline-block; background: none;"><i class="ss-icon">navigatedown</i></span></h3>
-      <div aria-hidden="true" aria-labelledby="ui-id-1" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" role="tabpanel" style="display: none;">
+      <h3 aria-controls="ui-id-2" aria-expanded="false" aria-selected="false"
+        class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+        id="ui-id-1" role="tab" tabindex="0"><span
+          class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Maintenance <span class="btn"
+          style="float: right;padding: 0px; display: inline-block; background: none;"><i
+            class="ss-icon">navigatedown</i></span></h3>
+      <div aria-hidden="true" aria-labelledby="ui-id-1"
+        class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" role="tabpanel"
+        style="display: none;">
         <div class="border-bottom border-gray" id="maintenance">
-          <h2>Regular maintenance is the way to ensure the best performance and long life of your DR<sup>&reg;</sup> Trimmer Mower.</h2>
-          <p>Please refer to your Owner's Manual and the Engine Owner's Manual for maintenance procedures. Service intervals listed in the checklist below supersede those listed in the Engine Owner's Manual.</p>
+          <h2>Regular maintenance is the way to ensure the best performance and long life of your DR<sup>&reg;</sup>
+            Trimmer Mower.</h2>
+          <p>Please refer to your Owner's Manual and the Engine Owner's Manual for maintenance procedures. Service
+            intervals listed in the checklist below supersede those listed in the Engine Owner's Manual.</p>
           <div class="alert alert-warning"> <i class="ss-icon">warning</i> <strong>Warning:</strong>
-            <p>When performing any maintenance, you must first shut off the engine, wait five (5) minutes for all parts to stop and cool, and disconnect the spark plug wire, keeping it away from the spark plug. Read the safety considerations section of your Owner's Manual before performing any repairs or maintenance.</p>
+            <p>When performing any maintenance, you must first shut off the engine, wait five (5) minutes for all parts
+              to stop and cool, and disconnect the spark plug wire, keeping it away from the spark plug. Read the safety
+              considerations section of your Owner's Manual before performing any repairs or maintenance.</p>
           </div>
           <table class="table">
             <thead>
@@ -586,124 +903,235 @@
             </tbody>
           </table>
           <div class="alert alert-info">
-            <p><strong>Note:</strong> Consider that service intervals show to be maximum under normal operating conditions. Increase frequencies under extremely dirty or dusty conditions.</p>
+            <p><strong>Note:</strong> Consider that service intervals show to be maximum under normal operating
+              conditions. Increase frequencies under extremely dirty or dusty conditions.</p>
             <p>*An oil filter is on the COMMERCIAL and SELF-PROPELLED models only.</p>
           </div>
         </div>
       </div>
-      
+
       <!-- Start Accordion -->
-      <h3 aria-controls="ui-id-2" aria-expanded="false" aria-selected="false" class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" id="ui-id-1" role="tab" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>End of Season and Storage <span class="btn" style="float: right;padding: 0px; display: inline-block; background: none;"><i class="ss-icon">navigatedown</i></span></h3>
-      <div aria-hidden="true" aria-labelledby="ui-id-1" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" role="tabpanel" style="display: none;">
+      <h3 aria-controls="ui-id-2" aria-expanded="false" aria-selected="false"
+        class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+        id="ui-id-1" role="tab" tabindex="0"><span
+          class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>End of Season and Storage <span
+          class="btn" style="float: right;padding: 0px; display: inline-block; background: none;"><i
+            class="ss-icon">navigatedown</i></span></h3>
+      <div aria-hidden="true" aria-labelledby="ui-id-1"
+        class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" role="tabpanel"
+        style="display: none;">
         <div class="border-bottom border-gray" id="storage">
-          <h2>The following information is provided to demonstrate proper techniques when storing your DR<sup>&reg;</sup> Trimmer Mower.</h2>
+          <h2>The following information is provided to demonstrate proper techniques when storing your
+            DR<sup>&reg;</sup> Trimmer Mower.</h2>
           <div class="alert alert-info">
-            <p><strong>Note:</strong> This information pertains to the most recent trimmer mower models. Please refer to your Owner's Manual for instructions specific to your machine. Please refer to the Engine Owner's Manual for engine specific instructions.</p>
+            <p><strong>Note:</strong> This information pertains to the most recent trimmer mower models. Please refer to
+              your Owner's Manual for instructions specific to your machine. Please refer to the Engine Owner's Manual
+              for engine specific instructions.</p>
           </div>
           <div class="alert alert-warning"> <i class="ss-icon">warning</i> <strong>Warning:</strong>
-            <p>When performing any maintenance, you must first shut off the engine, wait five (5) minutes for all parts to stop and cool, and disconnect the spark plug wire, keeping it away from the spark plug. Read the safety considerations section of your Owner's Manual before performing any repairs or maintenance.</p>
-            <p>Never store the DR<sup>&reg;</sup> Trimmer Mower with fuel in the fuel tank inside a building where ignition sources are present, such as hot water and space heaters, clothes dryers and the like. If you are going to drain the fuel tank, do this outdoors. Allow the engine to cool before storing in any enclosure.</p>
-            <p>When not in use, your DR<sup>&reg;</sup> Trimmer Mower should be stored out of the reach of children in a dry location.</p>
+            <p>When performing any maintenance, you must first shut off the engine, wait five (5) minutes for all parts
+              to stop and cool, and disconnect the spark plug wire, keeping it away from the spark plug. Read the safety
+              considerations section of your Owner's Manual before performing any repairs or maintenance.</p>
+            <p>Never store the DR<sup>&reg;</sup> Trimmer Mower with fuel in the fuel tank inside a building where
+              ignition sources are present, such as hot water and space heaters, clothes dryers and the like. If you are
+              going to drain the fuel tank, do this outdoors. Allow the engine to cool before storing in any enclosure.
+            </p>
+            <p>When not in use, your DR<sup>&reg;</sup> Trimmer Mower should be stored out of the reach of children in a
+              dry location.</p>
           </div>
           <div class="alt-header-support">End-of-Season Procedure</div>
           <ul>
-            <li>Storing the cord in a plastic bag with a damp sponge or cloth will help keep it pliable. You can also soak it in a bucket of room temperature water for a few days before use to make it more pliable.</li>
+            <li>Storing the cord in a plastic bag with a damp sponge or cloth will help keep it pliable. You can also
+              soak it in a bucket of room temperature water for a few days before use to make it more pliable.</li>
             <li>Check the drive belt(s) for wear.</li>
-            <li>Change the engine oil (and oil filter, if applicable). This will help to eliminate sludge and acids in the engine.</li>
-            <li>Remove the spark plug and pour about 1 ounce of motor oil into the cylinder hole. Reinstall the plug and pull the recoil starter rope until you feel strong resistance. This will coat the piston and seat the valves to prevent moisture buildup.</li>
+            <li>Change the engine oil (and oil filter, if applicable). This will help to eliminate sludge and acids in
+              the engine.</li>
+            <li>Remove the spark plug and pour about 1 ounce of motor oil into the cylinder hole. Reinstall the plug and
+              pull the recoil starter rope until you feel strong resistance. This will coat the piston and seat the
+              valves to prevent moisture buildup.</li>
             <li>Clean or replace the engine air filters.</li>
-            <li>Clean any dirt and debris from the cylinder head cooling fins, carburetor linkage, recoil housing, debris screen, and muffler area of the engine.</li>
-            <li>Remove any wrapped weeds from the Mow-Ball&trade; Support, wheel spokes and axles. Using a stiff brush, clean grass and debris from the top and underneath the trimmer deck.</li>
+            <li>Clean any dirt and debris from the cylinder head cooling fins, carburetor linkage, recoil housing,
+              debris screen, and muffler area of the engine.</li>
+            <li>Remove any wrapped weeds from the Mow-Ball&trade; Support, wheel spokes and axles. Using a stiff brush,
+              clean grass and debris from the top and underneath the trimmer deck.</li>
             <li>Remove the bottom shield and clean out any debris.</li>
-            <li>Check to make sure the operator controls are moving freely. Lubricate the throttle lever, PTA&trade;lever (Sprint&trade;, Pro and Commercial models), and key switch with SAE 30 oil if necessary.</li>
+            <li>Check to make sure the operator controls are moving freely. Lubricate the throttle lever,
+              PTA&trade;lever (Sprint&trade;, Pro and Commercial models), and key switch with SAE 30 oil if necessary.
+            </li>
             <li>If your engine has a fuel filter, replace it.</li>
-            <li>If your DR<sup>&reg;</sup> Trimmer Mower will be idle for more than 30 days, we recommend using <a href="/shop-by-category/maintenance/maintenance/dr-ethanol-fuel-treatment-24-oz.axd">DR<sup>&reg;</sup> Ethanol Fuel Treatment</a>. This will prevent sediment from gumming up the carburetor. If there is dirt or moisture in the gas or tank, remove it by draining the tank. Completely fill the tank with fresh, unleaded gas and add the appropriate amount of fuel treatment. Run the Engine for a short time to allow the additive to circulate. </li>
-            <li><strong>Battery storage:</strong> On electric-starting models, remove the battery or store your DR<sup>&reg;</sup> Trimmer Mower in a dry environment where the temperature is between -10&deg; F (-23&deg; C) and +85&deg; F (+23&deg; C). Make sure the storage temperatures will never be outside these limits. If you will not use the machine over a long period, charge the battery every four to six weeks. (See your Owner's Manual for battery care).</li>
+            <li>If your DR<sup>&reg;</sup> Trimmer Mower will be idle for more than 30 days, we recommend using <a
+                href="/shop-by-category/maintenance/maintenance/dr-ethanol-fuel-treatment-24-oz.axd">DR<sup>&reg;</sup>
+                Ethanol Fuel Treatment</a>. This will prevent sediment from gumming up the carburetor. If there is dirt
+              or moisture in the gas or tank, remove it by draining the tank. Completely fill the tank with fresh,
+              unleaded gas and add the appropriate amount of fuel treatment. Run the Engine for a short time to allow
+              the additive to circulate. </li>
+            <li><strong>Battery storage:</strong> On electric-starting models, remove the battery or store your
+              DR<sup>&reg;</sup> Trimmer Mower in a dry environment where the temperature is between -10&deg; F
+              (-23&deg; C) and +85&deg; F (+23&deg; C). Make sure the storage temperatures will never be outside these
+              limits. If you will not use the machine over a long period, charge the battery every four to six weeks.
+              (See your Owner's Manual for battery care).</li>
           </ul>
         </div>
       </div>
-      
+
       <!-- Start Accordion -->
-      <h3 aria-controls="ui-id-2" aria-expanded="false" aria-selected="false" class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" id="ui-id-1" role="tab" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Cord tips and cord installation <span class="btn" style="float: right;padding: 0px; display: inline-block; background: none;"><i class="ss-icon">navigatedown</i></span></h3>
-      <div aria-hidden="true" aria-labelledby="ui-id-1" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" role="tabpanel" style="display: none;">
+      <h3 aria-controls="ui-id-2" aria-expanded="false" aria-selected="false"
+        class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+        id="ui-id-1" role="tab" tabindex="0"><span
+          class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Cord tips and cord installation <span
+          class="btn" style="float: right;padding: 0px; display: inline-block; background: none;"><i
+            class="ss-icon">navigatedown</i></span></h3>
+      <div aria-hidden="true" aria-labelledby="ui-id-1"
+        class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" role="tabpanel"
+        style="display: none;">
         <div class="border-bottom border-gray" id="cord">
-          <h2>The following information is provided to demonstrate proper techniques when installing or replacing cord on your DR<sup>&reg;</sup> Trimmer Mower.</h2>
+          <h2>The following information is provided to demonstrate proper techniques when installing or replacing cord
+            on your DR<sup>&reg;</sup> Trimmer Mower.</h2>
           <div class="alert alert-info">
-            <p><strong>Note:</strong> This information pertains to the most recent trimmer mower models. Please refer to your Owner's Manual for instructions specific to your machine. Please refer to the Engine Owner's Manual for engine specific instructions.</p>
+            <p><strong>Note:</strong> This information pertains to the most recent trimmer mower models. Please refer to
+              your Owner's Manual for instructions specific to your machine. Please refer to the Engine Owner's Manual
+              for engine specific instructions.</p>
           </div>
           <div class="alert alert-warning"> <i class="ss-icon">warning</i> <strong>Warning:</strong>
-            <p>When performing any maintenance, you must first shut off the engine, wait five (5) minutes for all parts to stop and cool, and disconnect the spark plug wire, keeping it away from the spark plug. Read the safety considerations section of your Owner's Manual before performing any repairs or maintenance.</p>
+            <p>When performing any maintenance, you must first shut off the engine, wait five (5) minutes for all parts
+              to stop and cool, and disconnect the spark plug wire, keeping it away from the spark plug. Read the safety
+              considerations section of your Owner's Manual before performing any repairs or maintenance.</p>
           </div>
           <div class="media clearfix">
-            <div class="pull-left"><img alt="" src="https://dam.generac.com/ImConvServlet/imconv/152cd9dfd31c670ed871b591f2ac84f97966170c/original"></div>
+            <div class="pull-left"><img alt=""
+                src="https://dam.generac.com/ImConvServlet/imconv/152cd9dfd31c670ed871b591f2ac84f97966170c/original">
+            </div>
             <div class="media-body">
               <div class="alt-header-support" class="media-heading">
-              Types of cord vs. types of vegetation</div>
-            <p>We ship (2) two thicknesses of cutting cord with your DR<sup>&reg;</sup> Trimmer Mower (older models used to use 130-mil orange cord as well). The cords are blue (175-mil) and green (155-mil). Because conditions and vegetation vary so much, you should experiment with cord weights (diameters) to discover what works best for your particular mowing and trimming situations.</p>
+                Types of cord vs. types of vegetation</div>
+              <p>We ship (2) two thicknesses of cutting cord with your DR<sup>&reg;</sup> Trimmer Mower (older models
+                used to use 130-mil orange cord as well). The cords are blue (175-mil) and green (155-mil). Because
+                conditions and vegetation vary so much, you should experiment with cord weights (diameters) to discover
+                what works best for your particular mowing and trimming situations.</p>
+            </div>
           </div>
-        </div>
-        <div class="alt-header-support">Here are a few things to keep in mind:</div>
-        <ul>
-          <li>If you buy cutting cord in rolls, cut it into 23&quot; lengths.</li>
-          <li>Cord life depends on trimming conditions. Replace cords when they become broken or frayed.</li>
-          <li>The smallest diameter of cord capable of cutting the material at hand combined with the fastest engine speed usually provides the best grass trimming performance. When you need more power for thicker growth such as berry canes, brambles, thistles, or ragweed, you may want to use the 175-mil cord in combination with the highest engine speed.</li>
-          <li>Ease the ends of the cord into heavy growth and move slowly through thick growth. If there are woody weeds in the material you are cutting, the cutting cords may wrap around the stalks they cannot cut, and pull away from the trimmer head.</li>
-          <li>Please note that installing more than (2) two cords at a time does not improve trimming performance, in fact, it can lessen it. <strong>Adding additional cords creates drag on the trimmer head, robs the engine of power, and may cause wrapping. Installing (2) two cords, 180 degrees apart, is the best method for optimal trimming performance.<br>
-            </strong></li>
-          <li>When replacing cords, do it one at a time and use the old cord to mark the position for the new cord that you are replacing.</li>
-          <li>If the cord breaks off flush at the line plate, use the new cord to push out the old cord.</li>
-          <li>Storing the cord in a plastic bag with a damp sponge or cloth will help keep it pliable. You can also soak it in a bucket of room temperature water for a few days before use to make it more pliable.</li>
-        </ul>
-        <div class="media clearfix">
-          <div class="pull-right"><img alt="" src="https://dam.generac.com/ImConvServlet/imconv/2985978137d3f2915cb6b8ec7a74c09538ce2e6a/original"></div>
-          <div class="media-body">
-            <div class="alt-header-support" class="media-heading">
-            Cord Installation:</div>
-          <ol>
-            <li>Refer to your Owner's Manual for cutting height procedures before installing the cords.</li>
-            <li>Insert the ends of the cord into the openings of the lines plate. Push each end of the cord through the center hold in the line plate. Adjust the cord so that the tips are even.</li>
-            <li>Pull the cords through the loop and push the loop up into the line plate groove above.</li>
-            <li>Pull the cord tight.</li>
-          </ol>
-          <div class="alert alert-warning"> <i class="ss-icon">warning</i> <strong>Warning:</strong>
-            <p>Running the trimmer with only one cord installed or cords installed at different levels can cause excessive vibration and damage your machine.</p>
+          <div class="alt-header-support">Here are a few things to keep in mind:</div>
+          <ul>
+            <li>If you buy cutting cord in rolls, cut it into 23&quot; lengths.</li>
+            <li>Cord life depends on trimming conditions. Replace cords when they become broken or frayed.</li>
+            <li>The smallest diameter of cord capable of cutting the material at hand combined with the fastest engine
+              speed usually provides the best grass trimming performance. When you need more power for thicker growth
+              such as berry canes, brambles, thistles, or ragweed, you may want to use the 175-mil cord in combination
+              with the highest engine speed.</li>
+            <li>Ease the ends of the cord into heavy growth and move slowly through thick growth. If there are woody
+              weeds in the material you are cutting, the cutting cords may wrap around the stalks they cannot cut, and
+              pull away from the trimmer head.</li>
+            <li>Please note that installing more than (2) two cords at a time does not improve trimming performance, in
+              fact, it can lessen it. <strong>Adding additional cords creates drag on the trimmer head, robs the engine
+                of power, and may cause wrapping. Installing (2) two cords, 180 degrees apart, is the best method for
+                optimal trimming performance.<br>
+              </strong></li>
+            <li>When replacing cords, do it one at a time and use the old cord to mark the position for the new cord
+              that you are replacing.</li>
+            <li>If the cord breaks off flush at the line plate, use the new cord to push out the old cord.</li>
+            <li>Storing the cord in a plastic bag with a damp sponge or cloth will help keep it pliable. You can also
+              soak it in a bucket of room temperature water for a few days before use to make it more pliable.</li>
+          </ul>
+          <div class="media clearfix">
+            <div class="pull-right"><img alt=""
+                src="https://dam.generac.com/ImConvServlet/imconv/2985978137d3f2915cb6b8ec7a74c09538ce2e6a/original">
+            </div>
+            <div class="media-body">
+              <div class="alt-header-support" class="media-heading">
+                Cord Installation:</div>
+              <ol>
+                <li>Refer to your Owner's Manual for cutting height procedures before installing the cords.</li>
+                <li>Insert the ends of the cord into the openings of the lines plate. Push each end of the cord through
+                  the center hold in the line plate. Adjust the cord so that the tips are even.</li>
+                <li>Pull the cords through the loop and push the loop up into the line plate groove above.</li>
+                <li>Pull the cord tight.</li>
+              </ol>
+              <div class="alert alert-warning"> <i class="ss-icon">warning</i> <strong>Warning:</strong>
+                <p>Running the trimmer with only one cord installed or cords installed at different levels can cause
+                  excessive vibration and damage your machine.</p>
+              </div>
+            </div>
+          </div>
+          <div class="alert alert-info">
+            <p><strong>Note:</strong> To firmly tighten and set the cords, it is best to start the engine and spin the
+              Mow Ball for a few seconds before cutting.</p>
           </div>
         </div>
       </div>
-      <div class="alert alert-info">
-        <p><strong>Note:</strong> To firmly tighten and set the cords, it is best to start the engine and spin the Mow Ball for a few seconds before cutting.</p>
+
+      <!-- Start Accordion -->
+      <h3 aria-controls="ui-id-2" aria-expanded="false" aria-selected="false"
+        class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+        id="ui-id-1" role="tab" tabindex="0"><span
+          class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Warranty <span class="btn"
+          style="float: right;padding: 0px; display: inline-block; background: none;"><i
+            class="ss-icon">navigatedown</i></span></h3>
+      <div aria-hidden="true" aria-labelledby="ui-id-1"
+        class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" role="tabpanel"
+        style="display: none;">
+        <div id="warranties">
+          <h2>DR<sup>&reg;</sup> Walk-Behind Trimmer Mower 2-Year Limited Warranty - Terms and Conditions</h2>
+          <p>Unless otherwise stated in the materials that arrive with your product, DR<sup>&reg;</sup> Walk-Behind
+            Trimmer Mowers are warranted for two (2) years against defects in materials or workmanship when put to
+            ordinary and normal consumer use; ninety (90) days for any other use.</p>
+          <p>For the purposes of all the above warranties, &quot;ordinary and normal consumer use&quot; refers to
+            non-commercial residential use and does not include misuse, accidents or damage due to inadequate
+            maintenance.</p>
+          <p>DR<sup>&reg;</sup> Power Equipment certifies that your DR<sup>&reg;</sup> Walk-Behind Trimmer Mower is fit
+            for ordinary purposes for which products of its type are used. DR<sup>&reg;</sup> Power Equipment however,
+            limits the implied warranties of merchantability and fitness in duration to a period of two (2) years in
+            consumer use, ninety (90) days for any other use.</p>
+          <p>The 2-Year Limited Warranty on a DR<sup>&reg;</sup> Walk-Behind Trimmer Mower starts on the date the
+            machine ships from our factory. The 2-Year Limited Warranty is applicable only to the original owner.</p>
+          <p>The warranty holder is responsible for the performance of the required maintenance as defined by the
+            manufacturer's owner's manuals. The warranty holder is responsible for replacement of normally wearing parts
+            such as belts, cutting cord, Mow-Balls, batteries, air filters, oil filters and spark plugs. Accessories to
+            the machine are not covered by this warranty.</p>
+          <p>During the warranty period, the warranty holder is responsible for the machine transportation charges, if
+            required. During the warranty period, warranty parts will be shipped by standard method at no charge to the
+            warranty holder. Expedited shipping of warranty parts is the responsibility of the warranty holder.</p>
+          <p>SOME STATES DO NOT ALLOW LIMITATIONS ON THE LENGTH OF IMPLIED WARRANTIES, SO THE ABOVE LIMITATIONS MAY NOT
+            APPLY TO YOU.</p>
+          <p>DR<sup>&reg;</sup> Power Equipment shall not be liable under any circumstances for any incidental or
+            consequential damages or expenses of any kind, including, but not limited to, cost of equipment rentals,
+            loss of profit, or cost of hiring services to perform tasks normally performed by your DR<sup>&reg;</sup>
+            Walk-Behind Trimmer Mower.</p>
+          <p>SOME STATES DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE
+            LIMITATIONS MAY NOT APPLY TO YOU.</p>
+          <p>THIS WARRANTY GIVES YOU SPECIFIC LEGAL RIGHTS, AND YOU ALSO HAVE OTHER RIGHTS, WHICH VARY FROM STATE TO
+            STATE.</p>
+          <h2>DR<sup>&reg;</sup> Tow-Behind Trimmer Mower 2-Year Limited Warranty - Terms and Conditions</h2>
+          <p>Unless otherwise stated in the materials that arrive with your product, DR<sup>&reg;</sup> Tow-Behind
+            Trimmer Mowers are warranted for two (2) years against defects in materials or workmanship when put to
+            ordinary and normal consumer use; ninety (90) days for any other use.</p>
+          <p>For the purposes of all the above warranties, &quot;ordinary and normal consumer use&quot; refers to
+            non-commercial residential use and does not include misuse, accidents or damage due to inadequate
+            maintenance.</p>
+          <p>DR<sup>&reg;</sup> Power Equipment certifies that your DR<sup>&reg;</sup> Tow-Behind Trimmer Mower is fit
+            for ordinary purposes for which products of its type are used. DR<sup>&reg;</sup> Power Equipment however,
+            limits the implied warranties of merchantability and fitness in duration to a period of two (2) years in
+            consumer use, ninety (90) days for any other use.</p>
+          <p>The 2-Year Limited Warranty on a DR<sup>&reg;</sup> Tow-Behind Trimmer Mower starts on the date the machine
+            ships from our factory. The 2-Year Limited Warranty is applicable only to the original owner.</p>
+          <p>The warranty holder is responsible for the performance of the required maintenance as defined by the
+            manufacturer's owner's manuals. The warranty holder is responsible for replacement of normally wearing parts
+            such as drive belts, cutting cord, Mow-Balls, air filters and spark plugs. Accessories to the machine are
+            not covered by this warranty.</p>
+          <p>During the warranty period, the warranty holder is responsible for the machine transportation charges, if
+            required. During the warranty period, warranty parts will be shipped by standard method at no charge to the
+            warranty holder. Expedited shipping of warranty parts is the responsibility of the warranty holder.</p>
+          <p>SOME STATES DO NOT ALLOW LIMITATIONS ON THE LENGTH OF IMPLIED WARRANTIES, SO THE ABOVE LIMITATIONS MAY NOT
+            APPLY TO YOU.</p>
+          <p>DR<sup>&reg;</sup> Power Equipment shall not be liable under any circumstances for any incidental or
+            consequential damages or expenses of any kind, including, but not limited to, cost of equipment rentals,
+            loss of profit, or cost of hiring services to perform tasks normally performed by your DR<sup>&reg;</sup>
+            Tow-Behind Trimmer Mower.</p>
+          <p>SOME STATES DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE
+            LIMITATIONS MAY NOT APPLY TO YOU.</p>
+          <p>THIS WARRANTY GIVES YOU SPECIFIC LEGAL RIGHTS, AND YOU ALSO HAVE OTHER RIGHTS, WHICH VARY FROM STATE TO
+            STATE.</p>
+        </div>
       </div>
     </div>
   </div>
-  
-  <!-- Start Accordion -->
-  <h3 aria-controls="ui-id-2" aria-expanded="false" aria-selected="false" class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" id="ui-id-1" role="tab" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Warranty <span class="btn" style="float: right;padding: 0px; display: inline-block; background: none;"><i class="ss-icon">navigatedown</i></span></h3>
-  <div aria-hidden="true" aria-labelledby="ui-id-1" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" role="tabpanel" style="display: none;">
-    <div id="warranties">
-      <h2>DR<sup>&reg;</sup> Walk-Behind Trimmer Mower 2-Year Limited Warranty - Terms and Conditions</h2>
-      <p>Unless otherwise stated in the materials that arrive with your product, DR<sup>&reg;</sup> Walk-Behind Trimmer Mowers are warranted for two (2) years against defects in materials or workmanship when put to ordinary and normal consumer use; ninety (90) days for any other use.</p>
-      <p>For the purposes of all the above warranties, &quot;ordinary and normal consumer use&quot; refers to non-commercial residential use and does not include misuse, accidents or damage due to inadequate maintenance.</p>
-      <p>DR<sup>&reg;</sup> Power Equipment certifies that your DR<sup>&reg;</sup> Walk-Behind Trimmer Mower is fit for ordinary purposes for which products of its type are used. DR<sup>&reg;</sup> Power Equipment however, limits the implied warranties of merchantability and fitness in duration to a period of two (2) years in consumer use, ninety (90) days for any other use.</p>
-      <p>The 2-Year Limited Warranty on a DR<sup>&reg;</sup> Walk-Behind Trimmer Mower starts on the date the machine ships from our factory. The 2-Year Limited Warranty is applicable only to the original owner.</p>
-      <p>The warranty holder is responsible for the performance of the required maintenance as defined by the manufacturer's owner's manuals. The warranty holder is responsible for replacement of normally wearing parts such as belts, cutting cord, Mow-Balls, batteries, air filters, oil filters and spark plugs. Accessories to the machine are not covered by this warranty.</p>
-      <p>During the warranty period, the warranty holder is responsible for the machine transportation charges, if required. During the warranty period, warranty parts will be shipped by standard method at no charge to the warranty holder. Expedited shipping of warranty parts is the responsibility of the warranty holder.</p>
-      <p>SOME STATES DO NOT ALLOW LIMITATIONS ON THE LENGTH OF IMPLIED WARRANTIES, SO THE ABOVE LIMITATIONS MAY NOT APPLY TO YOU.</p>
-      <p>DR<sup>&reg;</sup> Power Equipment shall not be liable under any circumstances for any incidental or consequential damages or expenses of any kind, including, but not limited to, cost of equipment rentals, loss of profit, or cost of hiring services to perform tasks normally performed by your DR<sup>&reg;</sup> Walk-Behind Trimmer Mower.</p>
-      <p>SOME STATES DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATIONS MAY NOT APPLY TO YOU.</p>
-      <p>THIS WARRANTY GIVES YOU SPECIFIC LEGAL RIGHTS, AND YOU ALSO HAVE OTHER RIGHTS, WHICH VARY FROM STATE TO STATE.</p>
-      <h2>DR<sup>&reg;</sup> Tow-Behind Trimmer Mower 2-Year Limited Warranty - Terms and Conditions</h2>
-      <p>Unless otherwise stated in the materials that arrive with your product, DR<sup>&reg;</sup> Tow-Behind Trimmer Mowers are warranted for two (2) years against defects in materials or workmanship when put to ordinary and normal consumer use; ninety (90) days for any other use.</p>
-      <p>For the purposes of all the above warranties, &quot;ordinary and normal consumer use&quot; refers to non-commercial residential use and does not include misuse, accidents or damage due to inadequate maintenance.</p>
-      <p>DR<sup>&reg;</sup> Power Equipment certifies that your DR<sup>&reg;</sup> Tow-Behind Trimmer Mower is fit for ordinary purposes for which products of its type are used. DR<sup>&reg;</sup> Power Equipment however, limits the implied warranties of merchantability and fitness in duration to a period of two (2) years in consumer use, ninety (90) days for any other use.</p>
-      <p>The 2-Year Limited Warranty on a DR<sup>&reg;</sup> Tow-Behind Trimmer Mower starts on the date the machine ships from our factory. The 2-Year Limited Warranty is applicable only to the original owner.</p>
-      <p>The warranty holder is responsible for the performance of the required maintenance as defined by the manufacturer's owner's manuals. The warranty holder is responsible for replacement of normally wearing parts such as drive belts, cutting cord, Mow-Balls, air filters and spark plugs. Accessories to the machine are not covered by this warranty.</p>
-      <p>During the warranty period, the warranty holder is responsible for the machine transportation charges, if required. During the warranty period, warranty parts will be shipped by standard method at no charge to the warranty holder. Expedited shipping of warranty parts is the responsibility of the warranty holder.</p>
-      <p>SOME STATES DO NOT ALLOW LIMITATIONS ON THE LENGTH OF IMPLIED WARRANTIES, SO THE ABOVE LIMITATIONS MAY NOT APPLY TO YOU.</p>
-      <p>DR<sup>&reg;</sup> Power Equipment shall not be liable under any circumstances for any incidental or consequential damages or expenses of any kind, including, but not limited to, cost of equipment rentals, loss of profit, or cost of hiring services to perform tasks normally performed by your DR<sup>&reg;</sup> Tow-Behind Trimmer Mower.</p>
-      <p>SOME STATES DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATIONS MAY NOT APPLY TO YOU.</p>
-      <p>THIS WARRANTY GIVES YOU SPECIFIC LEGAL RIGHTS, AND YOU ALSO HAVE OTHER RIGHTS, WHICH VARY FROM STATE TO STATE.</p>
-    </div>
-  </div>
-</div>
-</div>
 </div>
