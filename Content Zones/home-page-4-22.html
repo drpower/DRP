@@ -1,0 +1,960 @@
+<style type="text/css">
+    .button-home {
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        /* width: 110px;        height: 40px; */
+        padding: 16px 16px;
+        font-size: 14px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+
+    .button-home:hover {
+        background-color: #ffffff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        color: #b44127;
+    }
+
+    .section-subtitle {
+        padding-bottom: 20px;
+        font-weight: bold;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    .section-subtitle span {
+        background-color: #fff;
+        padding: 0 5px;
+        position: relative;
+        z-index: 99;
+    }
+
+    .section-subtitle::before {
+        content: "";
+        border-top: 1px solid #a3a3a3;
+        width: 100%;
+        position: absolute;
+        top: 16px;
+        left: 0;
+        z-index: 0;
+    }
+
+    hr {
+        border-top: 1px solid #b8b8b8;
+    }
+
+    .mb-5,
+    .my-5 {
+        margin-bottom: 0rem !important;
+    }
+
+    .homepage-new .container {
+        padding: 0 0rem !important;
+    }
+
+    @media screen and (max-width: 1404px) {
+        .homepage-new .row {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    }
+
+    @media screen and (max-width: 490px) {
+        .category-product-title {
+            min-height: 100px;
+        }
+    }
+
+    /* .hero-category-product-title {      font-size: 2.7em;      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);    } */
+    .hero-category-product-title:hover {
+        color: #515151;
+    }
+
+    @media only screen and (max-width: 1200px) {
+
+        /* .hero-category-product-title {        font-size: 1.7em;      } */
+        .hero-red-line {
+            display: none;
+        }
+
+        .hero-product-title-break {
+            display: block;
+        }
+
+        .home-spotlight-break {
+            display: block;
+            margin-left: 0px !important;
+        }
+    }
+
+    .hero-grid-container {
+        display: grid;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .hero-grid-child-1 {}
+
+    .hero-grid-child-2 {}
+
+    .hero-grid-child-3 {}
+
+    .cta-button {
+        background-color: #F04124;
+        color: #fff;
+        border-radius: 5px;
+        font-weight: bold;
+        padding: 10px;
+        margin: auto;
+    }
+
+    /* GRID TEST STYLE */
+
+    @media only screen and (min-width: 1200px) {
+        .hero-grid-container {
+            grid-template-columns: 40% 40% 20%;
+            grid-template-rows: 1fr;
+        }
+
+        .hero-grid-child-1 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        .hero-grid-child-2 {
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        .hero-grid-child-3 {
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+
+        .cta-button {
+            width: 75%;
+        }
+
+        .hero-category-product-title {
+            font-size: 2.7em;
+        }
+    }
+
+    @media only screen and (max-width: 1199px) {
+        .hero-grid-container {
+            grid-template-columns: 60% 40%;
+            grid-template-rows: 50% 50%;
+        }
+
+        .hero-grid-child-1 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        .hero-grid-child-2 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        .hero-grid-child-3 {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        .cta-button {
+            width: 50%;
+            font-size: 1.7em;
+        }
+
+        .hero-category-product-title {
+            font-size: 2.7em;
+        }
+    }
+
+    @media only screen and (max-width: 780px) {
+        .hero-grid-container {
+            grid-template-columns: 1fr;
+            grid-template-rows: 50px 50px 50px;
+        }
+
+        .hero-grid-child-1 {
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        .hero-grid-child-2 {
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        .hero-grid-child-3 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+
+        .cta-button {
+            width: 20%;
+            font-size: 1em;
+        }
+
+        .hero-category-product-title {
+            font-size: 2.2em;
+        }
+    }
+
+    @media only screen and (max-width: 510px) {
+        .cta-button {
+            width: 50%;
+            font-size: 1em;
+        }
+    }
+
+    @media only screen and (max-width: 425px) {
+        .hero-category-product-title {
+            font-size: 1.7em;
+        }
+    }
+
+    @media (max-width: 414px) {
+        .country-home-data-wrapper .refer-friend-wrapper {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        .chp-banner a {
+            height: auto;
+        }
+    }
+
+    .home-page-banner-text-wrapper-right .banner-shop-now {
+        color: #fff;
+        padding: 8px 30px;
+        border-radius: 4px;
+        border: none;
+        background: #f23827;
+        font-weight: normal;
+    }
+
+    .banner-bottom-text-shipping {
+        margin: 20px 0px 20px 0px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.9rem;
+        color: #fff;
+        text-shadow: 0px 0px 20px #654321;
+        line-height: 30px;
+        text-transform: none;
+        display: block;
+    }
+
+    .home-page-banner-text-wrapper-right .banner-shop-now:hover {
+        color: #fff;
+        background: #ab2328;
+    }
+
+    .home-page-main-banner {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+
+    @media only screen and (min-width: 1400px) {
+        .home-page-main-banner .home-page-banner-text-wrapper {
+            position: absolute;
+            /* top: 4.5rem;        left: 49rem; */
+        }
+    }
+
+    @media only screen and (min-width: 558px) {
+        .home-page-main-banner {
+            padding-top: 20px !important;
+        }
+
+        .banner-shop-now {
+            font-size: 18px;
+        }
+    }
+
+    .home-page-banner-text-wrapper .banner-top-text {
+        text-align: left;
+        font-weight: bold;
+        font-size: 6rem;
+        color: #fff;
+        display: block;
+        /* text-transform: uppercase; */
+        line-height: 90px;
+    }
+
+    .home-page-banner-text-wrapper .banner-top-text-mega {
+        font-size: 8rem;
+    }
+
+    .banner-sub-title {
+        text-align: left;
+        font-weight: bold;
+        font-size: 1.4rem;
+        color: #fff;
+        display: block;
+        text-transform: uppercase;
+    }
+
+    .home-page-banner-text-wrapper-right .banner-bottom-text {
+        margin: 20px 0px 20px 0px;
+        text-align: center;
+        font-weight: normal;
+        font-size: 1.25rem;
+        color: #fff;
+        text-shadow: 0px 0px 20px #654321;
+        line-height: 22px;
+        text-transform: none;
+        display: block;
+    }
+
+    .home-page-banner-text-wrapper-right {
+        color: #fff;
+        position: absolute;
+        top: 4.5rem;
+        left: 70%;
+    }
+
+    @media only screen and (max-width: 900px) {
+        .home-page-banner-text-wrapper .banner-top-text {
+            text-align: left;
+            font-weight: bold;
+            font-size: 3rem;
+            color: #fff;
+            display: block;
+            text-transform: uppercase;
+            line-height: 40px;
+        }
+
+        .home-page-banner-text-wrapper-right {
+            color: #fff;
+            position: absolute;
+            top: .5rem;
+            left: 50%;
+        }
+
+        .home-page-banner-text-wrapper .banner-top-text-mega {
+            font-size: 4rem;
+        }
+
+        .home-page-banner-text-wrapper .banner-bottom-text {
+            margin: 10px 0px 10px 0px;
+            text-align: left;
+            font-size: 1rem;
+            color: #fff;
+            text-transform: none;
+            display: block;
+            font-weight: normal;
+        }
+
+        .banner-sub-title {
+            text-align: left;
+            font-weight: bold;
+            font-size: 1rem;
+            color: #fff;
+            display: block;
+            /* text-transform: uppercase; */
+            line-height: 32px;
+        }
+    }
+
+    @media (max-width: 570px) {
+        .home-page-banner-text-wrapper-right {
+            position: absolute;
+            top: .5rem;
+            left: 50%;
+        }
+
+        .banner-bottom-text-shipping {
+            margin: 20px 0px 20px 0px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1rem;
+            color: #fff;
+            text-shadow: 0px 0px 20px #654321;
+            line-height: 20px;
+            text-transform: none;
+            display: block;
+        }
+    }
+
+    @media (max-width: 557px) {
+        .home-page-main-banner .home-page-banner-text-wrapper {
+            top: 1rem;
+            left: 2em;
+            right: 0;
+        }
+
+        .home-page-main-banner {
+            padding: 0px !important;
+            margin-top: 20px !important;
+            margin-bottom: 0px !important;
+        }
+    }
+
+    @media (max-width: 450px) {
+        .home-page-main-banner .home-page-banner-text-wrapper {
+            top: 1rem;
+            left: 2;
+            right: 0;
+        }
+
+        .home-category-image-wrapper {
+            margin-left: -20px;
+            margin-right: -20px;
+            height: auto;
+            margin-top: 30px;
+        }
+
+        .home-page-banner-text-wrapper .banner-bottom-text {
+            margin: 0px 0px 0px 0px;
+            text-align: left;
+            font-size: 1rem;
+            color: #fff;
+            text-transform: none;
+            display: block;
+        }
+    }
+
+    @keyframes slidy {
+        0% {
+            left: 0%;
+        }
+
+        20% {
+            left: 0%;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        45% {
+            left: -100%;
+        }
+
+        50% {
+            left: -200%;
+        }
+
+        70% {
+            left: -200%;
+        }
+
+        75% {
+            left: -300%;
+        }
+
+        95% {
+            left: -300%;
+        }
+
+        100% {
+            left: -400%;
+        }
+    }
+
+    #slider {
+        overflow: hidden;
+    }
+
+    #slider figure img {
+        width: 20%;
+        float: left;
+    }
+
+    #slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 30s slidy infinite;
+    }
+
+    #slider-mobile {
+        overflow: hidden;
+    }
+
+    #slider-mobile figure img {
+        width: 20%;
+        float: left;
+    }
+
+    #slider-mobile figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 30s slidy infinite;
+    }
+
+    @media only screen and (max-width: 600px) {
+        #slider {
+            display: none;
+        }
+    }
+
+    @media only screen and (min-width: 601px) {
+        #slider-mobile {
+            display: none;
+        }
+    }
+</style>
+<div class="homepage-new" style="margin-top: 20px">
+
+
+
+      <!--START SLIDER-->
+
+
+
+
+
+  <div class="container home-page-main-banner"
+  style="clear: both; margin-top: 0px !important; margin-bottom: 0px !important; padding-bottom: 0px !important; padding-top: 20px !important">
+  <div class="banner__component simple-banner" style="margin-right: 0px !important; margin-left: 0px !important;">
+
+    <div id="slider">
+      <figure>
+        <a href="/savings">
+          <img src="https://dam.generac.com/ImConvServlet/imconv/61f4ea9916cc48ea2607ea8b7cd6b262e270f0b0/original"
+            alt>
+        </a>
+        <a href="/power-equipment">
+          <img src="https://dam.generac.com/ImConvServlet/imconv/03234dde513f237f150c264c32bb78259f6c68da/original"
+            alt>
+        </a>
+        <a href="/savings">
+          <img src="https://dam.generac.com/ImConvServlet/imconv/61f4ea9916cc48ea2607ea8b7cd6b262e270f0b0/original"
+            alt>
+        </a>
+        <a href="/power-equipment">
+          <img src="https://dam.generac.com/ImConvServlet/imconv/03234dde513f237f150c264c32bb78259f6c68da/original"
+            alt>
+        </a>
+        <a href="/savings">
+          <img src="https://dam.generac.com/ImConvServlet/imconv/61f4ea9916cc48ea2607ea8b7cd6b262e270f0b0/original"
+            alt>
+        </a>
+      </figure>
+    </div>
+    <div id="slider-mobile">
+      <figure>
+        <a href="/savings">
+          <img src="https://dam.generac.com/ImConvServlet/imconv/fb392aa4bb1b7662b1ae8402271e01c94ff99a7a/original"
+            alt>
+        </a>
+        <a href="/power-equipment">
+          <img src="https://dam.generac.com/ImConvServlet/imconv/3951c1d9d41aad350cf71a738440a4e9360ccd94/original"
+            alt>
+        </a>
+        <a href="/savings">
+          <img src="https://dam.generac.com/ImConvServlet/imconv/fb392aa4bb1b7662b1ae8402271e01c94ff99a7a/original"
+            alt>
+        </a>
+        <a href="/power-equipment">
+          <img src="https://dam.generac.com/ImConvServlet/imconv/3951c1d9d41aad350cf71a738440a4e9360ccd94/original"
+            alt>
+        </a>
+        <a href="/savings">
+          <img src="https://dam.generac.com/ImConvServlet/imconv/fb392aa4bb1b7662b1ae8402271e01c94ff99a7a/original"
+            alt>
+        </a>
+      </figure>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!--END SLIDER-->
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="my-5 section-header col-xs-12" style="margin-top: 60px !important">
+                <h4 class="section-subtitle"><span>Featured Deals</span></h4>
+            </div>
+            <div class="col-xs-12 col-md-3"><a href="/power-equipment/chippers"><img alt="Shop Chippers"
+                        src="https://dam.generac.com/ImConvServlet/imconv/7ccb738d7c50c9558b47e234d861a9552fc6a3cf/original" />
+                    <div class="category-product-title"
+                        style="/* display:none; */text-align: center;margin-top: 0px;margin-bottom: 10px;font-weight: normal;padding: 10px; font-size: 16px; ">
+                        <strong>Chippers</strong><br>
+                        Clean up, clear out, and save on a DR<sup>&reg;</sup> Wood Chipper.
+
+
+
+                    
+
+                    
+                    </div>
+                </a></div>
+            <div class="col-xs-12 col-md-3"><a href="/power-equipment/roto-tillers"><img alt="Shop Rototillers"
+                        src="https://dam.generac.com/ImConvServlet/imconv/ea68f118a7c7b66d8fdee951633d91028fa4b1fe/original" />
+                    <div class="category-product-title"
+                        style="/* display:none; */text-align: center;margin-top: 0px;margin-bottom: 10px;font-weight:normal;padding: 10px; font-size: 16px; ">
+                        <strong>Rototillers</strong> <br>
+                        Plant your best garden ever and get Free Home Delivery with Liftgate Service on a new DR<sup>&reg;</sup> Rototiller.
+
+
+
+                    
+                    </div>
+                </a></div>
+            
+            <div class="col-xs-12 col-md-3"><a href="/power-equipment/trimmer-mowers"><img alt="Shop Trimmers"
+                        src="https://dam.generac.com/ImConvServlet/imconv/171fb3842619b55a3cddd886df53246a08c648cb/original" />
+                    <div class="category-product-title"
+                        style="/* display:none; */text-align: center;margin-top: 0px;margin-bottom: 10px;font-weight: normal;padding: 10px; font-size: 16px; ">
+                        <strong>Trimmer Mowers</strong><br>
+                        Trim and Mow Everywhere a Bladed Mower Can't with a DR<sup>&reg;</sup> Trimmer Mower.
+
+
+
+
+                        
+                    </div>
+                </a></div>
+                <div class="col-xs-12 col-md-3"><a href="/power-equipment/field-brush-mowers"><img alt="Shop Field & Brush Mowers"
+                    src="https://dam.generac.com/ImConvServlet/imconv/1d2c70615a46bb25f331b6cb757a89285daf0bf7/original" />
+                <div class="category-product-title"
+                    style="/* display:none; */text-align: center;margin-top: 0px;margin-bottom: 10px;font-weight: normal;padding: 10px; font-size: 16px; ">
+                    <strong>Field & Brush Mowers</strong><br>
+                    Power through fields of overgrowth and reclaim your property with a DR<sup>&reg;</sup> Field & Brush Mower.
+
+
+
+
+
+                    
+                </div>
+            </a></div>
+        </div>
+    </div>
+    <!-- END Featured Categories -->
+
+    <!-- START New Arrivals -->
+    <div class="container">
+        <div class="row">
+            <div class="my-5 section-header col-xs-12" style="margin-top: 30px !important">
+                <h4 class="section-subtitle"><span>New Arrivals</span></h4>
+            </div>
+            <div class="col-xs-12 col-md-4"><a href="/p/AT49030BEN"><img alt="Shop NEW PRO XL30"
+                        src="https://dam.generac.com/ImConvServlet/imconv/933deab5655a7f334f3bfc5c4fdd0ee006beee61/original" />
+                    <div class="category-product-title"
+                        style="/* display:none; */text-align: center;margin-top: 0px;margin-bottom: 10px;font-weight: normal;padding: 10px; font-size: 16px; ">
+                        <strong>PRO XL30 Field & Brush Mower</strong><br>
+                        The most powerful engine we've ever offered on a walk-behind machine. <br>
+                        <span style="color: #b44127; font-weight:bold;">ON SALE NOW $4,499.99</span>
+                    </div>
+                </a></div>
+            <div class="col-xs-12 col-md-4"><a href="/p/AT59036KEN"><img alt="Shop XD36"
+                        src="https://dam.generac.com/ImConvServlet/imconv/b1f0256635f3d7fae36d3907633eba1df80ab388/original" />
+                    <div class="category-product-title"
+                        style="/* display:none; */text-align: center;margin-top: 0px;margin-bottom: 10px;font-weight: normal;padding: 10px; font-size: 16px; ">
+                        <strong>XD36 Field & Brush Mower</strong><br>
+                        The XD36 is a commercial duty mower built for the demands of everyday use.<br>
+                        <span style="color: #b44127; font-weight:bold;">ON SALE NOW $5,599.99 </span>
+                    </div>
+                </a></div>
+            <div class="col-xs-12 col-md-4"><a href="/power-equipment/lawn-mowers/walk-behind-mowers"><img
+                        alt="Shop PRO MAX30"
+                        src="https://dam.generac.com/ImConvServlet/imconv/b118e1330b60acfc11f83319d910527e4f368a0d/original" />
+                    <div class="category-product-title"
+                        style="/* display:none; */text-align: center;margin-top: 0px;margin-bottom: 10px;font-weight: normal;padding: 10px; font-size: 16px; ">
+                        <strong>PRO MAX30 Lawn Mower </strong><br>
+                        Mow up to 43% faster with our new wide-area walk-behind mower and take back your weekend.<br>
+                        <span style="color: #b44127; font-weight:bold;">STARTING AT $1,299.99 </span>
+                    </div>
+                </a></div>
+        </div>
+    </div>
+    <!-- END New Arrivals -->
+
+
+    <!-- START bundle IMAGE -->
+    <div style="margin-top:60px"></div>
+    <a href="/savings/bundles">
+        <picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source media="(max-width: 780px)"
+                srcset="https://dam.generac.com/ImConvServlet/imconv/91ecc66cab84d2ae6fa09e77fc80feb33e30ca6d/original">
+            </source>
+            <!--[if IE 9]></video><![endif]--> <img alt="Brush Mower Bundles - Shop Now"
+                srcset="https://dam.generac.com/ImConvServlet/imconv/49f38b4a28fc7730eebb283d39291c01bc0dc116/original" />
+        </picture>
+    </a> <!-- End bundle IMAGE -->
+
+
+
+
+
+    <!-- START Product Spotlights -->
+    <div class="container" style="margin-top: 30px">
+        <div class="row">
+            <div class="my-5 section-header col-xs-12">
+                <h4 class="section-subtitle" style="text-align: center; margin-top: 0px"><span>Product Spotlight</span>
+                </h4>
+            </div>
+            <div class="col-xs-12 col-md-6" style="margin-bottom: 20px"><a href="/power-equipment/burncage"><img
+                        alt="Shop BurnCages"
+                        src="https://dam.generac.com/ImConvServlet/imconv/1122dbd57204182cd8e30a2b1966def35d351f97/original" />
+                    <div class="category-product-title"
+                        style="/* display:none; */text-align: center;margin-top: 0px;margin-bottom: 10px;padding: 15px;font-size: 16px;">
+                        <!--<strong>ProXL 575</strong> <br>-->Burn Clean, Burn Safe with a DR<sup>&reg;</sup> BurnCage!
+
+
+
+
+
+
+
+                        
+                    </div>
+                </a></div>
+                <div class="col-xs-12 col-md-6"><a href="/power-equipment/power-graders"><img alt="Shop Power Graders"                        src="https://dam.generac.com/ImConvServlet/imconv/5f0a39908a824bed348eb5a5b67df2287949a121/original" />
+                <div class="category-product-title"                        style="/* display:none; */text-align: center;margin-top: 0px;margin-bottom: 10px;padding: 15px;font-size: 16px; "> <!--<strong> PRO MAX450</strong><br>-->
+                    Renew your driveway or riding ring with a DR<sup>&reg;</sup> Power Grader!
+
+
+            
+            
+            
+            
+            
+            
+                    
+                </div>
+                </a></div>
+        </div>  
+    </div>
+
+    <!-- END Product Spotlights --> <!-- START MURDERERS ROW -->
+    <div class="content">
+        <section id="homepage-categories">
+            <div class="my-5 section-header">
+                <h4 class="text-center section-subtitle"><span>Shop By Category</span></h4>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6 col-grid-5 category-item"><a href="/power-equipment/field-brush-mowers"><img
+                                alt="Shop Field and Brush Mowers"
+                                src="https://dam.generac.com/ImConvServlet/imconv/7fa2438c4bac62c82fd95ed25d4af830e650096e/original" />
+                            <hr />
+                            <div class="category-product-title">Field and Brush Mowers</div>
+                        </a></div>
+                    <div class="col-xs-6 col-grid-5 category-item"><a href="/power-equipment/trimmer-mowers"><img
+                                alt="Shop Trimmer Mowers"
+                                src="https://dam.generac.com/ImConvServlet/imconv/a25566d1876e2e4384bc2af0f82ad81ed5965297/original" />
+                            <hr />
+                            <div class="category-product-title">Trimmer Mowers</div>
+                        </a></div>
+                    <div class="col-xs-6 col-grid-5 category-item"><a href="/power-equipment/chippers"><img
+                                alt="Shop Chippers"
+                                src="https://dam.generac.com/ImConvServlet/imconv/9242dadcda6fd03139d31c4ec48c02bd2c41ee66/original" />
+                            <hr />
+                            <div class="category-product-title">Chippers and Shredders</div>
+                        </a></div>
+                    <div class="col-xs-6 col-grid-5 category-item"><a href="/power-equipment/leaf-blowers-vacuums"><img
+                                alt="Shop Lawn Vacs"
+                                src="https://dam.generac.com/ImConvServlet/imconv/a3623b96a80bd00ed254e3b9bbb3150d7a2177aa/original" />
+                            <hr />
+                            <div class="category-product-title">Leaf and Lawn Vacuums</div>
+                        </a></div>
+                    <div class="col-xs-6 col-grid-5 category-item"><a
+                            href="/power-equipment/lawn-mowers/electric-zero-turn-lawn-mowers"><img
+                                alt="Shop Electric Zero-Turn Lawn Mowers"
+                                src="https://dam.generac.com/ImConvServlet/imconv/1b645ba359a91cd0f7bc4ad8db32344d4aa6b552/original" />
+                            <hr />
+                            <div class="category-product-title">Electric Zero-Turn Lawn Mowers</div>
+                        </a></div>
+                    <div class="col-xs-6 col-grid-5 category-item"><a href="/power-equipment/roto-tillers"><img
+                                alt="Shop Roto-Tillers"
+                                src="https://dam.generac.com/ImConvServlet/imconv/5ec1d49087aa700192220ee2a625a832cec65f11/original" />
+                            <hr />
+                            <div class="category-product-title">Roto-Tillers</div>
+                        </a></div>
+                    <div class="col-xs-6 col-grid-5 category-item"><a
+                            href="/power-equipment/snow-removal-redi-plow/snow-blowers"><img alt="Shop Snow Blowers"
+                                src="https://dam.generac.com/ImConvServlet/imconv/4f97435e713dc15b0e104a3f4c9e6b4288741c69/original" />
+                            <hr />
+                            <div class="category-product-title">Snow Blowers</div>
+                        </a></div>
+                    <div class="col-xs-6 col-grid-5 category-item"><a href="/power-equipment/stump-grinders"><img
+                                alt="Shop Stump Grinders"
+                                src="https://dam.generac.com/ImConvServlet/imconv/625c3eeae75a69a1e451b25819e944df16ffbbd6/original" />
+                            <hr />
+                            <div class="category-product-title">Stump Grinders</div>
+                        </a></div>
+                    <div class="col-xs-6 col-grid-5 category-item"><a href="/power-equipment/power-graders"><img
+                                alt="Shop Power Graders"
+                                src="https://dam.generac.com/ImConvServlet/imconv/8d7574ad705c98d521a7790f9285bd9fc22cb6aa/original" />
+                            <hr />
+                            <div class="category-product-title">Power Graders</div>
+                        </a></div>
+                    <div class="col-xs-6 col-grid-5 category-item"><a href="/power-equipment/powerwagons"><img
+                                alt="Shop Powerwagons"
+                                src="https://dam.generac.com/ImConvServlet/imconv/6438ddeea673f3404d40d837c81da42b496d9b7b/original" />
+                            <hr />
+                            <div class="category-product-title">Powerwagons</div>
+                        </a></div>
+                    <div class="col-xs-6 col-grid-5 category-item"><a
+                            href="/power-equipment/log-splitters-wood-cutting"><img
+                                alt="Shop Log Splitters &amp; Wood Cutting"
+                                src="https://dam.generac.com/ImConvServlet/imconv/85311f5c8f229694c55cf02d3e9f6277ba663a72/original" />
+                            <hr />
+                            <div class="category-product-title">Log Splitters &amp; Wood Cutting</div>
+                        </a></div>
+                    <div class="col-xs-6 col-grid-5 category-item"><a href="/power-equipment/burncage"><img
+                                alt="Shop BurnCage"
+                                src="https://dam.generac.com/ImConvServlet/imconv/5dcfb31934e15900ba2f516edf2b23f03206079b/original" />
+                            <hr />
+                            <div class="category-product-title">BurnCage</div>
+                        </a></div>
+                    <div class="col-xs-6 col-grid-5 category-item"><a href="/power-equipment/lawn-mowers"><img
+                                alt="Shop Lawn Mowers"
+                                src="https://dam.generac.com/ImConvServlet/imconv/7f6166cd37f20dfbb42b75f5bd5ad8f63afe566e/original" />
+                            <hr />
+                            <div class="category-product-title">Lawn Mowers</div>
+                        </a></div>
+                    <div class="col-xs-6 col-grid-5 category-item"><a href="/power-equipment/pressure-washers"><img
+                                alt="Shop Pressure Washers"
+                                src="https://dam.generac.com/ImConvServlet/imconv/e5bf9b66c3fa0ed9436a315945464db675f7ac86/original" />
+                            <hr />
+                            <div class="category-product-title">Pressure Washers</div>
+                        </a></div>
+                    <!--<div class="col-xs-6 col-grid-5 category-item">                <a href="/savings/special-promotion"><img alt="Shop Snow Blowers" src="https://dam.generac.com/ImConvServlet/imconv/8b04d91d4775084e2914f6d000102e4d20f201d2/original">                <hr>                <div class="category-product-title">                  Snow Blowers                </div></a>              </div>-->
+                    <div class="col-xs-6 col-grid-5 category-item"><a href="/power-equipment/atv-attachments"><img
+                                alt="Shop ATV Attachments"
+                                src="https://dam.generac.com/ImConvServlet/imconv/996311887138bc584d18f02dc531b687d39ef453/original" />
+                            <hr />
+                            <div class="category-product-title">ATV Attachments</div>
+                        </a></div>
+                    <div class="col-xs-6 col-grid-5 category-item"><a href="/power-equipment/tractor-attachments"><img
+                                alt="Shop Tractor Attachments"
+                                src="https://dam.generac.com/ImConvServlet/imconv/721485edcd416f4b3871562006e2539a7c6fc851/original" />
+                            <hr />
+                            <div class="category-product-title">Tractor Attachments</div>
+                        </a></div>
+                    <div class="col-xs-6 col-grid-5 category-item"><a href="/power-equipment/equipment-maintenance"><img
+                                alt="Shop Batteries, Parts, and Maintenance"
+                                src="https://dam.generac.com/ImConvServlet/imconv/96075fb5f0b7eab5d953e2227d39cbbfd8a79435/original" />
+                            <hr />
+                            <div class="category-product-title">Equipment Maintenance</div>
+                        </a></div>
+
+                    <div class="col-xs-6 col-grid-5 category-item"><a href="/power-equipment/edgers"><img
+                                alt="Shop Edgers"
+                                src="https://dam.generac.com/ImConvServlet/imconv/56d0726da90dce55fbd53bd0267919b02641b0fc/original" />
+                            <hr />
+                            <div class="category-product-title">Edgers</div>
+                        </a></div>
+                    <div class="col-xs-6 col-grid-5 category-item"><a href="/power-equipment/lawn-and-garden"><img
+                                alt="Shop Lawn and Garden"
+                                src="https://dam.generac.com/ImConvServlet/imconv/e055a7f0aa70eeae4792d347c1c498ad68e273e7/original" />
+                            <hr />
+                            <div class="category-product-title">Lawn and Garden</div>
+                        </a></div>
+                    <div class="col-xs-6 col-grid-5 category-item"><a href="/power-equipment/trailers"><img
+                                alt="Shop Trailers"
+                                src="https://dam.generac.com/ImConvServlet/imconv/89b998866380e21d3b3cdab999c0b03dd71054bf/original" />
+                            <hr />
+                            <div class="category-product-title">Trailers</div>
+                        </a></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- END MURDERERS ROW -->
+
+    <!-- START EXPERT PICKS-->
+    <div style="margin-top: 30px"> <a href="/expert-picks">
+            <picture> <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source media="(max-width: 780px)"
+                    srcset="https://dam.generac.com/ImConvServlet/imconv/9fbaf908203fe12e23c24f6f3f89a8131cf072e4/original">
+                </source>
+                <!--[if IE 9]></video><![endif]--> <img alt="Expert Picks - Shop Now"
+                    srcset="https://dam.generac.com/ImConvServlet/imconv/2ce43cc7b2ad6faa7487c68d547808c2cc2a385a/original" />
+            </picture>
+        </a> </div>
+    <!-- END EXPERT PICKS-->
+
+    <!-- START FEATURED CATEGORIES -->
+
+    <!-- <div class="container">    <div class="row">    <div class="my-5 section-header col-xs-12">    <h4 class="section-subtitle" style="text-align: center"><span>Featured Categories</span></h4>    </div>    <div class="col-xs-12 col-md-6" style="margin-bottom: 20px"><a href="/power-equipment/stump-grinders"><img alt="Shop Stump Grinders" src="https://dam.generac.com/ImConvServlet/imconv/d3d5c8580df8560f5d1666ab3a554323708d8c83/original" /><button class="button-home btn-primary">             Shop Stump Grinders            </button>    </a></div>    <div class="col-xs-12 col-md-6"><a href="/power-equipment/field-brush-mowers"><img alt="Shop Field and Brush Mowers" src="https://dam.generac.com/ImConvServlet/imconv/cbf0e19256548a6080ec4c6b6380f27449f94d5b/original" /><button class="button-home btn-primary">             Shop Field and Brush Mowers            </button>          </a></div>    </div>    </div> -->
+    <!-- END FEATURED CATEGORIES --> <!-- START BOTTOM THREE SECTION -->
+    <section class="mt-5" id="homepage-info" style="margin-top: 30px !important">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-3 icon"> <i class="ss-creditcard"></i> </div>
+                        <div class="col-md-9 info-box">
+                            <h4 class="info-title">36 Months Financing</h4>
+                            <h6 class="info-subtitle">Easy Financing</h6>
+                            <p class="info"> On Purchases of $799 or more made with your DR Power/Synchrony credit card.
+                            </p>
+                            <a class="find-dealer-link"
+                                href="/pages/content/customer-support/shopping-resources/easy-financing">Learn more <i
+                                    class="ss-icon ss-navigateright" style="font-size: 10px"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-3 icon"> <i class="ss-pin"></i> </div>
+                        <div class="col-md-9 info-box">
+                            <h4 class="info-title">Find a DR Dealer</h4>
+                            <h6 class="info-subtitle">Come see us in person!</h6>
+                            <p class="info"> You can purchase DR Power Equipment at over 1000 dealer locations. Stop
+                                into a retail location and check out your favorite DR. </p>
+                            <a class="find-dealer-link" href="/dealer-locator">Find a dealer near you <i
+                                    class="ss-icon ss-navigateright" style="font-size: 10px"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-3 icon"> <i class="ss-settings"></i> </div>
+                        <div class="col-md-9 info-box">
+                            <h4 class="info-title">Order Parts Online</h4>
+                            <h6 class="info-subtitle">Parts Look-Up and Diagrams</h6>
+                            <p class="info"> The best way to order parts is to use our <a class="online-order-parts"
+                                    href="/pages/content/customer-support/product-support/ordering-parts?aribrand=chp">online
+                                    parts ordering tool.</a> It will allow you to view the schematics for various
+                                machine assemblies and select specific parts for order. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END BOTTOM THREE SECTION -->
+</div>
+<!-- END HOME WRAPPER -->
