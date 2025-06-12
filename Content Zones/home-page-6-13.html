@@ -53,23 +53,179 @@
             min-height: 100px;
         }
     }
+
+
+
+
+    @keyframes slidy {
+        0% {
+            left: 0%;
+        }
+
+        20% {
+            left: 0%;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        45% {
+            left: -100%;
+        }
+
+        50% {
+            left: -200%;
+        }
+
+        70% {
+            left: -200%;
+        }
+
+        75% {
+            left: -300%;
+        }
+
+        95% {
+            left: -300%;
+        }
+
+        100% {
+            left: -400%;
+        }
+    }
+
+    #slider {
+        overflow: hidden;
+    }
+
+    #slider figure img {
+        width: 20%;
+        float: left;
+    }
+
+    #slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 30s slidy infinite;
+    }
+
+    #slider-mobile {
+        overflow: hidden;
+    }
+
+    #slider-mobile figure img {
+        width: 20%;
+        float: left;
+    }
+
+    #slider-mobile figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 30s slidy infinite;
+    }
+
+    @media only screen and (max-width: 600px) {
+        #slider {
+            display: none;
+        }
+    }
+
+    @media only screen and (min-width: 601px) {
+        #slider-mobile {
+            display: none;
+        }
+    }
+
+
 </style>
 <div class="homepage-new" style="margin-top: 20px">
-    <!-- START HEADER IMAGE -->
-    <a href="/savings/sale">
-        <picture>
-            <!--[if IE 9]>
-			<video style="display: none;">
-				<![endif]-->
-            <source media="(max-width: 766px)"
-                srcset="https://dam.generac.com/ImConvServlet/imconv/8355ce31fb9e809cfce1719c9caa3f15607c9992/original"
-                style="width: 100%; height: auto;" width="766" height="595">
-            <img src="https://dam.generac.com/ImConvServlet/imconv/928524c050bc21bc99dbf7b72e596605af831a0b/original"
-                alt="Fathers Day Sale
-" style="width: 100%; height: auto;" width="1440" height="619" fetchpriority="high">
-        </picture>
-    </a>
-    <!-- END HEADER IMAGE -->
+
+
+      <!--START SLIDER-->
+
+
+
+
+
+  <div class="container home-page-main-banner"
+  style="clear: both; margin-top: 0px !important; margin-bottom: 0px !important; padding-bottom: 0px !important; padding-top: 20px !important">
+
+    <div id="slider">
+      <figure>
+        <a href="/savings">
+          <img src="https://dam.generac.com/ImConvServlet/imconv/928524c050bc21bc99dbf7b72e596605af831a0b/original"
+            alt>
+        </a>
+        <a href="/savings/sale/sale-field-brush-mowers">
+          <img src="https://dam.generac.com/ImConvServlet/imconv/640d8d8dd5782d7caa27eed7707a5243dac3b458/original"
+            alt>
+        </a>
+        <a href="/savings">
+          <img src="https://dam.generac.com/ImConvServlet/imconv/928524c050bc21bc99dbf7b72e596605af831a0b/original"
+            alt>
+        </a>
+        <a href="/savings/sale/sale-field-brush-mowers">
+          <img src="https://dam.generac.com/ImConvServlet/imconv/640d8d8dd5782d7caa27eed7707a5243dac3b458/original"
+            alt>
+        </a>
+        <a href="/savings">
+          <img src="https://dam.generac.com/ImConvServlet/imconv/928524c050bc21bc99dbf7b72e596605af831a0b/original"
+            alt>
+        </a>
+      </figure>
+    </div>
+    <div id="slider-mobile">
+      <figure>
+        <a href="/savings">
+          <img src="https://dam.generac.com/ImConvServlet/imconv/8355ce31fb9e809cfce1719c9caa3f15607c9992/original"
+            alt>
+        </a>
+        <a href="/savings/sale/sale-field-brush-mowers">
+          <img src="https://dam.generac.com/ImConvServlet/imconv/f0137ee93c07432d061d37d4eb55483e8ce7f048/original"
+            alt>
+        </a>
+        <a href="/savings">
+          <img src="https://dam.generac.com/ImConvServlet/imconv/8355ce31fb9e809cfce1719c9caa3f15607c9992/original"
+            alt>
+        </a>
+        <a href="/savings/sale/sale-field-brush-mowers">
+          <img src="https://dam.generac.com/ImConvServlet/imconv/f0137ee93c07432d061d37d4eb55483e8ce7f048/original"
+            alt>
+        </a>
+        <a href="/savings">
+          <img src="https://dam.generac.com/ImConvServlet/imconv/8355ce31fb9e809cfce1719c9caa3f15607c9992/original"
+            alt>
+        </a>
+      </figure>
+    </div>
+
+ 
+</div>
+
+
+
+
+
+
+
+
+<!--END SLIDER-->
+
+
+
+
+
+
+
     <div class="container">
         <div class="row">
             <div class="my-5 section-header col-xs-12" style="margin-top: 60px !important">
@@ -77,17 +233,50 @@
                     <span>Featured Deals</span>
                 </h4>
             </div>
+             <div class="col-xs-12 col-md-3">
+                <a href="/power-equipment/chippers">
+                    <img alt="Shop Chippers"
+                        src="https://dam.generac.com/ImConvServlet/imconv/a92c3d6919f8709a813f0ee11a4cb58546ffa516/original"
+                        loading="lazy" style="width: 100%; height: auto;" width="671" height="515">
+                    <div class="category-product-title"
+                        style="/* display:none; */text-align: center;margin-top: 0px;margin-bottom: 10px;font-weight: normal;padding: 10px; font-size: 16px; ">
+                        <!--  <strong>PRO XL34T Wood Splitter
+                    </strong><br>--> Clean up mountains of yard waste and turn branches up to 5" in diameter into beneficial mulch with a DR® Chipper Shredder. 
+
+                        <br>
+                        <span style="color: #b44127; font-weight:bold;">STARTING AT $769.99
+                        </span>
+                    </div>
+                </a>
+            </div>
+  <div class="col-xs-12 col-md-3">
+                <a href="/power-equipment/burncage">
+                    <img alt="Shop Burncage"
+                        src="https://dam.generac.com/ImConvServlet/imconv/e76ab9e9eb9728a9c966853333700e4a61e02baa/original"
+                        loading="lazy" style="width: 100%; height: auto;" width="671" height="515">
+                    <div class="category-product-title"
+                        style="/* display:none; */text-align: center;margin-top: 0px;margin-bottom: 10px;font-weight:normal;padding: 10px; font-size: 16px; ">
+                        <!-- <strong>PRO MAX60T Field & Brush Mower
+                        </strong><br>--> DR BurnCage maximizes airflow to light faster and burn hotter and cleaner than any burn barrel. Available in 3 sizes.
+
+                        <br>
+                        <span style="color: #b44127; font-weight:bold;">SAVE UP TO $319.99
+                        </span>
+                    </div>
+                </a>
+            </div>
             <div class="col-xs-12 col-md-3">
                 <a href="/power-equipment/field-brush-mowers">
                     <img alt="Shop Field and Brush Mowers"
-                        src="https://dam.generac.com/ImConvServlet/imconv/6800a859d36be1ee7122fdb147f834fa44e08184/original"
+                        src="https://dam.generac.com/ImConvServlet/imconv/cae0a42faa88c67cfa1389b4faa2e418a8a516de/original"
                         loading="lazy" style="width: 100%; height: auto;" width="671" height="515">
                     <div class="category-product-title"
                         style="/* display:none; */text-align: center;margin-top: 0px;margin-bottom: 10px;font-weight: normal;padding: 10px; font-size: 16px; ">
                         <!-- <strong>PRO XL800 Powerwagon
-                        </strong><br>--> Keep unruly fields mowed all season long with a powerful DR Field & Brush Mower.
+                        </strong><br>--> Reclaim overgrown fields with a powerful, American made DR Field & Brush Mower!
+
                         <br>
-                        <span style="color: #b44127; font-weight:bold;">SAVE UP TO $1,500
+                        <span style="color: #b44127; font-weight:bold;">STARTING AT $1,899.99
                         </span>
                     </div>
                 </a>
@@ -95,48 +284,21 @@
             <div class="col-xs-12 col-md-3">
                 <a href="/power-equipment/lawn-mowers">
                     <img alt="Shop Mowers"
-                        src="https://dam.generac.com/ImConvServlet/imconv/6f8155b0376427ed525603ac5f4b0479222ce8dc/original"
+                        src="https://dam.generac.com/ImConvServlet/imconv/b6088b2635ec45222b5f880b60498aac9372496a/original"
                         loading="lazy" style="width: 100%; height: auto;" width="671" height="515">
                     <div class="category-product-title"
                         style="/* display:none; */text-align: center;margin-top: 0px;margin-bottom: 10px;font-weight: normal;padding: 10px; font-size: 16px; ">
                         <!--  <strong>XD36 Commercial Field & Brush Mower
-                        </strong><br>--> Mow 5+ acres without the hassle of gas!
+                        </strong><br>--> Take back your weekend and enjoy a professional level cut with the DR PRO MAX30.
+
                         <br>
-                        <span style="color: #b44127; font-weight:bold;">SAVE UP TO $7,400
+                        <span style="color: #b44127; font-weight:bold;">STARTING AT 1,399.99
                         </span>
                     </div>
                 </a>
             </div>
-            <div class="col-xs-12 col-md-3">
-                <a href="/power-equipment/trimmer-mowers">
-                    <img alt="Shop Trimmers"
-                        src="https://dam.generac.com/ImConvServlet/imconv/9f13ffd8b8381960bfcaaebc412893648d333959/original"
-                        loading="lazy" style="width: 100%; height: auto;" width="671" height="515">
-                    <div class="category-product-title"
-                        style="/* display:none; */text-align: center;margin-top: 0px;margin-bottom: 10px;font-weight:normal;padding: 10px; font-size: 16px; ">
-                        <!-- <strong>PRO MAX60T Field & Brush Mower
-                        </strong><br>--> Trim and mow everywhere with a versatile Trimmer Mower.
-                        <br>
-                        <span style="color: #b44127; font-weight:bold;">SAVE UP TO $400
-                        </span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-xs-12 col-md-3">
-                <a href="/power-equipment/chippers">
-                    <img alt="Shop Chippers"
-                        src="https://dam.generac.com/ImConvServlet/imconv/408d1fb3b60f5aee11dfd8fd1addb29368591392/original"
-                        loading="lazy" style="width: 100%; height: auto;" width="671" height="515">
-                    <div class="category-product-title"
-                        style="/* display:none; */text-align: center;margin-top: 0px;margin-bottom: 10px;font-weight: normal;padding: 10px; font-size: 16px; ">
-                        <!--  <strong>PRO XL34T Wood Splitter
-                    </strong><br>--> Turn your ugly brush piles into beneficial mulch with a Chipper or Chipper Shredder.
-                        <br>
-                        <span style="color: #b44127; font-weight:bold;">SAVE UP TO $600
-                        </span>
-                    </div>
-                </a>
-            </div>
+          
+           
         </div>
     </div>
     <!-- END Featured Categories -->
@@ -213,28 +375,29 @@
                 </h4>
             </div>
             <div class="col-xs-12 col-md-6" style="margin-bottom: 20px">
-                <a href="/p/LE25190DMN">
-                    <img alt="Shop Edgers"
-                        src="https://dam.generac.com/ImConvServlet/imconv/123d86d8ae7b1b24ebb1b7dfeb8f4446abc1664b/original"
+                <a href="/p/TR47010DEN">
+                    <img alt="Shop Trimmers"
+                        src="https://dam.generac.com/ImConvServlet/imconv/eae8f00fd0b1fa17b8696ce325b98102bbf6abfe/original"
                         loading="lazy" style="width: 100%; height: auto;" width="1000" height="397">
                     <div class="category-product-title"
                         style="/* display:none; */text-align: center;margin-top: 0px;margin-bottom: 10px;padding: 15px;font-size: 16px; ">
-                        <!--<strong>PREMIER 320</strong><br>-->Give your lawn a professional edge and save $70 on a PRO XL Edger.
-                        <!--<br><span style="color: #b44127; font-weight:bold;">Starting at $799.99
-                        </span>-->
+                        <!--<strong>PREMIER 320</strong><br>-->The PRO XLSP Trimmer Mower gives you the versatility to trim and mow everywhere with the convienence of self-propulsion and electric start. 
+
+                        <br><span style="color: #b44127; font-weight:bold;">ON SALE NOW $1,099.99
+                        </span>
                     </div>
                 </a>
             </div>
             <div class="col-xs-12 col-md-6">
                 <a href="/p/WL31004DEN">
                     <img alt="Shop Pilot Leaf Vacuum"
-                        src="https://dam.generac.com/ImConvServlet/imconv/a6cde136eb0b5a1d8924d529b36e252835207496/original"
+                        src="https://dam.generac.com/ImConvServlet/imconv/b958b2c0a3ddf20a480565e760bd6b4e8969baa0/original"
                         loading="lazy" style="width: 100%; height: auto;" width="1000" height="397">
                     <div class="category-product-title"
                         style="/* display:none; */text-align: center;margin-top: 0px;margin-bottom: 10px;padding: 15px;font-size: 16px; ">
-                        <!--<strong>PILOT</strong><br>--> Clear away grass clippings, leaves, and more with the convienence of direct bagging with a PILOT XTSP Leaf and Lawn Vacuum.
-                        <!-- <br><span style="color: #b44127; font-weight:bold;">Starting at $349.99
-                    </span>-->
+                        <!--<strong>PILOT</strong><br>--> The PILOT XTSP Leaf and Lawn Vacuum clears away grass clippings and more with the convienence of direct bagging. 
+                         <br><span style="color: #b44127; font-weight:bold;">ON SALE NOW $1,499.99
+                    </span>
                     </div>
                 </a>
             </div>
