@@ -1,66 +1,64 @@
 <style>
 .clp-banner {
-  position: relative;
-  width: 100%;
-  height: 290px; /* Match original banner height */
-  background-image: url('https://dam.generac.com/ImConvServlet/imconv/a1e92def9c657b852e1319ec76e91e66c403f217/original');
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 215px;
+    background-image: url('https://dam.generac.com/ImConvServlet/imconv/298130097cb44258ee380f8d3f833821501f6209/original');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
 }
 
-/* Gradient overlay fading left */
 .clp-banner::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    to left, 
-    rgba(0, 0, 0, 0.6),   /* right side: light transparent black */
-    rgba(0, 0, 0, 0.0)    /* left side: slightly darker */
-  );
-  z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+    z-index: 1;
 }
 
 .clp-banner-text {
-  position: absolute;
-  top: 50%;
-  right: 5%;
-  transform: translateY(-50%);
-  text-align: right;
-  color: white;
-  z-index: 2; /* keep text above overlay */
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    text-align: right;
+    color: white;
+    z-index: 2;
 }
 
 .clp-banner-text h1 {
-  font-size: 6rem;
-  font-weight: bold;
-  margin: 0;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-  line-height: 0.9;
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 0;
+    line-height: 0.9;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-.clp-banner-text p {
-  font-size: 2rem;
-  margin: 0;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+.clp-banner-text h2 {
+    font-size: 1.6rem;
+    margin: 0 !important;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-weight: 900;
+    padding: 0 !important;
+    line-height: 1.3em !important;
+    text-transform: uppercase;
 }
 
-/* Hide banner on mobile */
 @media (max-width: 767px) {
-  .clp-banner {
-    display: none;
-  }
+    .clp-banner {
+        display: none;
+    }
 }
-
 </style>
 
 <div class="clp-banner">
-  <div class="clp-banner-text">
-    <h1>BUILT<br>TO LAST</h1>
-    <p>ENGINEERED FOR PERFORMANCE</p>
-  </div>
+    <div class="clp-banner-text">
+        <h1>BUILT TO LAST</h1>
+        <h2>DR<sup style="font-size: .6em;font-weight: lighter;">&reg;</sup> Field & Brush Mowers</h2>
+    </div>
 </div>
