@@ -1,0 +1,298 @@
+<div class="static-content-container" style="width:85%; margin: auto;">
+
+
+<style>
+.static-content-container {
+  max-width: 1400px;
+}
+
+/* Header */
+.static-page-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #6b7280;
+  margin-bottom: 5px;
+}
+
+.static-content-container h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.static-content-container p {
+  max-width: 100%;
+  color: #4b5563;
+}
+
+/* Product Support Banner */
+
+.product-support-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #f1c1b7;
+  background: #faf6f5;
+  border-radius: 12px;
+  padding: 20px 25px;
+  margin: 30px 0;
+  transition: 0.2s ease;
+  color: #374151;
+  gap: 15px; /* helps spacing on small screens */
+}
+
+
+.product-support-banner:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-decoration: none;
+}
+
+.ps-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.ps-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #f3e8e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; /* ✅ FIX */
+}
+
+
+.ps-icon i {
+  color: #e3624d;
+  font-size: 20px;
+}
+
+.ps-text strong {
+  display: block;
+  font-weight: 600;
+  color: #374151;
+}
+
+.ps-text span {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+
+.ps-link {
+  color: #e3624d;
+  font-weight: 600;
+  white-space: nowrap; /* ✅ FIX */
+  flex-shrink: 0;       /* ✅ FIX */
+}
+
+
+@media (max-width: 576px) {
+  .product-support-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ps-link {
+    margin-top: 10px;
+  }
+}
+
+/* Helper row */
+.resource-top-row {
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+.resource-top-row a {
+  color: #e3624d;
+  font-weight: 500;
+}
+
+/* Cards */
+a.tile-btn {
+  display: block;
+  text-align: center;
+  padding: 30px 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fafafa;
+  color: #374151;
+  margin-bottom: 20px;
+  transition: all 0.2s ease;
+  height: 100%;
+}
+
+a.tile-btn:hover {
+  border-color: #e3624d;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  text-decoration: none;
+}
+
+.tile-btn-icon-wrapper {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tile-btn-icon {
+  font-size: 22px;
+  color: #e3624d;
+}
+
+.tile-btn-title {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.tile-btn-desc {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.resource-link {
+  color: #e3624d !important; 
+  text-decoration: none; 
+}
+.resource-link:hover {
+  opacity: 0.8 !important; 
+  text-decoration: none; 
+}
+
+</style>
+
+<h3 class="static-page-title">Customer Support</h3>
+<h1>Shopping Resources</h1>
+
+<p>
+Explore our customer resources: find product manuals, troubleshooting guides, dealer locations, warranty information, and current offers to help you buy, maintain, and service your equipment.
+For direct assistance, connect with our <a class="resource-link" href="/pages/content/customer-support/contact-us">support team</a> or call 
+<a style="color:inherit; text-decoration:none; cursor: text;" href="tel:18006876575">1-800-687-6575</a>.
+</p>
+
+<!-- Product Support Banner -->
+<a href="/pages/content/product-support" class="product-support-banner">
+  <div class="ps-left">
+    <div class="ps-icon">
+      <i class="fas fa-headset"></i>
+    </div>
+    <div class="ps-text">
+      <strong>Product Support</strong>
+      <span>Get manuals, troubleshooting & parts help</span>
+    </div>
+  </div>
+  <div class="ps-link">Get support →</div>
+</a>
+
+<div class="resource-top-row">
+  Need immediate help?
+  <a class="resource-link"href="/pages/content/customer-support/contact-us">Contact Us</a>
+</div>
+
+<!-- GRID -->
+<div class="row">
+
+  <div class="col-sm-12 col-md-6 col-lg-4">
+    <a href="/pages/content/customer-support/shopping-resources/ordering" class="tile-btn">
+      <div class="tile-btn-icon-wrapper">
+        <i class="ss-icon tile-btn-icon">cart</i>
+      </div>
+      <span class="tile-btn-title">Ordering Information</span>
+      <span class="tile-btn-desc">Ordering methods and payment information.</span>
+    </a>
+  </div>
+
+  <div class="col-sm-12 col-md-6 col-lg-4">
+    <a href="/dealer-locator" class="tile-btn">
+      <div class="tile-btn-icon-wrapper">
+        <i class="ss-icon tile-btn-icon">location</i>
+      </div>
+      <span class="tile-btn-title">Sales & Service Locator</span>
+      <span class="tile-btn-desc">Find authorized dealers & service centers.</span>
+    </a>
+  </div>
+
+  <div class="col-sm-12 col-md-6 col-lg-4">
+    <a href="/pages/content/customer-support/shopping-resources/shipping" class="tile-btn">
+      <div class="tile-btn-icon-wrapper">
+        <i class="ss-icon tile-btn-icon">send</i>
+      </div>
+      <span class="tile-btn-title">Shipping Information</span>
+      <span class="tile-btn-desc">Delivery times, tracking methods, and shipping rates.</span>
+    </a>
+  </div>
+
+  <div class="col-sm-12 col-md-6 col-lg-4">
+    <a href="/pages/content/customer-support/shopping-resources/warranty" class="tile-btn">
+      <div class="tile-btn-icon-wrapper">
+        <i class="ss-icon tile-btn-icon">bookmark</i>
+      </div>
+      <span class="tile-btn-title">Warranty Information</span>
+      <span class="tile-btn-desc">Extended protection plans and warranty repair information.</span>
+    </a>
+  </div>
+
+  <div class="col-sm-12 col-md-6 col-lg-4">
+    <a href="/pages/content/customer-support/shopping-resources/easy-financing" class="tile-btn">
+      <div class="tile-btn-icon-wrapper">
+        <i class="ss-icon tile-btn-icon">creditcard</i>
+      </div>
+      <span class="tile-btn-title">Easy Financing</span>
+      <span class="tile-btn-desc">Flexible payment options and credit application details.</span>
+    </a>
+  </div>
+
+  <div class="col-sm-12 col-md-6 col-lg-4">
+    <a href="/pages/email/subscribe" class="tile-btn">
+      <div class="tile-btn-icon-wrapper">
+        <i class="ss-icon tile-btn-icon">email</i>
+      </div>
+      <span class="tile-btn-title">Email Specials</span>
+      <span class="tile-btn-desc">Sign up for exclusive email offers.</span>
+    </a>
+  </div>
+
+  <div class="col-sm-12 col-md-6 col-lg-4">
+    <a href="/pages/content/customer-support/shopping-resources/free-catalog-and-dvd" class="tile-btn">
+      <div class="tile-btn-icon-wrapper">
+        <i class="ss-icon tile-btn-icon">openbook</i>
+      </div>
+      <span class="tile-btn-title">Free Catalog</span>
+      <span class="tile-btn-desc">Request our latest print catalog delivered to your home.</span>
+    </a>
+  </div>
+
+  <div class="col-sm-12 col-md-6 col-lg-4">
+    <a href="/pages/content/customer-support/shopping-resources/returns" class="tile-btn">
+      <div class="tile-btn-icon-wrapper">
+        <i class="ss-icon tile-btn-icon">sync</i>
+      </div>
+      <span class="tile-btn-title">Returns / Exchanges</span>
+      <span class="tile-btn-desc">Easy returns process and exchange policy guidelines.</span>
+    </a>
+  </div>
+
+  <div class="col-sm-12 col-md-6 col-lg-4">
+    <a href="/pages/content/customer-support/shopping-resources/promotions" class="tile-btn">
+      <div class="tile-btn-icon-wrapper">
+        <i class="ss-icon tile-btn-icon">tag</i>
+      </div>
+      <span class="tile-btn-title">Promotions</span>
+      <span class="tile-btn-desc">Sale dates, price matching, and financing options.</span>
+    </a>
+  </div>
+
+</div>
+
+</div>
