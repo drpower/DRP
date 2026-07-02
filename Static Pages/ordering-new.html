@@ -1,0 +1,272 @@
+<div class="static-content-container fleft">
+
+<style>
+.static-content-container {
+  max-width: 1400px;
+}
+
+/* Header */
+.static-page-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #6b7280;
+  margin-bottom: 5px;
+}
+
+.static-content-container h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+
+.static-content-container p {
+  color: #4b5563;
+}
+
+/* Links */
+.resource-link {
+  color: #e3624d !important;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.resource-link:hover {
+  opacity: 0.8 !important;
+}
+
+.resource-content a,
+#overview a {
+  color: #e3624d;
+  text-decoration: none;
+}
+
+.resource-content a:hover,
+#overview a:hover {
+  opacity: 0.8;
+}
+
+/* Layout */
+.resources-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Softer cards */
+.resource-card {
+  flex: 1 1 calc(50% - 20px);
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #f1f1f1;
+  border-radius: 8px;
+}
+
+/* Single-line alignment */
+.resource-card.single-line {
+  align-items: center;
+}
+
+.resource-card.single-line p {
+  margin: 0;
+}
+
+/* Icon */
+.resource-icon {
+  width: 55px;
+  height: 55px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resource-icon i {
+  font-size: 22px;
+  color: #e3624d;
+}
+
+/* Content */
+.resource-content strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.resource-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.mail-address {
+  margin: 10px 0;
+  padding: 12px 14px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1f2937;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .resource-card {
+    flex: 1 1 100%;
+  }
+}
+</style>
+
+<h3 class="static-page-title">Customer Support</h3>
+
+<div id="overview">
+
+<h1>Ordering Options</h1>
+
+<div class="resources-row">
+
+  <!-- Online -->
+  <div class="resource-card">
+    <div class="resource-icon"><i class="ss-icon">cart</i></div>
+    <div class="resource-content">
+      <strong>Online Orders</strong>
+      <p>
+        You may place an order online using our secure checkout. If you need help during the checkout process, 
+        please call us toll free at 1-800-687-6575 or 
+        <a class="resource-link" href="/pages/content/customer-support/contact/">email</a> 
+        us to speak with one of our representatives during our business hours.
+      </p>
+    </div>
+  </div>
+
+  <!-- Phone -->
+  <div class="resource-card">
+    <div class="resource-icon"><i class="ss-icon">phone</i></div>
+    <div class="resource-content">
+      <strong>Phone Orders</strong>
+      <p>
+        To order by phone, please call us TOLL-FREE at 
+        <a style="color:inherit; text-decoration:none; cursor:text;" href="tel:18006876575">1-800-687-6575</a>.
+      </p>
+    </div>
+  </div>
+
+  <!-- Mail -->
+  <div class="resource-card">
+    <div class="resource-icon"><i class="ss-icon">mail</i></div>
+    <div class="resource-content">
+      <strong>Mail Orders</strong>
+  <p>
+If you would like to pay by check or money order, please call to place your order. 
+<p style="margin-top:8px;">Mail check to:</p>
+</p>
+
+<div class="mail-address">
+  DR Power Equipment<br>
+  800 Hinesburg Road<br>
+  South Burlington, VT 05403
+</div>
+
+
+<p style="margin-top:10px; color:#6b7280; font-size:13px !important;">
+  Note that your order will not ship until your payment is received.
+</p>
+
+
+    </div>
+  </div>
+
+  <!-- International + Puerto Rico Combined -->
+  <div class="resource-card">
+    <div class="resource-icon"><i class="ss-icon">globe</i></div>
+    <div class="resource-content">
+      <strong>International and Puerto Rico Orders</strong>
+      <p>
+        Should you have questions about making an International Order, please call 1-802-870-1437, or see our separate 
+        <a class="resource-link" href="https://www.drpowerinternational.com/">International Sales &amp; Distributors page</a>. 
+        (Payment for International orders must be in U.S. dollars, drawn from a U.S. bank.)
+      </p>
+      <p style="margin-top:8px;">
+        Additional shipping charges will be applied to shipments bound for Puerto Rico. Once you place your order online, 
+        we will contact you with a shipping quote. You may contact us by 
+        <a class="resource-link" href="/pages/content/customer-support/contact/">email</a> 
+        or telephone at 1-800-687-6575.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<h1>Credit Card Payments</h1>
+
+<div class="resource-card">
+  <div class="resource-icon"><i class="ss-icon">creditcard</i></div>
+  <div class="resource-content">
+    <p>
+      We accept all major credit cards, including VISA, Mastercard, American Express, and Discover. 
+      We also offer special financing for qualifying customers. More information can be found on the financing section 
+      of our website 
+      <a class="resource-link" href="/pages/content/customer-support/shopping-resources/easy-financing">here</a>.
+    </p>
+  </div>
+</div>
+
+<h1>Checking Order Status</h1>
+
+<div class="resources-row">
+
+  <div class="resource-card">
+    <div class="resource-icon"><i class="ss-icon">monitor</i></div>
+    <div class="resource-content">
+      <strong>Online</strong>
+      <p>
+        After you place an online order, you will receive an email containing your order confirmation number and order total. 
+        If you have created an account on our website, you may sign in and check your order status under the "Order History" link.
+      </p>
+    </div>
+  </div>
+
+  <div class="resource-card">
+    <div class="resource-icon"><i class="ss-icon">phone</i></div>
+    <div class="resource-content">
+      <strong>By Phone</strong>
+      <p>
+        Call us TOLL-FREE at 
+        <a style="color:inherit; text-decoration:none; cursor:text;" href="tel:18006876575">1-800-687-6575</a> 
+        (U.S. and Canada) to check the status of your order. Please have your order confirmation number ready when you call. 
+        For international orders, call 1-802-870-1437.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<h1>Related Resources</h1>
+
+<div class="resource-card single-line">
+  <div class="resource-icon">
+    <i class="ss-icon">sync</i>
+  </div>
+  <div class="resource-content">
+    <p>
+      <a class="resource-link" href="/pages/content/customer-support/shopping-resources/returns">
+        Returns and Exchanges
+      </a>
+    </p>
+  </div>
+</div>
+
+</div>
+</div>
