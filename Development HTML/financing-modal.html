@@ -1,0 +1,339 @@
+<style>
+.static-content-container {
+  max-width: 1400px;
+}
+
+.static-page-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #6b7280;
+  margin-bottom: 5px;
+}
+
+.static-content-container h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+
+.section-heading {
+  font-size: 20px;
+  font-weight: 600;
+  color: #374151;
+  margin: 40px 0 20px;
+}
+
+.static-content-container p {
+  color: #4b5563;
+}
+
+.resources-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.resource-card {
+  flex: 1 1 calc(50% - 20px);
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #f1f1f1;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.resource-card.full-width {
+  flex: 1 1 100%;
+}
+
+.resource-header {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.resource-icon {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+
+  background: #f9fafb;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resource-icon i {
+  font-size: 20px;
+  color: #e3624d;
+}
+
+.resource-content {
+  flex: 1;
+}
+
+.resource-content strong {
+  font-weight: 600;
+}
+
+.resource-content p {
+  margin: 0 0 12px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.financing-offer .btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #b44127;
+  color: #fff !important;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.financing-offer .btn:hover {
+  opacity: .9;
+}
+
+.notice {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.notice p {
+  margin: 0 0 1rem 0;
+}
+
+.notice p:last-child {
+  margin-bottom: 0;
+}
+
+.financing-image {
+  width: 285px;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+
+.financing-title {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.financing-offer {
+  font-size: 24px;
+  font-weight: 700;
+  color: #b44127;
+  margin-bottom: 12px;
+}
+
+.financing-details-title {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+
+.notice {
+  margin-top: 10px;
+
+}
+.financing-offer-sub {
+    padding-bottom: 15px;
+  border-bottom: 1px solid #e5e7eb;
+}
+.notice p {
+  font-size: 14px !important;
+  line-height: 1.7 !important;
+  color: #6b7280 !important;
+}
+
+.financing-hero {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+
+@media (max-width: 768px) {
+  .resource-card {
+    flex: 1 1 100%;
+  }
+
+  .resource-header {
+    flex-direction: column;
+  }
+
+  .static-content-container img {
+    width: auto !important;
+    margin-bottom: 20px;
+}
+
+}
+
+@media (max-width: 767px) {
+  .resource-card .row {
+    display: block;
+  }
+
+  .resource-card .col-sm-4,
+  .resource-card .col-sm-8 {
+    width: 100% !important;
+    float: none !important;
+    clear: both !important;
+  }
+
+  .resource-card img {
+    display: block;
+    margin-bottom: 20px;
+    max-width: 200px !important;
+  }
+}
+
+
+</style>
+
+<div>
+    <div class="resource-card full-width">
+
+  <div class="row" style="width:100%;">
+
+    <div class="col-sm-4">
+      <img
+        src="https://dam.generac.com/ImConvServlet/imconv/5fdab613241942eed5c5a0568b936b873ccfa644/original"
+        alt="Easy Financing with Synchrony"
+        class="pull-left" style="max-width: 400px !important;">
+         
+
+ 
+      
+    </div>
+
+    <div class="col-sm-8">
+ <div class="financing-offer">Apply for Easy Financing</div> 
+    <p> When you click the "Continue" button below, you will begin the application process with Synchrony, our
+                credit partner company. </p>
+            <ol>
+                <li>Fill out the form per the instructions.</li>
+                <li> If your credit application is successful, you will receive an account number. Jot down the number
+                    if you wish to use it prior to receiving your card in the mail. (Note that, for security reasons,
+                    the number will only appear on your screen for a few moments.) </li>
+                <li>You new card will arrive in the mail in approximately 7-10 days.</li>
+            </ol>
+            <h2 style="color: #b44127">We look forward to welcoming you as a DR<sup>&reg;</sup> customer!</h2>
+            <p>If you need help, please call us at <strong>1-800-687-6575</strong>.</p> <a
+                href="https://etail.mysynchrony.com/eapply/eapply.action?uniqueId=B0DF25620F44100FFF82556029EA8BA4A1CED0C49222AE0A&amp;client=DRPower"
+                target="_blank" class="btn" style="background: #b44127 none repeat scroll 0 0; color: #ffffff">Apply Now
+                <i class="ss-icon" style="font-size: 11px">navigateright</i></a>
+
+    
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+  <div class="section-heading">
+  Financing Options
+</div>
+
+<div class="resource-card full-width">
+  <div class="resource-header">
+    <div class="resource-content">
+
+      <div class="financing-offer">
+        0% Interest for 12 Months<sup>*</sup>
+      </div>
+
+      <p class="financing-offer-sub">
+        On Purchases of $299.00-$999.99 of DR Power branded products and services made with your DR Power (a Generac company) Synchrony credit card between 9.1.2026 and 12.31.2026. Equal Monthly Payments Required for 12 months.
+      </p>
+
+      <div class="notice">
+        <p>
+          *Offer applies only to single-receipt qualifying purchases. A promo fee does not apply to this offer. No interest will be charged and equal monthly payments are required on amount financed until it is paid in full. The payments equal the initial total amount financed divided by the number of months in the promo period, rounded up to the next whole dollar. These payments may be higher than the payments that would be required if this purchase was a non-promo purchase. During the last month(s) of the promo period the required monthly payment may be reduced due to the prior months’ rounding.
+        </p>
+
+        <p>
+          Regular account terms apply to non-promo purchases. New Accounts as of 9.1.2026: Purchase APR is 34.99%. Penalty APR is 39.99%. Min Interest Charge $2. A $150 promo fee will be charged on equal payment no interest promotions and fixed payment reduced APR promotions of 18 months or more. Existing cardholders: see your credit card agreement terms. Subject to credit approval.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="resource-card full-width">
+  <div class="resource-header">
+    <div class="resource-content">
+
+      <div class="financing-offer">
+        0% Interest for 36 Months<sup>*</sup>
+      </div>
+
+      <p class="financing-offer-sub">
+        On Purchases of $3,000 or more of DR Power branded products and services made with your DR Power (a Generac company) Synchrony credit card between 9.1.2026 and 12.31.2026. Equal Monthly Payments Required for 36 months. A $150 promo fee will be included in required monthly payments.
+      </p>
+
+      <div class="notice">
+        <p>
+          *Offer applies only to single-receipt qualifying purchases. A $150 promo fee will be shown as a separate transaction on your billing statement and included in the balance subject to this promo. No interest will be charged on the amount financed (including related promo fee) and equal monthly payments are required on such balance until it is paid in full. The payments equal the amount financed (including related promo fee) divided by the number of months in the promo period, rounded up to the next cent. These payments may be higher than the payments that would be required if this purchase was a non-promo purchase. During the last month(s) of the promo period the required monthly payment may be reduced due to the prior months’ rounding.
+        </p>
+
+        <p>
+          Regular account terms apply to non-promo purchases. New Accounts as of 9.1.2026: Purchase APR is 34.99%. Penalty APR is 39.99%. Min Interest Charge $2. A $150 promo fee will be charged on equal payment no interest promotions and fixed payment reduced APR promotions of 18 months or more. Existing cardholders: see credit card agreement terms. Subject to credit approval.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="resource-card full-width">
+  <div class="resource-header">
+    <div class="resource-content">
+
+      <div class="financing-offer">
+        No Interest If Paid in Full Within 24 Months<sup>*</sup>
+      </div>
+
+      <p class="financing-offer-sub">
+        On purchases of $1,000-$2,999.99 of DR Power branded products and services made with your DR Power (a Generac company) Synchrony credit card between 9.1.2026 and 12.31.2026. Interest will be charged to your account from the purchase date if the promotional balance is not paid in full within 24 months. Minimum Monthly Payments Required.
+      </p>
+
+      <div class="notice">
+        <p>
+          *Qualifying purchase amount must be on one receipt. A promo fee does not apply to this offer. No interest will be charged on the amount financed if you pay it off, in full, within the promo period. If you do not, interest will be charged on the amount financed from the purchase date. The required minimum monthly payments may or may not pay off the amount financed before the end of promo period, depending on purchase amount, promo length and payment allocation.
+        </p>
+
+        <p>
+          Regular account terms apply to non-promo purchases and, after promo period ends, to the promo balance. New Accounts as of 9.1.2026: Purchase APR is 34.99%. Penalty APR 39.99%. Min Interest Charge $2. A $150 promo fee will be charged on equal payment no interest promotions and fixed payment reduced APR promotions of 18 months or more. Existing cardholders: See your credit card agreement terms. Subject to credit approval.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
