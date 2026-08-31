@@ -1,35 +1,48 @@
 <style>
-.static-content-container h3 {
+  .static-content-container h3 {
     margin-top: 20px !important;
-}
-.static-content-container ul, ol {
+  }
+
+  .static-content-container ul,
+  ol {
     margin-top: 0;
     margin-bottom: 30px;
-}
-.static-content-container li {
+  }
+
+  .static-content-container li {
     margin-left: 20px;
-}
-.alt-header-support {
+  }
+
+  .alt-header-support {
     font-size: 22px;
     font-weight: bold;
     padding: 0px;
-}
-#ui-id-1, #ui-id-2, #ui-id-3, #ui-id-4 {
+  }
+
+  #ui-id-1,
+  #ui-id-2,
+  #ui-id-3,
+  #ui-id-4 {
     margin-left: 0px;
-}
-shipping-image {
-}
-#overview p {
+  }
+
+  shipping-image {}
+
+  #overview p {
     margin-left: 30px;
-}
-.ui-widget-content {
+  }
+
+  .ui-widget-content {
     background-image: none;
-}
-.ui-state-hover, .ui-state-focus {
-    background: #a43117!important;
-    color: #fff!important;
-}
-.ui-accordion .ui-accordion-header {
+  }
+
+  .ui-state-hover,
+  .ui-state-focus {
+    background: #a43117 !important;
+    color: #fff !important;
+  }
+
+  .ui-accordion .ui-accordion-header {
     display: block;
     cursor: pointer;
     position: relative;
@@ -39,106 +52,133 @@ shipping-image {
     font-weight: bold;
     color: #fff;
     background-color: #b44127 !important;
-}
-.ui-accordion .ui-accordion-content {
+  }
+
+  .ui-accordion .ui-accordion-content {
     padding: 1em;
-}
-.ui-accordion .ss-icon {
+  }
+
+  .ui-accordion .ss-icon {
     font-size: 16px;
-}
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  }
+
+  .ui-state-default,
+  .ui-widget-content .ui-state-default,
+  .ui-widget-header .ui-state-default {
     text-align: left;
-}
+  }
 
-@media only screen and (max-width: 1024px) {
-.tdmobile {
-    display: none !important;
-}
-}
+  @media only screen and (max-width: 1024px) {
+    .tdmobile {
+      display: none !important;
+    }
+  }
 
-@media only screen and (min-width: 1025px) {
-.tdfull {
-    display: none !important;
-}
-#manuals td a {
-    float: right
-}
-#maintenance td:nth-child(n+2) {
-    text-align: center
-}
-#maintenance th:nth-child(n+2) {
-    text-align: center
-}
-}
+  @media only screen and (min-width: 1025px) {
+    .tdfull {
+      display: none !important;
+    }
 
-@media only screen and (min-width: 768px) {
-.template-table {
-    border: 0 none;
-    border-spacing: 0;
-    font-size: 14px;/*width: 100%;*/
-}
-.template-table th {
-    font-weight: bold;
-    padding: 10px;
-    text-align: center;
-}
-.template-table td {
-    padding: 10px;
-}
-}
+    #manuals td a {
+      float: right
+    }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-.static-content-container {
-    width: auto;
-    margin: 2%;
-}
-.container__full {
-    padding-left: 0px;
-    padding-right: 0px;
-}
-.container__full .row {
-    margin-left: 0px;
-    margin-right: 0px;
-}
-#ui-id-1, #ui-id-2, #ui-id-3, #ui-id-4 {
-    margin-left: 0px;
-}
-#overview p {
-    margin-left: 0px;
-}
-.template-table {
-    border: 0 none;
-    border-spacing: 0;
-    font-size: 10px;/*width: 100%;*/
-}
-.template-table th {
-    font-size: 10px;
-    ;
-    font-weight: bold;
-    padding: 5px;
-    text-align: center;
-}
-.template-table td {
-    padding: 5px;
-}
-.template-table td[rowspan] {
-    text-align: center;
-}
-.ui-accordion .ui-accordion-header {
-    padding: 20px !important;
-    font-size: 14px;
-}
-}
-/*Table borders and background colors*/
-.section_border {
+    #maintenance td:nth-child(n+2) {
+      text-align: center
+    }
+
+    #maintenance th:nth-child(n+2) {
+      text-align: center
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .template-table {
+      border: 0 none;
+      border-spacing: 0;
+      font-size: 14px;
+      /*width: 100%;*/
+    }
+
+    .template-table th {
+      font-weight: bold;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .template-table td {
+      padding: 10px;
+    }
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .static-content-container {
+      width: auto;
+      margin: 2%;
+    }
+
+    .container__full {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    .container__full .row {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    #ui-id-1,
+    #ui-id-2,
+    #ui-id-3,
+    #ui-id-4 {
+      margin-left: 0px;
+    }
+
+    #overview p {
+      margin-left: 0px;
+    }
+
+    .template-table {
+      border: 0 none;
+      border-spacing: 0;
+      font-size: 10px;
+      /*width: 100%;*/
+    }
+
+    .template-table th {
+      font-size: 10px;
+      ;
+      font-weight: bold;
+      padding: 5px;
+      text-align: center;
+    }
+
+    .template-table td {
+      padding: 5px;
+    }
+
+    .template-table td[rowspan] {
+      text-align: center;
+    }
+
+    .ui-accordion .ui-accordion-header {
+      padding: 20px !important;
+      font-size: 14px;
+    }
+  }
+
+  /*Table borders and background colors*/
+  .section_border {
     border-bottom: 1px solid #7d7d7d;
-}
-.section_white {
+  }
+
+  .section_white {
     background-color: #fff;
-}
-.section-shade {
+  }
+
+  .section-shade {
     background-color: #f3f3f3;
-}
+  }
 </style>
 <div class="static-content-container fleft">
   <h3 class="static-page-title">Product Support</h3>
@@ -146,133 +186,295 @@ shipping-image {
     <h1 class="media-heading">Legacy Machine Support</h1>
   </div>
   <!-- Start Main Accordion -->
-  <div class="ui-accordion ui-widget ui-helper-reset" id="accordion" role="tablist"> 
-    
+  <div class="ui-accordion ui-widget ui-helper-reset" id="accordion" role="tablist">
+
+    <!-- Start ZT5e Accordian-->
+
+    <h3 aria-controls="ui-id-2" aria-expanded="false" aria-selected="false"
+      class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+      id="ui-id-1" role="tab" tabindex="0"><span
+        class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>ZT5e E-Series Electric/Battery Zero-Turn Mower Support<span class="btn"
+        style="float: right;padding: 0px; display: inline-block; background: none;"><i
+          class="ss-icon">navigatedown</i></span></h3>
+    <div aria-hidden="true" aria-labelledby="ui-id-1"
+      class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" role="tabpanel"
+      style="display: none;">
+      <div class="media clearfix">
+        <div class=""><img alt="DR ZT5e E-Series Electric/Battery Zero-Turn Mower Support"
+            src="https://dam.generac.com/ImConvServlet/imconv/b96805a9e9f575b138b19a2c18fc736a34c1ad55/original"></div>
+        <div class="media-body">
+          <h1 class="media-heading">DR<sup style="font-size:20px;">&reg;</sup> ZT5e E-Series Electric/Battery Zero-Turn Mower</h1>
+        </div>
+      </div>
+      <br>
+      <h2>Ordering Parts</h2>
+      <div id="zt5e-parts">
+        <p>Order parts online at the links below. For assistance please call 1-800-687-6575</p>
+        <a class="btn mtb1"
+          href="/pages/content/customer-support/product-support/ordering-parts?aribrand=chp&arian=lawn%20mowers">Find
+          Parts</a>
+      </div>
+      <br>
+      <hr>
+      <h2>Owner's Manuals, Parts Lists &amp; Schematics</h2>
+      <div class="border-bottom border-gray" id="manuals">
+        <p>If you have any questions or are unsure of your model, please contact one of our experienced Technical
+          Support Specialists via <a href="tel:+18006876575" rel="nofollow"
+            style="color: #000; text-decoration: none;">phone</a> or <a
+            href="/pages/content/customer-support/contact/form">email</a>.</p>
+        
+        <table class="table">
+          <tbody>
+            <tr>
+              <td><span class="tdmobile">48" & 60" ZT5e Zero-Turn Mower (2022-2026)</span><a class="tdfull"
+                  href="https://dam.generac.com/ImConvServlet/imconv/a94eb3898f9b2ff46c99e6139ac0da80b23934b7/original"
+                  target="_blank">48" & 60" ZT5e Zero-Turn Mower (2022-2026)</a></td>
+              <td class="tdmobile"><a
+                  href="https://dam.generac.com/ImConvServlet/imconv/a94eb3898f9b2ff46c99e6139ac0da80b23934b7/original"
+                  target="_blank">Owner's Manual</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- End ZT5e Accordian-->
+
     <!-- Start Neuton Accordian-->
-    
-    <h3 aria-controls="ui-id-2" aria-expanded="false" aria-selected="false" class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" id="ui-id-1" role="tab" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Neuton Power Products Support<span class="btn" style="float: right;padding: 0px; display: inline-block; background: none;"><i class="ss-icon">navigatedown</i></span></h3>
-    <div aria-hidden="true" aria-labelledby="ui-id-1" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" role="tabpanel" style="display: none;">
+
+    <h3 aria-controls="ui-id-2" aria-expanded="false" aria-selected="false"
+      class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+      id="ui-id-1" role="tab" tabindex="0"><span
+        class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Neuton Power Products Support<span
+        class="btn" style="float: right;padding: 0px; display: inline-block; background: none;"><i
+          class="ss-icon">navigatedown</i></span></h3>
+    <div aria-hidden="true" aria-labelledby="ui-id-1"
+      class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" role="tabpanel"
+      style="display: none;">
       <div class="static-content-container fleft">
         <div class="grid">
           <div class="row">
             <div class="col-12">
               <h1>Owner's Manuals</h1>
-              <p>If your computer requires Adobe Reader&reg; to view these manuals, <a href="http://www.adobe.com/products/acrobat/readstep2.html" rel="nofollow" target="_blank">download it here</a>.</p>
+              <p>If your computer requires Adobe Reader&reg; to view these manuals, <a
+                  href="http://www.adobe.com/products/acrobat/readstep2.html" rel="nofollow" target="_blank">download it
+                  here</a>.</p>
               <h4>Neuton CE6 Manuals</h4>
-              <div class="media"><img src="https://dam.generac.com/ImConvServlet/imconv/94994b21b283ee05f8b8cdd3f810adc326995b8a/original" alt="" class="floatLeft" />
+              <div class="media"><img
+                  src="https://dam.generac.com/ImConvServlet/imconv/94994b21b283ee05f8b8cdd3f810adc326995b8a/original"
+                  alt="" class="floatLeft" />
                 <div class="media-body">
                   <ul>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/17f9a9c2d06c165d9e8235829378339ec91f0f6c/original" target="_blank">CE6.4 Manual</a></li>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/bebb044bba80489c49cc6380c211f5b355b143bd/original" target="_blank">CE6.3 Manual</a></li>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/652edd91e2f68d51042102fa4bfc6100976c4f0f/original" target="_blank">CE6.2 Manual</a></li>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/73ed609a9401f422c4f521f1de914e4e1f243231/original" target="_blank">Charging your Neuton CE6</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/17f9a9c2d06c165d9e8235829378339ec91f0f6c/original"
+                        target="_blank">CE6.4 Manual</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/bebb044bba80489c49cc6380c211f5b355b143bd/original"
+                        target="_blank">CE6.3 Manual</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/652edd91e2f68d51042102fa4bfc6100976c4f0f/original"
+                        target="_blank">CE6.2 Manual</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/73ed609a9401f422c4f521f1de914e4e1f243231/original"
+                        target="_blank">Charging your Neuton CE6</a></li>
                   </ul>
                 </div>
               </div>
               <h4>Neuton CE5 Manuals</h4>
-              <div class="media"><img src="https://dam.generac.com/ImConvServlet/imconv/d937ff0a625bf64bb297152db5a301c63c3418a9/original" alt="" class="floatLeft" />
+              <div class="media"><img
+                  src="https://dam.generac.com/ImConvServlet/imconv/d937ff0a625bf64bb297152db5a301c63c3418a9/original"
+                  alt="" class="floatLeft" />
                 <div class="media-body">
                   <ul>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/4486fd95f2c1b65d17be9d3697d6d93045070a4c/original" target="_blank">CE5.4 Manual</a></li>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/09c0df4d1d50fb5a4868c1b3e4a66c8b48e3c59c/original" target="_blank">CE5.3 Manual</a></li>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/e1185ee4770364947e58b9217d9dc16af84f8b02/original" target="_blank">CE5.2 Manual</a></li>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/575817e70e4eabdf7a84b0b8f6d7741dbf78fc4c/original" target="_blank">Charging your Neuton CE5</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/4486fd95f2c1b65d17be9d3697d6d93045070a4c/original"
+                        target="_blank">CE5.4 Manual</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/09c0df4d1d50fb5a4868c1b3e4a66c8b48e3c59c/original"
+                        target="_blank">CE5.3 Manual</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/e1185ee4770364947e58b9217d9dc16af84f8b02/original"
+                        target="_blank">CE5.2 Manual</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/575817e70e4eabdf7a84b0b8f6d7741dbf78fc4c/original"
+                        target="_blank">Charging your Neuton CE5</a></li>
                   </ul>
                 </div>
               </div>
               <h4>Attachments</h4>
-              <div class="media"><img src="https://dam.generac.com/ImConvServlet/imconv/839bfee0fedcdafda4f651ea572fbe69134370ee/original" alt="" class="floatLeft" />
+              <div class="media"><img
+                  src="https://dam.generac.com/ImConvServlet/imconv/839bfee0fedcdafda4f651ea572fbe69134370ee/original"
+                  alt="" class="floatLeft" />
                 <div class="media-body">
                   <ul>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/b18b26d880c09d126d14256e2ff67233660b9c93/original" target="_blank">Neuton Trimmer/Edger (for CE5 and CE6)</a></li>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/3f892a2bc432c882e9e0c3fbfe5406443f3b2a43/original" target="_blank">Neuton Striper/Roller (for CE6)</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/b18b26d880c09d126d14256e2ff67233660b9c93/original"
+                        target="_blank">Neuton Trimmer/Edger (for CE5 and CE6)</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/3f892a2bc432c882e9e0c3fbfe5406443f3b2a43/original"
+                        target="_blank">Neuton Striper/Roller (for CE6)</a></li>
                   </ul>
                 </div>
               </div>
               <h4>Lithium Hand Tools</h4>
-              <div class="media"><img src="https://dam.generac.com/ImConvServlet/imconv/6352a33e69f1754fb3d2c512dfbeb4c8dcf8b65a/original" alt="" class="floatLeft" />
+              <div class="media"><img
+                  src="https://dam.generac.com/ImConvServlet/imconv/6352a33e69f1754fb3d2c512dfbeb4c8dcf8b65a/original"
+                  alt="" class="floatLeft" />
                 <div class="media-body">
                   <ul>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/ed2864dc02d455cbe3ead86e5c8f815b811125ec/original" target="_blank">Lithium String Trimmer Manual</a></li>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/7c8494fbebbd11e2829b15335c2fd4b2c96910e0/original" target="_blank">Lithium Hedge Trimmer Manual</a></li>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/32bd4d9d510f5d95f27fd00c7b7dbfd85d594955/original" target="_blank">Lithium Blower Manual</a></li>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/50e5590b13aeb81bcacffdc24eddeb685e007e35/original" target="_blank">Lithium Chainsaw Manual</a></li>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/4dd10b34ccb734849d9ae1524218f2eebf40439b/original" target="_blank">Lithium Pole Saw Manual</a></li>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/8adbc6158c6e2cc92c4c780065fa9cae99a3e0b5/original" target="_blank">Charging Instructions for Lithium Hands Tools</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/ed2864dc02d455cbe3ead86e5c8f815b811125ec/original"
+                        target="_blank">Lithium String Trimmer Manual</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/7c8494fbebbd11e2829b15335c2fd4b2c96910e0/original"
+                        target="_blank">Lithium Hedge Trimmer Manual</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/32bd4d9d510f5d95f27fd00c7b7dbfd85d594955/original"
+                        target="_blank">Lithium Blower Manual</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/50e5590b13aeb81bcacffdc24eddeb685e007e35/original"
+                        target="_blank">Lithium Chainsaw Manual</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/4dd10b34ccb734849d9ae1524218f2eebf40439b/original"
+                        target="_blank">Lithium Pole Saw Manual</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/8adbc6158c6e2cc92c4c780065fa9cae99a3e0b5/original"
+                        target="_blank">Charging Instructions for Lithium Hands Tools</a></li>
                   </ul>
                 </div>
               </div>
               <h4>Corded Hand Tools</h4>
-              <div class="media"><img src="https://dam.generac.com/ImConvServlet/imconv/11269be6d1b8211ea3839e60f8845114a7d51d29/original" alt="" class="floatLeft" />
+              <div class="media"><img
+                  src="https://dam.generac.com/ImConvServlet/imconv/11269be6d1b8211ea3839e60f8845114a7d51d29/original"
+                  alt="" class="floatLeft" />
                 <div class="media-body">
                   <ul>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/0393e12c158a658af6c579dde14b118df6878084/original" target="_blank">Corded String Trimmer Manual</a></li>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/543c91dba032d87907f8e37988b782725e3aa27e/original" target="_blank">Corded Tiller Manual</a></li>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/018b2c37d8b52998f4073e19222a39ef890c53b6/original" target="_blank">Corded 24-inch Hedge Trimmer Manual</a></li>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/a39c1d7c21f223f3f290da8d1e3d24d8504255f1/original" target="_blank">Corded Pole Saw Manual</a></li>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/e588991651c1c1e832c6aaf7d28aea4ded6fc94a/original" target="_blank">Corded Blower/Vacuum Manual</a></li>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/91e9c90339a2f10313b61d58af55636106eb7698/original" target="_blank">Corded Chainsaw Manual</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/0393e12c158a658af6c579dde14b118df6878084/original"
+                        target="_blank">Corded String Trimmer Manual</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/543c91dba032d87907f8e37988b782725e3aa27e/original"
+                        target="_blank">Corded Tiller Manual</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/018b2c37d8b52998f4073e19222a39ef890c53b6/original"
+                        target="_blank">Corded 24-inch Hedge Trimmer Manual</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/a39c1d7c21f223f3f290da8d1e3d24d8504255f1/original"
+                        target="_blank">Corded Pole Saw Manual</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/e588991651c1c1e832c6aaf7d28aea4ded6fc94a/original"
+                        target="_blank">Corded Blower/Vacuum Manual</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/91e9c90339a2f10313b61d58af55636106eb7698/original"
+                        target="_blank">Corded Chainsaw Manual</a></li>
                   </ul>
                 </div>
               </div>
               <h4>Mower Manuals</h4>
-              <div class="media"><img src="https://dam.generac.com/ImConvServlet/imconv/2e3b869e93f7bace80cca0c049734b1509ff9ea8/original" alt="EM 5.1 mower" class="floatLeft" />
+              <div class="media"><img
+                  src="https://dam.generac.com/ImConvServlet/imconv/2e3b869e93f7bace80cca0c049734b1509ff9ea8/original"
+                  alt="EM 5.1 mower" class="floatLeft" />
                 <div class="media-body">
                   <ul>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/a205aeab0383fd32962321f72e2f97dca2cd5ed1/original" target="_blank">EM 5.1 Manual</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/a205aeab0383fd32962321f72e2f97dca2cd5ed1/original"
+                        target="_blank">EM 5.1 Manual</a></li>
                   </ul>
                 </div>
               </div>
-              <div class="media"><img src="https://dam.generac.com/ImConvServlet/imconv/8b2fc87096d5eadd69db1f43c8a979c1eb84deb7/original" alt="EM 4.1 mower" class="floatLeft" />
+              <div class="media"><img
+                  src="https://dam.generac.com/ImConvServlet/imconv/8b2fc87096d5eadd69db1f43c8a979c1eb84deb7/original"
+                  alt="EM 4.1 mower" class="floatLeft" />
                 <div class="media-body">
                   <ul>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/8ef0162008b8ea066cc3e5d63f034ab4cac79efc/original" target="_blank">EM 4.1</a> (March 2004 - January 2006)</li>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/b3f968802ed3a5936340b1134aafdafb3eead2bf/original" target="_blank">EM 4.1</a> (January 2003 - February 2004)</li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/8ef0162008b8ea066cc3e5d63f034ab4cac79efc/original"
+                        target="_blank">EM 4.1</a> (March 2004 - January 2006)</li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/b3f968802ed3a5936340b1134aafdafb3eead2bf/original"
+                        target="_blank">EM 4.1</a> (January 2003 - February 2004)</li>
                   </ul>
                 </div>
               </div>
-              <div class="media"><img src="https://dam.generac.com/ImConvServlet/imconv/cc1d348af43e39b3cf331fab7bc8f19f080b98b9/original" alt="2001 Whisper Lite mower" class="floatLeft" />
+              <div class="media"><img
+                  src="https://dam.generac.com/ImConvServlet/imconv/cc1d348af43e39b3cf331fab7bc8f19f080b98b9/original"
+                  alt="2001 Whisper Lite mower" class="floatLeft" />
                 <div class="media-body">
                   <ul>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/68d7b73e4a5b035a8bf00227b0f3ab4c0809c936/original" target="_blank">2001 Whisper Lite</a> (Your machine operates with a two-step function handlebar to start your mower)</li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/68d7b73e4a5b035a8bf00227b0f3ab4c0809c936/original"
+                        target="_blank">2001 Whisper Lite</a> (Your machine operates with a two-step function handlebar
+                      to start your mower)</li>
                   </ul>
                 </div>
               </div>
-              <div class="media"><img src="https://dam.generac.com/ImConvServlet/imconv/bb0b761ee074f66779ca7f637cda0276b039917f/original" alt="2000 Whisper Lite mower" class="floatLeft" />
+              <div class="media"><img
+                  src="https://dam.generac.com/ImConvServlet/imconv/bb0b761ee074f66779ca7f637cda0276b039917f/original"
+                  alt="2000 Whisper Lite mower" class="floatLeft" />
                 <div class="media-body">
                   <ul>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/b966be6dc643a4e7855368bc3b989ba7557ac00d/original" target="_blank">2000 Whisper Lite</a> (Your machine operates with a three-step function handlebar to start your mower)</li>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/00a8eb7671442cc9b02551cc320742b72b4b2f51/original" target="_blank">1999 Whisper Lite</a> (Your machine operates with a blade engage lever on the right handlebar to start your mower)</li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/b966be6dc643a4e7855368bc3b989ba7557ac00d/original"
+                        target="_blank">2000 Whisper Lite</a> (Your machine operates with a three-step function
+                      handlebar to start your mower)</li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/00a8eb7671442cc9b02551cc320742b72b4b2f51/original"
+                        target="_blank">1999 Whisper Lite</a> (Your machine operates with a blade engage lever on the
+                      right handlebar to start your mower)</li>
                   </ul>
                 </div>
               </div>
               <h4>Attachments</h4>
-              <div class="media"><img src="https://dam.generac.com/ImConvServlet/imconv/40a6786c92d538ef7eec25704876b5735f48e223/original" alt="EM 5.1 Trimmer Attachment" class="floatLeft" />
+              <div class="media"><img
+                  src="https://dam.generac.com/ImConvServlet/imconv/40a6786c92d538ef7eec25704876b5735f48e223/original"
+                  alt="EM 5.1 Trimmer Attachment" class="floatLeft" />
                 <div class="media-body">
                   <ul>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/fbb908c63a05bdaa981378c4f5b1ed633e5b14bc/original" target="_blank">Trimmer Attachment</a> (for EM 5.1 models)</li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/fbb908c63a05bdaa981378c4f5b1ed633e5b14bc/original"
+                        target="_blank">Trimmer Attachment</a> (for EM 5.1 models)</li>
                   </ul>
                 </div>
               </div>
               <h4>Garden Cart Instructions</h4>
-              <div class="media"><img src="https://dam.generac.com/ImConvServlet/imconv/f9aa436f80dbf2204a16ac00f776010b582c83d6/original" alt="Neuton Cart" class="floatLeft" />
+              <div class="media"><img
+                  src="https://dam.generac.com/ImConvServlet/imconv/f9aa436f80dbf2204a16ac00f776010b582c83d6/original"
+                  alt="Neuton Cart" class="floatLeft" />
                 <div class="media-body">
                   <ul>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/8e0d06aef0328717523cd82bee3bc79623f74d87/original" target="_blank">Garden Cart Owner's Manual</a></li>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/6724128fbe8119ef879b809d76221deb7f801b23/original" target="_blank">Leaf Catcher Instructions</a></li>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/61d451ae55198a6007718e890b79b8dbceeb7bd1/original" target="_blank">Side Rail Instructions</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/8e0d06aef0328717523cd82bee3bc79623f74d87/original"
+                        target="_blank">Garden Cart Owner's Manual</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/6724128fbe8119ef879b809d76221deb7f801b23/original"
+                        target="_blank">Leaf Catcher Instructions</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/61d451ae55198a6007718e890b79b8dbceeb7bd1/original"
+                        target="_blank">Side Rail Instructions</a></li>
                   </ul>
                 </div>
               </div>
               <h4>Neuton NiCad Battery Hand Tools</h4>
-              <div class="media"><img src="https://dam.generac.com/ImConvServlet/imconv/76bef561ba87fbebfb1676c84cf11a3cc753ec3f/original" alt="NiCad hand tools" class="floatLeft" />
+              <div class="media"><img
+                  src="https://dam.generac.com/ImConvServlet/imconv/76bef561ba87fbebfb1676c84cf11a3cc753ec3f/original"
+                  alt="NiCad hand tools" class="floatLeft" />
                 <div class="media-body">
                   <ul>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/ddc98847bf85ad4087654380079a874acd0ecda0/original" target="_blank">Neuton NiCad Blower</a></li>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/0dbc6a071f05ad9e371ad3583158828f945b6372/original">Neuton NiCad Chainsaw</a></li>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/248f9b857bb72fc9b4a29b7ee077e2fe56ffd86d/original" target="_blank">Neuton NiCad Hedge Trimmer</a></li>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/2548b11a9ae2398c1d7897e820434ae3ac05b7a2/original" target="_blank">Neuton NiCad String Trimmer</a></li>
-                    <li><a href="https://dam.generac.com/ImConvServlet/imconv/7b5a43f15849d060a417e4c9c86b705ce859d6b5/original" target="_blank">Neuton NiCad Pole Saw</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/ddc98847bf85ad4087654380079a874acd0ecda0/original"
+                        target="_blank">Neuton NiCad Blower</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/0dbc6a071f05ad9e371ad3583158828f945b6372/original">Neuton
+                        NiCad Chainsaw</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/248f9b857bb72fc9b4a29b7ee077e2fe56ffd86d/original"
+                        target="_blank">Neuton NiCad Hedge Trimmer</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/2548b11a9ae2398c1d7897e820434ae3ac05b7a2/original"
+                        target="_blank">Neuton NiCad String Trimmer</a></li>
+                    <li><a
+                        href="https://dam.generac.com/ImConvServlet/imconv/7b5a43f15849d060a417e4c9c86b705ce859d6b5/original"
+                        target="_blank">Neuton NiCad Pole Saw</a></li>
                   </ul>
                 </div>
               </div>
@@ -281,14 +483,22 @@ shipping-image {
         </div>
       </div>
     </div>
-    
-    <!-- End Neuton Accordian--> 
-    
+
+    <!-- End Neuton Accordian-->
+
     <!-- Start BHO Accordion -->
-    <h3 aria-controls="ui-id-2" aria-expanded="false" aria-selected="false" class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" id="ui-id-1" role="tab" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Towable Backhoe Support<span class="btn" style="float: right;padding: 0px; display: inline-block; background: none;"><i class="ss-icon">navigatedown</i></span></h3>
-    <div aria-hidden="true" aria-labelledby="ui-id-1" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" role="tabpanel" style="display: none;">
+    <h3 aria-controls="ui-id-2" aria-expanded="false" aria-selected="false"
+      class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+      id="ui-id-1" role="tab" tabindex="0"><span
+        class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Towable Backhoe Support<span class="btn"
+        style="float: right;padding: 0px; display: inline-block; background: none;"><i
+          class="ss-icon">navigatedown</i></span></h3>
+    <div aria-hidden="true" aria-labelledby="ui-id-1"
+      class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" role="tabpanel"
+      style="display: none;">
       <div class="media clearfix">
-        <div class=""> <img alt="DR Towable Backhoe Support" src="https://dam.generac.com/ImConvServlet/imconv/db42b9109d0e24bf5a3a52253c47ab6e56f136c3/original">
+        <div class=""> <img alt="DR Towable Backhoe Support"
+            src="https://dam.generac.com/ImConvServlet/imconv/db42b9109d0e24bf5a3a52253c47ab6e56f136c3/original">
           <div class="clearer"> &nbsp; </div>
           <div class="clearer"> &nbsp; </div>
         </div>
@@ -300,38 +510,57 @@ shipping-image {
       <h2>Ordering Parts</h2>
       <div id="bho-parts">
         <p>Order parts online at the link below. For assistance please call 1-800-687-6575</p>
-        <a class="btn mb4" href="/pages/content/customer-support/product-support/ordering-parts?aribrand=chp&amp;arian=towable%20backhoes">Find Parts</a> </div>
+        <a class="btn mb4"
+          href="/pages/content/customer-support/product-support/ordering-parts?aribrand=chp&amp;arian=towable%20backhoes">Find
+          Parts</a>
+      </div>
       <br>
       <hr>
       <h2>Owner's Manuals, Parts Lists &amp; Schematics</h2>
       <div class="border-bottom border-gray" id="bho-manuals">
-        <p>Questions? Contact Us by <a rel="nofollow" href="tel: +18006876575" style="color: #000; text-decoration: none;">phone</a> or <a href="/pages/content/customer-support/contact/form">email</a>.</p>
-        <div class="alert alert-info"> <strong>Please Note:</strong> Parts Lists and Schematics are located in the back of the Owner's Manual. </div>
+        <p>Questions? Contact Us by <a rel="nofollow" href="tel: +18006876575"
+            style="color: #000; text-decoration: none;">phone</a> or <a
+            href="/pages/content/customer-support/contact/form">email</a>.</p>
+        <div class="alert alert-info"> <strong>Please Note:</strong> Parts Lists and Schematics are located in the back
+          of the Owner's Manual. </div>
         <table class="table">
           <tbody>
             <tr>
-              <td><span class="tdmobile">DR<sup>&reg;</sup> Towable Backhoe (2008-Present)</span><a class="tdfull" href=
-																		"https://dam.generac.com/ImConvServlet/imconv/a1432b0333c23cf7d0af9604e3a523b8dec0ed25/original" target="_blank">DR<sup>&reg;</sup> Towable Backhoe (2008-Present)</a></td>
-              <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/a1432b0333c23cf7d0af9604e3a523b8dec0ed25/original" target="_blank">Owner's Manual</a></td>
+              <td><span class="tdmobile">DR<sup>&reg;</sup> Towable Backhoe (2008-2018)</span><a class="tdfull"
+                  href="https://dam.generac.com/ImConvServlet/imconv/a1432b0333c23cf7d0af9604e3a523b8dec0ed25/original"
+                  target="_blank">DR<sup>&reg;</sup> Towable Backhoe (2008-2018)</a></td>
+              <td class="tdmobile"><a
+                  href="https://dam.generac.com/ImConvServlet/imconv/a1432b0333c23cf7d0af9604e3a523b8dec0ed25/original"
+                  target="_blank">Owner's Manual</a></td>
             </tr>
             <tr>
-              <td><span class="tdmobile">DR<sup>&reg;</sup> Towable Backhoe (2008) Model</span><a class="tdfull" href=
-																		"https://dam.generac.com/ImConvServlet/imconv/3063ff1b58e7532a21ad916f77c56662483e073a/original?cm_sp=OwnerSupportHome-_-BHO-_-manual-Backhoe-247111" target="_blank">DR<sup>&reg;</sup> Towable
-                Backhoe (2008) Model</a></td>
-              <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/3063ff1b58e7532a21ad916f77c56662483e073a/original?cm_sp=OwnerSupportHome-_-BHO-_-manual-Backhoe-247111" target="_blank">Owner's Manual</a></td>
+              <td><span class="tdmobile">DR<sup>&reg;</sup> Dirtboss Towable Backhoe (2008-2009)</span><a class="tdfull"
+                  href="https://dam.generac.com/ImConvServlet/imconv/3063ff1b58e7532a21ad916f77c56662483e073a/original?cm_sp=OwnerSupportHome-_-BHO-_-manual-Backhoe-247111"
+                  target="_blank">DR<sup>&reg;</sup> Dirtboss Towable Backhoe (2008-2009)</a></td>
+              <td class="tdmobile"><a
+                  href="https://dam.generac.com/ImConvServlet/imconv/3063ff1b58e7532a21ad916f77c56662483e073a/original?cm_sp=OwnerSupportHome-_-BHO-_-manual-Backhoe-247111"
+                  target="_blank">Owner's Manual</a></td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
-    <!-- End BHO Accordian--> 
-    
+    <!-- End BHO Accordian-->
+
     <!-- START Versa-Pro Accordian-->
-    
-    <h3 aria-controls="ui-id-2" aria-expanded="false" aria-selected="false" class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" id="ui-id-1" role="tab" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Versa-Pro Z-Mower Support<span class="btn" style="float: right;padding: 0px; display: inline-block; background: none;"><i class="ss-icon">navigatedown</i></span></h3>
-    <div aria-hidden="true" aria-labelledby="ui-id-1" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" role="tabpanel" style="display: none;">
+
+    <h3 aria-controls="ui-id-2" aria-expanded="false" aria-selected="false"
+      class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+      id="ui-id-1" role="tab" tabindex="0"><span
+        class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Versa-Pro Z-Mower, Converta Mower & Legacy Zero-Turn Mower Support<span class="btn"
+        style="float: right;padding: 0px; display: inline-block; background: none;"><i
+          class="ss-icon">navigatedown</i></span></h3>
+    <div aria-hidden="true" aria-labelledby="ui-id-1"
+      class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" role="tabpanel"
+      style="display: none;">
       <div class="media clearfix">
-        <div class=""> <img alt="DR Vers-Pro Z-Mower Support" src="https://dam.generac.com/ImConvServlet/imconv/52df547ed086c072af47ca4cfbdfcc8cfba581c5/original">
+        <div class=""> <img alt="DR Vers-Pro Z-Mower Support"
+            src="https://dam.generac.com/ImConvServlet/imconv/52df547ed086c072af47ca4cfbdfcc8cfba581c5/original">
           <div class="clearer"> &nbsp; </div>
         </div>
         <div class="media-body">
@@ -342,89 +571,160 @@ shipping-image {
       <h2>Ordering Parts</h2>
       <div id="vzp-parts">
         <p>Order parts online at the links below. For assistance please call 1-800-687-6575</p>
-        <a class="btn mtb1" href=
-							"/pages/content/customer-support/product-support/ordering-parts?aribrand=chp">Find Parts</a> </div>
+        <a class="btn mtb1" href="/pages/content/customer-support/product-support/ordering-parts?aribrand=chp">Find
+          Parts</a>
+      </div>
       <br>
       <hr>
       <h2>Owner's Manuals, Parts Lists &amp; Schematics</h2>
       <div class="border-bottom border-gray" id="vzp-manuals">
-        <p>If you have any questions or are unsure of your model, please contact one of our experienced Technical Support Specialists via <a href="tel:+18006876575" rel="nofollow" style=
-									"color: #000; text-decoration: none;">phone</a> or <a href="/pages/content/customer-support/contact/form">email</a>.</p>
+        <p>If you have any questions or are unsure of your model, please contact one of our experienced Technical
+          Support Specialists via <a href="tel:+18006876575" rel="nofollow"
+            style="color: #000; text-decoration: none;">phone</a> or <a
+            href="/pages/content/customer-support/contact/form">email</a>.</p>
         <table class="table">
           <tbody>
             <tr>
-              <td><span class="tdmobile">Versa-Pro&trade; Z-Mower 19.5 HP Model</span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/05ab6361945210708c5eb531194553a152142cf9/original"
-													target="_blank">Owner's Manual: Versa-Pro&trade; Z-Mower 19.5 HP Model</a><br class="tdfull">
-                <a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/c29433dafb899cfd69c26463460aca1aa3588729/original" target="_blank">Parts List &amp; Schematics: Versa-Pro&trade; Z-Mower
-                19.5 HP Model</a></td>
-              <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/05ab6361945210708c5eb531194553a152142cf9/original" target="_blank">Owner's Manual</a><br>
-                <a href="https://dam.generac.com/ImConvServlet/imconv/c29433dafb899cfd69c26463460aca1aa3588729/original" target="_blank">Parts List &amp; Schematics</a></td>
+              <td><span class="tdmobile">Versa-Pro&trade; Z-Mower 19.5 HP Model</span><a class="tdfull"
+                  href="https://dam.generac.com/ImConvServlet/imconv/05ab6361945210708c5eb531194553a152142cf9/original"
+                  target="_blank">Owner's Manual: Versa-Pro&trade; Z-Mower 19.5 HP Model</a><br class="tdfull">
+                <a class="tdfull"
+                  href="https://dam.generac.com/ImConvServlet/imconv/c29433dafb899cfd69c26463460aca1aa3588729/original"
+                  target="_blank">Parts List &amp; Schematics: Versa-Pro&trade; Z-Mower
+                  19.5 HP Model</a>
+              </td>
+              <td class="tdmobile"><a
+                  href="https://dam.generac.com/ImConvServlet/imconv/05ab6361945210708c5eb531194553a152142cf9/original"
+                  target="_blank">Owner's Manual</a><br>
+                <a href="https://dam.generac.com/ImConvServlet/imconv/c29433dafb899cfd69c26463460aca1aa3588729/original"
+                  target="_blank">Parts List &amp; Schematics</a>
+              </td>
             </tr>
             <tr>
-              <td><span class="tdmobile">Versa-Pro&trade; Z-Mower 22 HP Model</span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/05ab6361945210708c5eb531194553a152142cf9/original" target=
-													"_blank">Owner's Manual: Versa-Pro&trade; Z-Mower 22 HP Model</a><br class="tdfull">
-                <a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/c29433dafb899cfd69c26463460aca1aa3588729/original" target="_blank">Parts List &amp; Schematics: Versa-Pro&trade; Z-Mower 22
-                HP Model</a></td>
-              <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/05ab6361945210708c5eb531194553a152142cf9/original" target="_blank">Owner's Manual</a><br>
-                <a href="https://dam.generac.com/ImConvServlet/imconv/c29433dafb899cfd69c26463460aca1aa3588729/original" target="_blank">Parts List &amp; Schematics</a></td>
+              <td><span class="tdmobile">Versa-Pro&trade; Z-Mower 22 HP Model</span><a class="tdfull"
+                  href="https://dam.generac.com/ImConvServlet/imconv/05ab6361945210708c5eb531194553a152142cf9/original"
+                  target="_blank">Owner's Manual: Versa-Pro&trade; Z-Mower 22 HP Model</a><br class="tdfull">
+                <a class="tdfull"
+                  href="https://dam.generac.com/ImConvServlet/imconv/c29433dafb899cfd69c26463460aca1aa3588729/original"
+                  target="_blank">Parts List &amp; Schematics: Versa-Pro&trade; Z-Mower 22
+                  HP Model</a>
+              </td>
+              <td class="tdmobile"><a
+                  href="https://dam.generac.com/ImConvServlet/imconv/05ab6361945210708c5eb531194553a152142cf9/original"
+                  target="_blank">Owner's Manual</a><br>
+                <a href="https://dam.generac.com/ImConvServlet/imconv/c29433dafb899cfd69c26463460aca1aa3588729/original"
+                  target="_blank">Parts List &amp; Schematics</a>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="tdmobile">Versa-Pro&trade; Z-Mower 25HP 48" & 52" (2004-2006)</span><a class="tdfull"
+                  href="https://dam.generac.com/ImConvServlet/imconv/f1bba83b721f83a415128e045967c608b2df2aea/original"
+                  target="_blank">Versa-Pro&trade; Z-Mower 25HP 48" & 52" (2004-2006)</a></td>
+              <td class="tdmobile"><a
+                  href="https://dam.generac.com/ImConvServlet/imconv/f1bba83b721f83a415128e045967c608b2df2aea/original"
+                  target="_blank">Owner's Manual</a></td>
+            </tr>
+            <tr>
+              <td><span class="tdmobile">Converta Mower (2000-2003)</span><a class="tdfull"
+                  href="https://dam.generac.com/ImConvServlet/imconv/1ba9534465ea69a0d8b6d672ebf6279fa0418808/original"
+                  target="_blank">Converta Mower (2000-2003)</a></td>
+              <td class="tdmobile"><a
+                  href="https://dam.generac.com/ImConvServlet/imconv/1ba9534465ea69a0d8b6d672ebf6279fa0418808/original"
+                  target="_blank">Owner's Manual</a></td>
+            </tr>
+            <tr>
+              <td><span class="tdmobile">Zero-Turn Mower 14.5HP 36" & 15.5HP 42" (2004-2006)</span><a class="tdfull"
+                  href="https://dam.generac.com/ImConvServlet/imconv/bb6de84f1b9ce3c2b47a57d195025b1c38f124a6/original"
+                  target="_blank">Zero-Turn Mower 14.5HP 36" & 15.5HP 42" (2004-2006)</a></td>
+              <td class="tdmobile"><a
+                  href="https://dam.generac.com/ImConvServlet/imconv/bb6de84f1b9ce3c2b47a57d195025b1c38f124a6/original"
+                  target="_blank">Owner's Manual</a></td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
-    
-    <!-- End Versa-Pro Accordian--> 
-    
+
+    <!-- End Versa-Pro Accordian-->
+
     <!-- Start TreeChopper Accordian-->
-    
-    <h3 aria-controls="ui-id-2" aria-expanded="false" aria-selected="false" class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" id="ui-id-1" role="tab" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>TreeChopper Support<span class="btn" style="float: right;padding: 0px; display: inline-block; background: none;"><i class="ss-icon">navigatedown</i></span></h3>
-    <div aria-hidden="true" aria-labelledby="ui-id-1" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" role="tabpanel" style="display: none;">
+
+    <h3 aria-controls="ui-id-2" aria-expanded="false" aria-selected="false"
+      class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+      id="ui-id-1" role="tab" tabindex="0"><span
+        class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>TreeChopper Support<span class="btn"
+        style="float: right;padding: 0px; display: inline-block; background: none;"><i
+          class="ss-icon">navigatedown</i></span></h3>
+    <div aria-hidden="true" aria-labelledby="ui-id-1"
+      class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" role="tabpanel"
+      style="display: none;">
       <div class="media clearfix">
-        <div class=""><img alt="DR Tree Chopper Support" src="https://dam.generac.com/ImConvServlet/imconv/d0eff3d1e0f0e297e0b126d0af4f724d0b9c173f/original"></div>
+        <div class=""><img alt="DR Tree Chopper Support"
+            src="https://dam.generac.com/ImConvServlet/imconv/d0eff3d1e0f0e297e0b126d0af4f724d0b9c173f/original"></div>
         <div class="media-body">
-          <h1 class="media-heading">DR<sup style="font-size:20px;">&reg;</sup> TreeChopper<sup style="font-size:20px;">&trade;</sup></h1>
+          <h1 class="media-heading">DR<sup style="font-size:20px;">&reg;</sup> TreeChopper<sup
+              style="font-size:20px;">&trade;</sup></h1>
         </div>
       </div>
       <br>
       <h2>Ordering Parts</h2>
       <div id="tcr-parts">
         <p>Order parts online at the links below. For assistance please call 1-800-687-6575</p>
-        <a class="btn mtb1" href=
-  							"/pages/content/customer-support/product-support/ordering-parts?aribrand=chp&amp;arian=tree%20chopper">Find Parts</a> </div>
+        <a class="btn mtb1"
+          href="/pages/content/customer-support/product-support/ordering-parts?aribrand=chp&amp;arian=tree%20chopper">Find
+          Parts</a>
+      </div>
       <br>
       <hr>
       <h2>Owner's Manuals, Parts Lists &amp; Schematics</h2>
       <div class="border-bottom border-gray" id="manuals">
-        <p>If you have any questions or are unsure of your model, please contact one of our experienced Technical Support Specialists via <a href="tel:+18006876575" rel="nofollow" style=
-		"color: #000; text-decoration: none;">phone</a> or <a href="/pages/content/customer-support/contact/form">email</a>.</p>
-        <div class="alert alert-info"> <strong>Please Note:</strong> Parts Lists and Schematics are located in the back of the Owner's Manual. </div>
+        <p>If you have any questions or are unsure of your model, please contact one of our experienced Technical
+          Support Specialists via <a href="tel:+18006876575" rel="nofollow"
+            style="color: #000; text-decoration: none;">phone</a> or <a
+            href="/pages/content/customer-support/contact/form">email</a>.</p>
+        <div class="alert alert-info"> <strong>Please Note:</strong> Parts Lists and Schematics are located in the back
+          of the Owner's Manual. </div>
         <table class="table">
           <tbody>
             <tr>
-              <td><span class="tdmobile">TreeChopper<sup>&trade;</sup></span><a class="tdfull" href="https://dam.generac.com/ImConvServlet/imconv/3420577ed9453c0501ab96dbe8bd360f316b5da8/original" target=
-						"_blank">TreeChopper<sup>&trade;</sup></a></td>
-              <td class="tdmobile"><a href="https://dam.generac.com/ImConvServlet/imconv/3420577ed9453c0501ab96dbe8bd360f316b5da8/original" target="_blank">Owner's Manual</a></td>
+              <td><span class="tdmobile">TreeChopper<sup>&trade;</sup></span><a class="tdfull"
+                  href="https://dam.generac.com/ImConvServlet/imconv/3420577ed9453c0501ab96dbe8bd360f316b5da8/original"
+                  target="_blank">TreeChopper<sup>&trade;</sup></a></td>
+              <td class="tdmobile"><a
+                  href="https://dam.generac.com/ImConvServlet/imconv/3420577ed9453c0501ab96dbe8bd360f316b5da8/original"
+                  target="_blank">Owner's Manual</a></td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
-    
-    <!-- End TreeChopper Accordian--> 
-    
+
+    <!-- End TreeChopper Accordian-->
+
     <!-- Start Support Videos Accordian-->
-    
-    <h3 aria-controls="ui-id-2" aria-expanded="false" aria-selected="false" class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" id="ui-id-1" role="tab" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Support Videos <span class="btn" style="float: right;padding: 0px; display: inline-block; background: none;"><i class="ss-icon">navigatedown</i></span></h3>
-    <div aria-hidden="true" aria-labelledby="ui-id-1" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" role="tabpanel" style="display: none;">
+
+    <h3 aria-controls="ui-id-2" aria-expanded="false" aria-selected="false"
+      class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+      id="ui-id-1" role="tab" tabindex="0"><span
+        class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Support Videos <span class="btn"
+        style="float: right;padding: 0px; display: inline-block; background: none;"><i
+          class="ss-icon">navigatedown</i></span></h3>
+    <div aria-hidden="true" aria-labelledby="ui-id-1"
+      class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" role="tabpanel"
+      style="display: none;">
       <div id="supportvideos" class="border-bottom border-gray">
         <div class="row">
-          <div class="col-xs-12 col-sm-6 col-lg-6"><a href="https://www.youtube.com/embed/C_JyxMezuTo?autoplay=1&amp;rel=0" class="fancybox" data-fancybox-type="iframe"> <img src="https://img.youtube.com/vi/C_JyxMezuTo/mqdefault.jpg" alt="How to Clean a Carburetor (Carb) on Small-Engine Power Equipment" class="img-thumbnail" />
-            <h2 class="mtb2">How to Clean a Carburetor (Carb) on Small-Engine Power Equipment</h2>
+          <div class="col-xs-12 col-sm-6 col-lg-6"><a
+              href="https://www.youtube.com/embed/C_JyxMezuTo?autoplay=1&amp;rel=0" class="fancybox"
+              data-fancybox-type="iframe"> <img src="https://img.youtube.com/vi/C_JyxMezuTo/mqdefault.jpg"
+                alt="How to Clean a Carburetor (Carb) on Small-Engine Power Equipment" class="img-thumbnail" />
+              <h2 class="mtb2">How to Clean a Carburetor (Carb) on Small-Engine Power Equipment</h2>
             </a></div>
         </div>
       </div>
     </div>
-    <!-- End Support Videos Accordian--> 
-    
-    <!-- END Main Accordian --></div>
+    <!-- End Support Videos Accordian-->
+
+    <!-- END Main Accordian -->
+  </div>
 </div>
