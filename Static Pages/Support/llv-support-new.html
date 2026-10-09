@@ -32,34 +32,47 @@
     margin-left: 30px;
   }
 
-  .ui-widget-content {
-    background-image: none;
-  }
-
-  .ui-state-hover,
-  .ui-state-focus {
-    background: #a43117 !important;
-    color: #fff !important;
-  }
-
   .ui-accordion .ui-accordion-header {
-    display: block;
-    cursor: pointer;
-    position: relative;
-    margin: 2px 0 0 0;
-    padding: 15px !important;
-    font-size: 18px;
-    font-weight: bold;
-    color: #fff;
-    background-color: #b44127 !important;
+    background: #fff !important;
+    border: 1px solid #f1f1f1;
+    border-left: 4px solid #e3624d;
+    border-radius: 8px;
+
+    padding: 20px 24px !important;
+    font-size: 16px;
+    font-weight: 600;
+    color: #4b5563;
+  }
+
+  .ui-accordion .ui-accordion-header:hover,
+  .ui-state-hover {
+    background: #fff !important;
+    color: #4b5563 !important;
+    border-color: #e3624d !important;
+  }
+
+  .ui-accordion-header-active {
+    background: #fdf7f4 !important;
+    border-left: 4px solid #e3624d !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+
+  .ui-accordion .ss-icon,
+  .ui-accordion .ui-icon {
+    color: #e3624d;
   }
 
   .ui-accordion .ui-accordion-content {
-    padding: 1em;
+    background: #fff;
+    border: 1px solid #f1f1f1;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    padding: 20px;
   }
 
-  .ui-accordion .ss-icon {
-    font-size: 16px;
+  .ui-widget-content {
+    background-image: none;
   }
 
   .ui-state-default,
